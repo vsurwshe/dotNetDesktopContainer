@@ -7,3 +7,6 @@ C:\@vishva\MySqlDesktopApp\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.Properties.
 C:\@vishva\MySqlDesktopApp\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.csproj.GenerateResource.Cache
 C:\@vishva\MySqlDesktopApp\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.exe
 C:\@vishva\MySqlDesktopApp\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.pdb
+C:\@vishva\dotNetDesktopContainer\MySqlDesktopApp\bin\Debug\MySqlDesktopApp.exe.config
+C:\@vishva\dotNetDesktopContainer\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.exe
+C:\@vishva\dotNetDesktopContainer\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.pdb

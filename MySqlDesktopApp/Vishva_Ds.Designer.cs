@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace MySqlDesktopApp.DataSet {
+namespace MySqlDesktopApp {
     
     
     /// <summary>
@@ -20,9 +20,9 @@ namespace MySqlDesktopApp.DataSet {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("vishva_ds")]
+    [global::System.Xml.Serialization.XmlRootAttribute("Vishva_Ds")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class vishva_ds : global::System.Data.DataSet {
+    public partial class Vishva_Ds : global::System.Data.DataSet {
         
         private empDataTable tableemp;
         
@@ -30,7 +30,7 @@ namespace MySqlDesktopApp.DataSet {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public vishva_ds() {
+        public Vishva_Ds() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace MySqlDesktopApp.DataSet {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected vishva_ds(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected Vishva_Ds(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace MySqlDesktopApp.DataSet {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            vishva_ds cln = ((vishva_ds)(base.Clone()));
+            Vishva_Ds cln = ((Vishva_Ds)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace MySqlDesktopApp.DataSet {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "vishva_ds";
+            this.DataSetName = "Vishva_Ds";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/vishva_ds.xsd";
+            this.Namespace = "http://tempuri.org/Vishva_Ds.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableemp = new empDataTable();
@@ -225,7 +225,7 @@ namespace MySqlDesktopApp.DataSet {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            vishva_ds ds = new vishva_ds();
+            Vishva_Ds ds = new Vishva_Ds();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -279,13 +279,13 @@ namespace MySqlDesktopApp.DataSet {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class empDataTable : global::System.Data.TypedTableBase<empRow> {
             
-            private global::System.Data.DataColumn columnEMP_ID;
+            private global::System.Data.DataColumn columnid;
             
-            private global::System.Data.DataColumn columnEMP_NAME;
+            private global::System.Data.DataColumn columnname;
             
-            private global::System.Data.DataColumn columnEMP_EMAIL;
+            private global::System.Data.DataColumn columnemail;
             
-            private global::System.Data.DataColumn columnEMP_ADDRESS;
+            private global::System.Data.DataColumn columnaddress;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -322,33 +322,33 @@ namespace MySqlDesktopApp.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn EMP_IDColumn {
+            public global::System.Data.DataColumn idColumn {
                 get {
-                    return this.columnEMP_ID;
+                    return this.columnid;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn EMP_NAMEColumn {
+            public global::System.Data.DataColumn nameColumn {
                 get {
-                    return this.columnEMP_NAME;
+                    return this.columnname;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn EMP_EMAILColumn {
+            public global::System.Data.DataColumn emailColumn {
                 get {
-                    return this.columnEMP_EMAIL;
+                    return this.columnemail;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn EMP_ADDRESSColumn {
+            public global::System.Data.DataColumn addressColumn {
                 get {
-                    return this.columnEMP_ADDRESS;
+                    return this.columnaddress;
                 }
             }
             
@@ -389,13 +389,13 @@ namespace MySqlDesktopApp.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public empRow AddempRow(string EMP_NAME, string EMP_EMAIL, string EMP_ADDRESS) {
+            public empRow AddempRow(string name, string email, string address) {
                 empRow rowempRow = ((empRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        EMP_NAME,
-                        EMP_EMAIL,
-                        EMP_ADDRESS};
+                        name,
+                        email,
+                        address};
                 rowempRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowempRow);
                 return rowempRow;
@@ -403,9 +403,9 @@ namespace MySqlDesktopApp.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public empRow FindByEMP_ID(int EMP_ID) {
+            public empRow FindByid(int id) {
                 return ((empRow)(this.Rows.Find(new object[] {
-                            EMP_ID})));
+                            id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -425,35 +425,35 @@ namespace MySqlDesktopApp.DataSet {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnEMP_ID = base.Columns["EMP_ID"];
-                this.columnEMP_NAME = base.Columns["EMP_NAME"];
-                this.columnEMP_EMAIL = base.Columns["EMP_EMAIL"];
-                this.columnEMP_ADDRESS = base.Columns["EMP_ADDRESS"];
+                this.columnid = base.Columns["id"];
+                this.columnname = base.Columns["name"];
+                this.columnemail = base.Columns["email"];
+                this.columnaddress = base.Columns["address"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnEMP_ID = new global::System.Data.DataColumn("EMP_ID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEMP_ID);
-                this.columnEMP_NAME = new global::System.Data.DataColumn("EMP_NAME", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEMP_NAME);
-                this.columnEMP_EMAIL = new global::System.Data.DataColumn("EMP_EMAIL", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEMP_EMAIL);
-                this.columnEMP_ADDRESS = new global::System.Data.DataColumn("EMP_ADDRESS", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEMP_ADDRESS);
+                this.columnid = new global::System.Data.DataColumn("id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid);
+                this.columnname = new global::System.Data.DataColumn("name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnname);
+                this.columnemail = new global::System.Data.DataColumn("email", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnemail);
+                this.columnaddress = new global::System.Data.DataColumn("address", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnaddress);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnEMP_ID}, true));
-                this.columnEMP_ID.AutoIncrement = true;
-                this.columnEMP_ID.AutoIncrementSeed = -1;
-                this.columnEMP_ID.AutoIncrementStep = -1;
-                this.columnEMP_ID.AllowDBNull = false;
-                this.columnEMP_ID.Unique = true;
-                this.columnEMP_NAME.MaxLength = 10;
-                this.columnEMP_EMAIL.AllowDBNull = false;
-                this.columnEMP_EMAIL.MaxLength = 100;
-                this.columnEMP_ADDRESS.AllowDBNull = false;
-                this.columnEMP_ADDRESS.MaxLength = 100;
+                                this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
+                this.columnid.AllowDBNull = false;
+                this.columnid.Unique = true;
+                this.columnname.MaxLength = 10;
+                this.columnemail.AllowDBNull = false;
+                this.columnemail.MaxLength = 100;
+                this.columnaddress.AllowDBNull = false;
+                this.columnaddress.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -521,7 +521,7 @@ namespace MySqlDesktopApp.DataSet {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                vishva_ds ds = new vishva_ds();
+                Vishva_Ds ds = new Vishva_Ds();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -596,63 +596,63 @@ namespace MySqlDesktopApp.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int EMP_ID {
+            public int id {
                 get {
-                    return ((int)(this[this.tableemp.EMP_IDColumn]));
+                    return ((int)(this[this.tableemp.idColumn]));
                 }
                 set {
-                    this[this.tableemp.EMP_IDColumn] = value;
+                    this[this.tableemp.idColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string EMP_NAME {
+            public string name {
                 get {
                     try {
-                        return ((string)(this[this.tableemp.EMP_NAMEColumn]));
+                        return ((string)(this[this.tableemp.nameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'EMP_NAME\' in table \'emp\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'name\' in table \'emp\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableemp.EMP_NAMEColumn] = value;
+                    this[this.tableemp.nameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string EMP_EMAIL {
+            public string email {
                 get {
-                    return ((string)(this[this.tableemp.EMP_EMAILColumn]));
+                    return ((string)(this[this.tableemp.emailColumn]));
                 }
                 set {
-                    this[this.tableemp.EMP_EMAILColumn] = value;
+                    this[this.tableemp.emailColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string EMP_ADDRESS {
+            public string address {
                 get {
-                    return ((string)(this[this.tableemp.EMP_ADDRESSColumn]));
+                    return ((string)(this[this.tableemp.addressColumn]));
                 }
                 set {
-                    this[this.tableemp.EMP_ADDRESSColumn] = value;
+                    this[this.tableemp.addressColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsEMP_NAMENull() {
-                return this.IsNull(this.tableemp.EMP_NAMEColumn);
+            public bool IsnameNull() {
+                return this.IsNull(this.tableemp.nameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetEMP_NAMENull() {
-                this[this.tableemp.EMP_NAMEColumn] = global::System.Convert.DBNull;
+            public void SetnameNull() {
+                this[this.tableemp.nameColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -691,7 +691,7 @@ namespace MySqlDesktopApp.DataSet {
         }
     }
 }
-namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
+namespace MySqlDesktopApp.Vishva_DsTableAdapters {
     
     
     /// <summary>
@@ -815,10 +815,10 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "emp";
-            tableMapping.ColumnMappings.Add("EMP_ID", "EMP_ID");
-            tableMapping.ColumnMappings.Add("EMP_NAME", "EMP_NAME");
-            tableMapping.ColumnMappings.Add("EMP_EMAIL", "EMP_EMAIL");
-            tableMapping.ColumnMappings.Add("EMP_ADDRESS", "EMP_ADDRESS");
+            tableMapping.ColumnMappings.Add("id", "id");
+            tableMapping.ColumnMappings.Add("name", "name");
+            tableMapping.ColumnMappings.Add("email", "email");
+            tableMapping.ColumnMappings.Add("address", "address");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -830,7 +830,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_ID";
+            param.SourceColumn = "id";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
@@ -838,7 +838,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_NAME";
+            param.SourceColumn = "name";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             param.SourceColumnNullMapping = true;
             this._adapter.DeleteCommand.Parameters.Add(param);
@@ -847,7 +847,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_NAME";
+            param.SourceColumn = "name";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
@@ -855,7 +855,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_EMAIL";
+            param.SourceColumn = "email";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
@@ -863,7 +863,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_ADDRESS";
+            param.SourceColumn = "address";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.DeleteCommand.Parameters.Add(param);
             this._adapter.InsertCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
@@ -875,21 +875,21 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_NAME";
+            param.SourceColumn = "name";
             this._adapter.InsertCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p2";
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_EMAIL";
+            param.SourceColumn = "email";
             this._adapter.InsertCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p3";
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_ADDRESS";
+            param.SourceColumn = "address";
             this._adapter.InsertCommand.Parameters.Add(param);
             this._adapter.UpdateCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
@@ -902,28 +902,28 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_NAME";
+            param.SourceColumn = "name";
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p2";
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_EMAIL";
+            param.SourceColumn = "email";
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p3";
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_ADDRESS";
+            param.SourceColumn = "address";
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p4";
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_ID";
+            param.SourceColumn = "id";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
@@ -931,7 +931,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_NAME";
+            param.SourceColumn = "name";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             param.SourceColumnNullMapping = true;
             this._adapter.UpdateCommand.Parameters.Add(param);
@@ -940,7 +940,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_NAME";
+            param.SourceColumn = "name";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
@@ -948,7 +948,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_EMAIL";
+            param.SourceColumn = "email";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
@@ -956,7 +956,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "EMP_ADDRESS";
+            param.SourceColumn = "address";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
         }
@@ -974,8 +974,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
             this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        id AS EMP_ID, name AS EMP_NAME, email AS EMP_EMAIL, address AS EMP_" +
-                "ADDRESS\r\nFROM            emp";
+            this._commandCollection[0].CommandText = "SELECT        id, name, email, address\r\nFROM            emp";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -983,7 +982,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(vishva_ds.empDataTable dataTable) {
+        public virtual int Fill(Vishva_Ds.empDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -995,14 +994,14 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(vishva_ds.empDataTable dataTable) {
+        public virtual int Update(Vishva_Ds.empDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(vishva_ds dataSet) {
+        public virtual int Update(Vishva_Ds dataSet) {
             return this.Adapter.Update(dataSet, "emp");
         }
         
@@ -1028,7 +1027,8 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
         public virtual int Delete(int p1, string p3, string p4, string p5) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(p1));
             if ((p3 == null)) {
-                throw new global::System.ArgumentNullException("p3");
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
@@ -1068,7 +1068,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(string p1, string p2, string p3) {
             if ((p1 == null)) {
-                throw new global::System.ArgumentNullException("p1");
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(p1));
@@ -1107,7 +1107,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(string p1, string p2, string p3, int p4, string p6, string p7, string p8) {
             if ((p1 == null)) {
-                throw new global::System.ArgumentNullException("p1");
+                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(p1));
@@ -1126,7 +1126,8 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
             }
             this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(p4));
             if ((p6 == null)) {
-                throw new global::System.ArgumentNullException("p6");
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(0));
@@ -1252,7 +1253,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(vishva_ds dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(Vishva_Ds dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._empTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.emp.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1271,7 +1272,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(vishva_ds dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(Vishva_Ds dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._empTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.emp.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1289,7 +1290,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(vishva_ds dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(Vishva_Ds dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._empTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.emp.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1331,7 +1332,7 @@ namespace MySqlDesktopApp.DataSet.vishva_dsTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(vishva_ds dataSet) {
+        public virtual int UpdateAll(Vishva_Ds dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
