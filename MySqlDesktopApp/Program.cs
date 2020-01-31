@@ -16,7 +16,7 @@ namespace MySqlDesktopApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Desktop());
+            Application.Run(new Dashboard());
         }
     }
 }

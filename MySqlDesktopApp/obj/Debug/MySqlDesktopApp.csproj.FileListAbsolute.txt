@@ -16,3 +16,14 @@ C:\@vishva\dotNetDesktopContainer\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.cspr
 C:\@vishva\dotNetDesktopContainer\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.Desktop.resources
 C:\@vishva\dotNetDesktopContainer\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.Properties.Resources.resources
 C:\@vishva\dotNetDesktopContainer\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.csproj.GenerateResource.Cache
+C:\@vishva\@MyCode\dotNetDesktopContainer\MySqlDesktopApp\bin\Debug\MySqlDesktopApp.exe.config
+C:\@vishva\@MyCode\dotNetDesktopContainer\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.exe
+C:\@vishva\@MyCode\dotNetDesktopContainer\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.pdb
+C:\@vishva\@MyCode\dotNetDesktopContainer\MySqlDesktopApp\bin\Debug\MySqlDesktopApp.exe
+C:\@vishva\@MyCode\dotNetDesktopContainer\MySqlDesktopApp\bin\Debug\MySqlDesktopApp.pdb
+C:\@vishva\@MyCode\dotNetDesktopContainer\MySqlDesktopApp\bin\Debug\MaterialSkin.dll
+C:\@vishva\@MyCode\dotNetDesktopContainer\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.csprojResolveAssemblyReference.cache
+C:\@vishva\@MyCode\dotNetDesktopContainer\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.Desktop.resources
+C:\@vishva\@MyCode\dotNetDesktopContainer\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.Properties.Resources.resources
+C:\@vishva\@MyCode\dotNetDesktopContainer\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.csproj.GenerateResource.Cache
+C:\@vishva\@MyCode\dotNetDesktopContainer\MySqlDesktopApp\obj\Debug\MySqlDesktopApp.Dashboard.resources
