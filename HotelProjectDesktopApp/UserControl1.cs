@@ -67,10 +67,7 @@ namespace Assignment2_Bunifu_UI
 
         }
 
-        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
+      
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
