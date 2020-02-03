@@ -95,6 +95,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="UiScreen\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UiScreen\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="UiScreen\UserDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UiScreen\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UiScreen\UserDashboard.resx">
       <DependentUpon>UserDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +146,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\canva-blank-brown-card-board-paper-textured-background-MADatVKm_xA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Backup Code\TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>

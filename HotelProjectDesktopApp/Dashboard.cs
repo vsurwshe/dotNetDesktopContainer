@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,15 +24,13 @@ namespace HotelDashboard
 
         private void bunifuFlatButton6_Click_1(object sender, EventArgs e)
         {
-            //new HotelDashboard.UiScreen.UserDashboard().IsMdiContainer = true;
             Type typeOf = typeof(HotelDashboard.UiScreen.UserDashboard);
             createShowForm(typeOf);
-            //  (Bunifu.Framework.UI.BunifuFlatButton) sender 
         }
 
         private void bunifuFlatButton7_Click_1(object sender, EventArgs e)
         {
-            Type typeOf = typeof(HotelDashboard.Helper.UserExceptions);
+            Type typeOf = typeof(HotelDashboard.UiScreen.Customer);
             createShowForm(typeOf);
         }
 
@@ -40,17 +39,18 @@ namespace HotelDashboard
         {
             try
             {
-                HotelDashboard.Dashboard dash=new HotelDashboard.Dashboard();
+               // This Line creating Object of What we passing Type of Object in parameters
                 Object classObject = Activator.CreateInstance(objectName);
-
                 if (classObject.GetType().GetProperty("MdiParent") != null)
                 {
-                    MessageBox.Show("" + classObject.GetType().GetProperty("MdiParent"));
                     // This line geting MidParent Porperties and Setting value of Current Dashboard by 2 parameter
-                    classObject.GetType().GetProperty("MdiParent").SetValue(this,dash, null);
+                    classObject.GetType().GetProperty("MdiParent").SetValue(classObject, this, null);
                     // This line geting Dock Porperties and Setting value of DockStyle.Fill by 2 parameter
-                    classObject.GetType().GetProperty("Dock").SetValue(this, DockStyle.Fill, null);
-                    
+                    classObject.GetType().GetProperty("Dock").SetValue(classObject, DockStyle.Fill, null);
+                   // This line Find the Show mwthod and sloveing ambiguty form them. 
+                    MethodInfo showMethod = classObject.GetType().GetMethods().Where(x => x.Name == "Show").Last(x => !x.ContainsGenericParameters);
+                    // This method calling show method
+                    showMethod.Invoke(classObject, null);
                 }
                 else
                     throw new Exception("Object Class Not Found");
@@ -60,8 +60,6 @@ namespace HotelDashboard
                 new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
             }
         }
-
-      
 
     }
 }

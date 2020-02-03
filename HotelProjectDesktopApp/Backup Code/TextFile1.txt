@@ -1,0 +1,34 @@
+﻿//------ C# Reflcations
+
+                    MethodInfo showmethod = classObject.GetType().GetMethod("show", Type.EmptyTypes);
+                    showmethod.Invoke(classObject, null);
+                   
+                    //----
+                    MethodInfo[] methodInfos = classObject.GetType().GetMethods();//get all method of current type
+
+                    string retVal = "";
+                    StringBuilder paramInfo = new StringBuilder();
+                    foreach (MethodInfo methodInfo in methodInfos)
+                    {
+                        if (methodInfo.Name.Equals("Show"))
+                        {
+                            retVal = retVal + methodInfo.Attributes + "[]";
+
+                            //methodInfo.GetParameters("")
+                            //methodInfo.Invoke(dash, null);
+                            //break;
+                        }
+
+                        paramInfo.Append("( ");
+                        // Get params.
+                        foreach (ParameterInfo parameterInfo in methodInfo.GetParameters())
+                        {
+                            paramInfo.Append(string.Format("{0} {1} ", parameterInfo.ParameterType, parameterInfo.Name));
+                        }
+                        paramInfo.Append(" )");
+                        // Now display the basic method signature.
+                        Console.WriteLine(String.Format("{0} {1} {2}\n", retVal, methodInfo.Name, paramInfo.ToString()));
+                        paramInfo.Clear();
+                    }
+
+                    Console.WriteLine(String.Format(retVal));
