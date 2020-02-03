@@ -1,4 +1,4 @@
-﻿namespace Assignment2_Bunifu_UI
+﻿namespace HotelDashboard
 {
     partial class Form1
     {
@@ -91,7 +91,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.userControl11 = new Assignment2_Bunifu_UI.UserControl1();
+            //this.userControl11 = new HotelDashboard.UserControl1();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -1260,12 +1260,12 @@
             // 
             // userControl11
             // 
-            this.userControl11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
-            this.userControl11.Location = new System.Drawing.Point(87, 366);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(836, 345);
-            this.userControl11.TabIndex = 22;
-            this.userControl11.Load += new System.EventHandler(this.userControl11_Load);
+            //this.userControl11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
+            //this.userControl11.Location = new System.Drawing.Point(87, 366);
+            //this.userControl11.Name = "userControl11";
+            //this.userControl11.Size = new System.Drawing.Size(836, 345);
+            //this.userControl11.TabIndex = 22;
+            //this.userControl11.Load += new System.EventHandler(this.userControl11_Load);
             // 
             // Form1
             // 
@@ -1274,7 +1274,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(961, 606);
             this.Controls.Add(this.bunifuImageButton2);
-            this.Controls.Add(this.userControl11);
+            //this.Controls.Add(this.userControl11);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuMaterialTextbox2);
@@ -1383,7 +1383,7 @@
         //private Bunifu.DataViz.BunifuDataViz bunifuDataViz1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
-        private UserControl1 userControl11;
+        //private UserControl1 userControl11;
     }
 }
 

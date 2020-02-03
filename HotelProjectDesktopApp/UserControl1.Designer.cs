@@ -1,4 +1,4 @@
-﻿namespace Assignment2_Bunifu_UI
+﻿namespace HotelDashboard
 {
     partial class UserControl1
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Assignment2_Bunifu_UI
+namespace HotelDashboard
 {
     public partial class UserControl1 : UserControl
     {

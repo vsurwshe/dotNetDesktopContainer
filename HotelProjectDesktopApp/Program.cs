@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Assignment2_Bunifu_UI
+namespace HotelDashboard
 {
     static class Program
     {
