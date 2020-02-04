@@ -12,7 +12,7 @@ namespace HotelDashboard.Helper
     {
         public void showExceptions(String message)
         {
-            MessageBox.Show("Error: " + message);
+            MessageBox.Show(message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

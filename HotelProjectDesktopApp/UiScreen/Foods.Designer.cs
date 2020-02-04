@@ -1,6 +1,6 @@
 ﻿namespace HotelDashboard.UiScreen
 {
-    partial class Customer
+    partial class Foods
     {
         /// <summary>
         /// Required designer variable.
@@ -34,22 +34,22 @@
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(31, 26);
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(33, 39);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(129, 21);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(113, 23);
             this.bunifuCustomLabel1.TabIndex = 0;
-            this.bunifuCustomLabel1.Text = "Custmoer Form";
+            this.bunifuCustomLabel1.Text = "Foods Form";
             // 
-            // Customer
+            // Foods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1102, 550);
+            this.ClientSize = new System.Drawing.Size(1200, 600);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Customer";
-            this.Text = "Customer";
+            this.Name = "Foods";
+            this.Text = "Foods";
             this.ResumeLayout(false);
             this.PerformLayout();
 
