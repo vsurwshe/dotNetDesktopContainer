@@ -18,10 +18,10 @@ namespace HotelDashboard.UiScreen
 
         private void UserDashboard_Load(object sender, EventArgs e)
         {
-           HotelDashboard.WpfClient.Models.TokenResponse user = new HotelDashboard.WpfClient.Operations.ApiOperations().AuthenticateUser("v@v.com", "123456");
-           Properties.Settings.Default.userToken = user.userToken;
-           Properties.Settings.Default.refreshToekn = user.userRefreshToken;
-           l2.Text = "User Token "+Properties.Settings.Default.userToken;
+            new HotelDashboard.Helper.UserService().getAuthenticate("v@v.com", "123456");
+            l2.Text = "User Token " + Properties.Settings.Default.userToken;
         }
+
+        
     }
 }

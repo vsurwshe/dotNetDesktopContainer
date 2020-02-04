@@ -17,5 +17,23 @@ namespace HotelDashboard.Helper
                 Application.Exit();
             }
         }
+
+        // This method take username and password calling Api and setting response of api in setting variables
+        public void getAuthenticate(String username, String password)
+        {
+            try
+            {
+                if (Properties.Settings.Default.userToken == "")
+                {
+                    HotelDashboard.WpfClient.Models.TokenResponse user = new HotelDashboard.WpfClient.Operations.ApiOperations().AuthenticateUser(username,password);
+                    Properties.Settings.Default.userToken = user.userToken;
+                    Properties.Settings.Default.refreshToekn = user.userRefreshToken;
+                }
+            }
+            catch (Exception msg)
+            {
+                new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
+            }
+        }
     }
 }
