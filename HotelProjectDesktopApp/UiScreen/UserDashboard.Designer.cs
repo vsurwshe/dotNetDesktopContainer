@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.l2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel1
@@ -41,16 +42,28 @@
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "User Dashborad";
             // 
+            // l2
+            // 
+            this.l2.AutoSize = true;
+            this.l2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l2.Location = new System.Drawing.Point(25, 91);
+            this.l2.Name = "l2";
+            this.l2.Size = new System.Drawing.Size(143, 23);
+            this.l2.TabIndex = 1;
+            this.l2.Text = "User Dashborad";
+            // 
             // UserDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1208, 737);
             this.ControlBox = false;
+            this.Controls.Add(this.l2);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserDashboard";
             this.Text = "UserDashboard";
+            this.Load += new System.EventHandler(this.UserDashboard_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,5 +72,6 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private Bunifu.Framework.UI.BunifuCustomLabel l2;
     }
 }
