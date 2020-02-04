@@ -19,8 +19,8 @@ namespace HotelDashboard
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.DashboradButton_Click(sender, e);  
-        }
+                this.DashboradButton_Click(sender, e);  
+         }
 
         private void DashboradButton_Click(object sender, EventArgs e)
         {

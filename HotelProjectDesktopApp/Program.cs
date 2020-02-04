@@ -16,7 +16,14 @@ namespace HotelDashboard
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Dashboard());
+            if (Properties.Settings.Default.userToken == "")
+            {
+                Application.Run(new Login());
+            }
+            else
+            {
+                Application.Run(new Dashboard());
+            }
         }
     }
 }

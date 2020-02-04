@@ -352,7 +352,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(57, 916);
+            this.panel1.Size = new System.Drawing.Size(57, 788);
             this.panel1.TabIndex = 3;
             // 
             // pictureBox2
@@ -501,7 +501,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::HotelDashboard.Properties.Resources.canva_blank_brown_card_board_paper_textured_background_MADatVKm_xA;
-            this.ClientSize = new System.Drawing.Size(1372, 916);
+            this.ClientSize = new System.Drawing.Size(1372, 788);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
