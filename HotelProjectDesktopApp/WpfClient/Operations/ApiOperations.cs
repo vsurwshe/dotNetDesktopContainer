@@ -5,6 +5,7 @@ using System.Net;
 using System.Text;
 //------
 using HotelDashboard.WpfClient.Models;
+using HotelDashboard.Helper;
 using Newtonsoft.Json;
 
 
@@ -40,10 +41,22 @@ namespace HotelDashboard.WpfClient.Operations
                 string response = wc.UploadString(endpoint, method, json);
                 return JsonConvert.DeserializeObject<TokenResponse>(response);
             }
-            catch (Exception msg)
+            catch (WebException msg)
             {
-                new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
-                return null;
+                TokenResponse token = new TokenResponse();
+                if (msg.Status == WebExceptionStatus.ProtocolError)
+                {
+                    HttpWebResponse response = (HttpWebResponse)msg.Response;
+                    // This condtions checking 500 error got or not
+                    if ((int)response.StatusCode == 500)
+                    { token.userToken="500 Error";}
+                }
+                else
+                {
+                    new UserExceptions().showExceptions(msg.Message);
+                    token.userToken = null;
+                }
+                return token;
             }
         }
     }

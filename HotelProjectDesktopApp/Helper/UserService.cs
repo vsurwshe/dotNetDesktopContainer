@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 //---
 using System.Windows.Forms;
+using HotelDashboard.WpfClient.Models;
+using HotelDashboard.WpfClient.Operations;
+using HotelDashboard.Helper;
 
 namespace HotelDashboard.Helper
 {
@@ -32,22 +35,29 @@ namespace HotelDashboard.Helper
         }
         
         // This method take username and password calling Api and setting response of api in setting variables
-        public String getAuthenticate(String username, String password)
+        public TokenResponse getAuthenticate(String username, String password)
         {
+            TokenResponse user=null;
             try
             {
                 if (Properties.Settings.Default.userToken == "")
                 {
-                    HotelDashboard.WpfClient.Models.TokenResponse user = new HotelDashboard.WpfClient.Operations.ApiOperations().AuthenticateUser(username,password);
+                    user = new ApiOperations().AuthenticateUser(username, password);
                     Properties.Settings.Default.userToken = user.userToken;
                     Properties.Settings.Default.refreshToekn = user.userRefreshToken;
                 }
-                return Properties.Settings.Default.userToken;
+                else
+                {
+                    user=new TokenResponse();
+                    user.userToken = Properties.Settings.Default.userToken;
+                    user.userRefreshToken = Properties.Settings.Default.refreshToekn;
+                }
+                return user;
             }
             catch (Exception msg)
             {
-                new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
-                return null;
+                new UserExceptions().showExceptions(msg.Message);
+                return user;
             }
         }
     }

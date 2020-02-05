@@ -40,8 +40,8 @@ namespace HotelDashboard
 
         private void bgWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            String res= new HotelDashboard.Helper.UserService().getAuthenticate(username.Text, password.Text);
-            if (res != null)
+            HotelDashboard.WpfClient.Models.TokenResponse res= new HotelDashboard.Helper.UserService().getAuthenticate(username.Text, password.Text);
+            if (res.userToken != null && !res.userToken.Equals("500 Error"))
             {
                 this.Invoke(new MethodInvoker(delegate(){
                     this.Hide();
@@ -60,9 +60,8 @@ namespace HotelDashboard
             loginButton.Enabled = true;
         }
 
-
-        //-------
-
+        //------- Custome Method Implementions
+        // This method seting values of progress bar
         private void setProgressBar(Boolean progressBarvalue)
         {
             if (progressBarvalue)
@@ -74,10 +73,5 @@ namespace HotelDashboard
             }
            progressBar.Visible = progressBarvalue;
         }
-      
-
-        
-
-        
     }
 }
