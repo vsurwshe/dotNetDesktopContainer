@@ -37,7 +37,15 @@ namespace HotelDashboard
 
         private void signupButton_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                this.Hide();
+                new Register().Show();
+            }
+            catch (Exception msg)
+            {
+                new UserExceptions().showExceptions(msg.Message);
+            }
         }
 
         private void bgWorker_DoWork(object sender, DoWorkEventArgs e)

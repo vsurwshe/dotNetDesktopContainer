@@ -33,11 +33,11 @@
             this.username = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.password = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.bgWorker = new System.ComponentModel.BackgroundWorker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.signupButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.loginButton = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bgWorker = new System.ComponentModel.BackgroundWorker();
-            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +47,7 @@
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(15, 290);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(46, 288);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(262, 17);
             this.bunifuCustomLabel4.TabIndex = 6;
@@ -62,7 +62,7 @@
             this.username.HintText = "Enter User Name";
             this.username.isPassword = false;
             this.username.LineFocusedColor = System.Drawing.Color.Blue;
-            this.username.LineIdleColor = System.Drawing.Color.Gray;
+            this.username.LineIdleColor = System.Drawing.Color.Black;
             this.username.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.username.LineThickness = 1;
             this.username.Location = new System.Drawing.Point(93, 143);
@@ -110,8 +110,32 @@
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(491, 435);
+            this.bunifuCards1.Size = new System.Drawing.Size(491, 377);
             this.bunifuCards1.TabIndex = 1;
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(130, 326);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(245, 23);
+            this.progressBar.TabIndex = 12;
+            // 
+            // bgWorker
+            // 
+            this.bgWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorker_DoWork);
+            this.bgWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgWorker_RunWorkerCompleted);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkRed;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::HotelDashboard.Properties.Resources.userVectorImages;
+            this.pictureBox1.Location = new System.Drawing.Point(199, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(107, 102);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // signupButton
             // 
@@ -131,7 +155,7 @@
             this.signupButton.IdleFillColor = System.Drawing.Color.White;
             this.signupButton.IdleForecolor = System.Drawing.Color.Red;
             this.signupButton.IdleLineColor = System.Drawing.Color.Transparent;
-            this.signupButton.Location = new System.Drawing.Point(269, 290);
+            this.signupButton.Location = new System.Drawing.Point(300, 288);
             this.signupButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.signupButton.Name = "signupButton";
             this.signupButton.Size = new System.Drawing.Size(155, 17);
@@ -165,35 +189,11 @@
             this.loginButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DarkRed;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::HotelDashboard.Properties.Resources.userVectorImages;
-            this.pictureBox1.Location = new System.Drawing.Point(199, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(107, 102);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
-            // bgWorker
-            // 
-            this.bgWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorker_DoWork);
-            this.bgWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgWorker_RunWorkerCompleted);
-            // 
-            // progressBar
-            // 
-            this.progressBar.Location = new System.Drawing.Point(104, 337);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(245, 23);
-            this.progressBar.TabIndex = 12;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 435);
+            this.ClientSize = new System.Drawing.Size(491, 377);
             this.Controls.Add(this.bunifuCards1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Login";
