@@ -201,6 +201,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Backup Code\TextFile1.txt" />
+    <None Include="Resources\userVectorImages.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />

@@ -9,6 +9,7 @@ namespace HotelDashboard.Helper
 {
     class UserService
     {
+        // This method execute when user want quit form applications
         public void appExit()
         {
             DialogResult dr = MessageBox.Show("Are Sure want to Exit form Applications ? ", "Exit Applications", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
@@ -18,8 +19,20 @@ namespace HotelDashboard.Helper
             }
         }
 
+        // This mehod use for show warning message in applications
+        public void showWarningMessage(String message)
+        {
+            MessageBox.Show(message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        // This mehod use for show warning message in applications
+        public void showErrorMessage(String message)
+        {
+            MessageBox.Show(message, "Application Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        
         // This method take username and password calling Api and setting response of api in setting variables
-        public void getAuthenticate(String username, String password)
+        public String getAuthenticate(String username, String password)
         {
             try
             {
@@ -29,10 +42,12 @@ namespace HotelDashboard.Helper
                     Properties.Settings.Default.userToken = user.userToken;
                     Properties.Settings.Default.refreshToekn = user.userRefreshToken;
                 }
+                return Properties.Settings.Default.userToken;
             }
             catch (Exception msg)
             {
                 new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
+                return null;
             }
         }
     }
