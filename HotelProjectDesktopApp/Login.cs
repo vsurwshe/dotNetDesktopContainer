@@ -5,7 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+//---
 using System.Windows.Forms;
+using HotelDashboard.Helper;
 
 namespace HotelDashboard
 {
@@ -16,11 +18,11 @@ namespace HotelDashboard
             InitializeComponent();
             this.setProgressBar(false);
         }
-
+        // This method calling when user click on login button
         private void loginButton_Click(object sender, EventArgs e)
-        {
+        { // This condtions checking username or password filed empty or null
             if (String.IsNullOrEmpty(username.Text) || String.IsNullOrEmpty(password.Text))
-            { new HotelDashboard.Helper.UserService().showWarningMessage("Please Enter Vaild Username or Password !"); }
+            { new HotelDashboard.Helper.UserService().showWarningMessage(CommonMessage.LOGIN_USERPASS_VAILD); }
             else
             {
                 this.setProgressBar(true);
@@ -41,7 +43,7 @@ namespace HotelDashboard
         private void bgWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             HotelDashboard.WpfClient.Models.TokenResponse res= new HotelDashboard.Helper.UserService().getAuthenticate(username.Text, password.Text);
-            if (res.userToken != null && !res.userToken.Equals("500 Error"))
+            if (res.userToken != null && !res.userToken.Equals(CommonMessage.SYS_500_ERROR))
             {
                 this.Invoke(new MethodInvoker(delegate(){
                     this.Hide();
@@ -49,7 +51,7 @@ namespace HotelDashboard
                 }));
             }else{
                 loginButton.Enabled = false;
-                new HotelDashboard.Helper.UserService().showErrorMessage("You Provided Username and Password are Wrong !");
+                new UserService().showErrorMessage(CommonMessage.LOGIN_USERPASS_WORNG);
             }
         }
 

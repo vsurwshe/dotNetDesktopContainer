@@ -10,12 +10,19 @@ using HotelDashboard.Helper;
 
 namespace HotelDashboard.Helper
 {
+    public class messageBoxHeader
+    {
+        public static String APP_EXIT { get { return "Exit Applications"; } }
+        public static String APP_WARN { get { return "Applications Warning"; } }
+        public static String APP_ERROR { get { return "Applications Error"; } } 
+    }
     class UserService
     {
+       
         // This method execute when user want quit form applications
         public void appExit()
         {
-            DialogResult dr = MessageBox.Show("Are Sure want to Exit form Applications ? ", "Exit Applications", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            DialogResult dr = MessageBox.Show(CommonMessage.APP_EXIT_MSG, messageBoxHeader.APP_EXIT.ToString(), MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
                 Application.Exit();
@@ -25,13 +32,13 @@ namespace HotelDashboard.Helper
         // This mehod use for show warning message in applications
         public void showWarningMessage(String message)
         {
-            MessageBox.Show(message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(message, messageBoxHeader.APP_WARN.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         // This mehod use for show warning message in applications
         public void showErrorMessage(String message)
         {
-            MessageBox.Show(message, "Application Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(message,messageBoxHeader.APP_ERROR.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         
         // This method take username and password calling Api and setting response of api in setting variables

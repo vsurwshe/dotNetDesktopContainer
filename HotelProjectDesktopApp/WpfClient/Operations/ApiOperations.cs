@@ -49,7 +49,7 @@ namespace HotelDashboard.WpfClient.Operations
                     HttpWebResponse response = (HttpWebResponse)msg.Response;
                     // This condtions checking 500 error got or not
                     if ((int)response.StatusCode == 500)
-                    { token.userToken="500 Error";}
+                    { token.userToken=CommonMessage.SYS_500_ERROR;}
                 }
                 else
                 {

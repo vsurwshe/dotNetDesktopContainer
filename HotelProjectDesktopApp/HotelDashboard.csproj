@@ -93,6 +93,7 @@
     <Compile Include="Backup Code\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper\CommonMessage.cs" />
     <Compile Include="Helper\UserExceptions.cs" />
     <Compile Include="Helper\UserService.cs" />
     <Compile Include="Login.cs">
