@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.password = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.cancleButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.signUpButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.email = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.cancleButton = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.password = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +64,88 @@
             this.bunifuCards1.ShadowDepth = 20;
             this.bunifuCards1.Size = new System.Drawing.Size(441, 419);
             this.bunifuCards1.TabIndex = 0;
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.GreenYellow;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Black;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.GreenYellow;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Login Account";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.Red;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Red;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(294, 373);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(98, 17);
+            this.bunifuThinButton21.TabIndex = 19;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.cancleButton_Click);
+            // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(52, 373);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(245, 17);
+            this.bunifuCustomLabel4.TabIndex = 18;
+            this.bunifuCustomLabel4.Text = "I have an account  ? for login click here ";
+            // 
+            // password
+            // 
+            this.password.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.password.ForeColor = System.Drawing.Color.Black;
+            this.password.HintForeColor = System.Drawing.Color.Blue;
+            this.password.HintText = "Enter password";
+            this.password.isPassword = false;
+            this.password.LineFocusedColor = System.Drawing.Color.Blue;
+            this.password.LineIdleColor = System.Drawing.Color.Gray;
+            this.password.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.password.LineThickness = 1;
+            this.password.Location = new System.Drawing.Point(72, 260);
+            this.password.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(320, 25);
+            this.password.TabIndex = 17;
+            this.password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // cancleButton
+            // 
+            this.cancleButton.ActiveBorderThickness = 1;
+            this.cancleButton.ActiveCornerRadius = 20;
+            this.cancleButton.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.cancleButton.ActiveForecolor = System.Drawing.Color.White;
+            this.cancleButton.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.cancleButton.BackColor = System.Drawing.Color.White;
+            this.cancleButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cancleButton.BackgroundImage")));
+            this.cancleButton.ButtonText = "Cancel";
+            this.cancleButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cancleButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cancleButton.ForeColor = System.Drawing.Color.Green;
+            this.cancleButton.IdleBorderThickness = 1;
+            this.cancleButton.IdleCornerRadius = 20;
+            this.cancleButton.IdleFillColor = System.Drawing.Color.White;
+            this.cancleButton.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.cancleButton.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.cancleButton.Location = new System.Drawing.Point(223, 308);
+            this.cancleButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.cancleButton.Name = "cancleButton";
+            this.cancleButton.Size = new System.Drawing.Size(140, 37);
+            this.cancleButton.TabIndex = 16;
+            this.cancleButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cancleButton.Click += new System.EventHandler(this.cancleButton_Click);
             // 
             // pictureBox1
             // 
@@ -101,6 +183,7 @@
             this.signUpButton.Size = new System.Drawing.Size(140, 37);
             this.signUpButton.TabIndex = 14;
             this.signUpButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
             // 
             // email
             // 
@@ -139,88 +222,6 @@
             this.name.Size = new System.Drawing.Size(320, 37);
             this.name.TabIndex = 12;
             this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // cancleButton
-            // 
-            this.cancleButton.ActiveBorderThickness = 1;
-            this.cancleButton.ActiveCornerRadius = 20;
-            this.cancleButton.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.cancleButton.ActiveForecolor = System.Drawing.Color.White;
-            this.cancleButton.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.cancleButton.BackColor = System.Drawing.Color.White;
-            this.cancleButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cancleButton.BackgroundImage")));
-            this.cancleButton.ButtonText = "Cancel";
-            this.cancleButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cancleButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cancleButton.ForeColor = System.Drawing.Color.Green;
-            this.cancleButton.IdleBorderThickness = 1;
-            this.cancleButton.IdleCornerRadius = 20;
-            this.cancleButton.IdleFillColor = System.Drawing.Color.White;
-            this.cancleButton.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.cancleButton.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.cancleButton.Location = new System.Drawing.Point(223, 308);
-            this.cancleButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.cancleButton.Name = "cancleButton";
-            this.cancleButton.Size = new System.Drawing.Size(140, 37);
-            this.cancleButton.TabIndex = 16;
-            this.cancleButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cancleButton.Click += new System.EventHandler(this.cancleButton_Click);
-            // 
-            // password
-            // 
-            this.password.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.password.ForeColor = System.Drawing.Color.Black;
-            this.password.HintForeColor = System.Drawing.Color.Blue;
-            this.password.HintText = "Enter password";
-            this.password.isPassword = false;
-            this.password.LineFocusedColor = System.Drawing.Color.Blue;
-            this.password.LineIdleColor = System.Drawing.Color.Gray;
-            this.password.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.password.LineThickness = 1;
-            this.password.Location = new System.Drawing.Point(72, 260);
-            this.password.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(320, 25);
-            this.password.TabIndex = 17;
-            this.password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.GreenYellow;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.GreenYellow;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Login Account";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.Red;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Red;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(294, 373);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(98, 17);
-            this.bunifuThinButton21.TabIndex = 19;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.cancleButton_Click);
-            // 
-            // bunifuCustomLabel4
-            // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(52, 373);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(245, 17);
-            this.bunifuCustomLabel4.TabIndex = 18;
-            this.bunifuCustomLabel4.Text = "I have an account  ? for login click here ";
             // 
             // Register
             // 

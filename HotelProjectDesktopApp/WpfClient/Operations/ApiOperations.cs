@@ -73,7 +73,7 @@ namespace HotelDashboard.WpfClient.Operations
             });
             
             // This line calling api using access token and store result of api into res varilabel
-            string res=this.callApiUsingAccessToken("auth/user/register","POST",userBodyData);
+            string res=this.callApiUsingWithOutToken("auth/user/register","POST",userBodyData);
             if (res != null)
             {   // this line convert string result into Josn and paste into User Model and returning user model
                 return JsonConvert.DeserializeObject<User>(res);
@@ -108,6 +108,33 @@ namespace HotelDashboard.WpfClient.Operations
                     return msg.ToString();
                 }
             }
+            return response;
+        }
+
+        // this method common for all api with access token needs to be call 
+        public string callApiUsingWithOutToken(string userUrl, string userMethod, string userBody)
+        {   // this line makes final url for the api call using user url and base url.
+            string endpoint = this.baseUrl + userUrl;
+            string response = null;
+                WebClient wc = new WebClient();
+                // this line setting content type of request
+                wc.Headers["Content-Type"] = "application/json";
+                try
+                {   //this checking which method want to execute the user Ex. POST and PUT
+                    if (userMethod == "POST" || userMethod == "PUT")
+                    {
+                        response = wc.UploadString(endpoint, userMethod, userBody);
+                    }
+                    else
+                    { // this executing for the GET and DELETE method
+                        response = wc.UploadString(endpoint, userMethod);
+                    }
+                }
+                catch (WebException msg)
+                {
+                    return msg.ToString();
+                }
+            
             return response;
         }
     }

@@ -118,19 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="signUpButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIwAAAAlCAYAAACQ0wEYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIFSURBVHhe7du9SxxBAEDx/EV2qeys7FIFGytTSCCFaZIm
-        FlYWCtEUVwhXWCiBpDhIYRUIIQeSFCIhJFgoCFeoBEOwOJJi5I03y33NyrR37wcLcn40+5iZnR0fBKmA
-        waiIwaiIwaiIwaiIwahIbTDd///Cwc92ePFhOzx5uxbmd56FmY0Frwm7uK/c35XWZmh9/xT+dm96BYzK
-        BvPl9Cj+IWIhmm/nP0Lnz2Xvu5ok3Ffu78eTr2H1oBHvO+GMMxIMdfFLT9+vh6ub696nmiZ1DQwEww8+
-        3n2ZrUvThVlmce/VwMwyEAxVGYv6MVWxvkmqYKiJIUgatvV5PzQPW/HrGAxPQyx0XLNoHPpgqXL6u3MX
-        DNMQ05GUwwjDSBOD4fmbRyop59fFWRxlYjCPms/jcCPlMC09fL14F8zsm6Xa3T0J7ArHYPhCuo/BqIjB
-        qIjBqEgVDKtfVsFSnSoYdnk9uqD7VMHwDol3SVIO+3Ts18Vg0ravlJNeH8VgmI6ox3WMctLroxgMGu13
-        8ZKGpXPdqIJhdOGgzHHnpPeJFOKRF2af9OqoCgYsbNK5B4lYGEQ4dZcMBANGGKJJJ6w0nVivMLL0x4KR
-        YMD0xFMTdbE69iTedGDaSesVFrnjTjCMDSahLh6l5hrLcdPGa7Ivjrmk/0PLqQ1GGmYwKmIwKmIwKmIw
-        KhDCLZ9wXVJE8RwUAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAGIAAAARCAYAAAAmE3lhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA8SURBVFhH7dExAQAADMOg+Tfd2eAIFriFUASiCEQRiCIQ
+        RSCKQBSBKAJRBKIIRBGIIhBFIIpAFIEogrA9pRjvcEdlyasAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="cancleButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -148,11 +140,19 @@
         KhDCLZ9wXVJE8RwUAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="signUpButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGIAAAARCAYAAAAmE3lhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA8SURBVFhH7dExAQAADMOg+Tfd2eAIFriFUASiCEQRiCIQ
-        RSCKQBSBKAJRBKIIRBGIIhBFIIpAFIEogrA9pRjvcEdlyasAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAIwAAAAlCAYAAACQ0wEYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIFSURBVHhe7du9SxxBAEDx/EV2qeys7FIFGytTSCCFaZIm
+        FlYWCtEUVwhXWCiBpDhIYRUIIQeSFCIhJFgoCFeoBEOwOJJi5I03y33NyrR37wcLcn40+5iZnR0fBKmA
+        waiIwaiIwaiIwaiIwahIbTDd///Cwc92ePFhOzx5uxbmd56FmY0Frwm7uK/c35XWZmh9/xT+dm96BYzK
+        BvPl9Cj+IWIhmm/nP0Lnz2Xvu5ok3Ffu78eTr2H1oBHvO+GMMxIMdfFLT9+vh6ub696nmiZ1DQwEww8+
+        3n2ZrUvThVlmce/VwMwyEAxVGYv6MVWxvkmqYKiJIUgatvV5PzQPW/HrGAxPQyx0XLNoHPpgqXL6u3MX
+        DNMQ05GUwwjDSBOD4fmbRyop59fFWRxlYjCPms/jcCPlMC09fL14F8zsm6Xa3T0J7ArHYPhCuo/BqIjB
+        qIjBqEgVDKtfVsFSnSoYdnk9uqD7VMHwDol3SVIO+3Ts18Vg0ravlJNeH8VgmI6ox3WMctLroxgMGu13
+        8ZKGpXPdqIJhdOGgzHHnpPeJFOKRF2af9OqoCgYsbNK5B4lYGEQ4dZcMBANGGKJJJ6w0nVivMLL0x4KR
+        YMD0xFMTdbE69iTedGDaSesVFrnjTjCMDSahLh6l5hrLcdPGa7Ivjrmk/0PLqQ1GGmYwKmIwKmIwKmIw
+        KhDCLZ9wXVJE8RwUAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

@@ -14,7 +14,8 @@ namespace HotelDashboard.Helper
     {
         public static String APP_EXIT { get { return "Exit Applications"; } }
         public static String APP_WARN { get { return "Applications Warning"; } }
-        public static String APP_ERROR { get { return "Applications Error"; } } 
+        public static String APP_ERROR { get { return "Applications Error"; } }
+        public static String APP_SUCCESS { get { return "Successfull"; } } 
     }
     class UserService
     {
@@ -35,10 +36,16 @@ namespace HotelDashboard.Helper
             MessageBox.Show(message, messageBoxHeader.APP_WARN.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        // This mehod use for show warning message in applications
+        // This mehod use for show Error message in applications
         public void showErrorMessage(String message)
         {
             MessageBox.Show(message,messageBoxHeader.APP_ERROR.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        // This mehod use for show Error message in applications
+        public static void showSuccessMessage(String message)
+        {
+            MessageBox.Show(message, messageBoxHeader.APP_SUCCESS.ToString(), MessageBoxButtons.OK, MessageBoxIcon.None);
         }
         
         // This method take username and password calling Api and setting response of api in setting variables
@@ -67,5 +74,9 @@ namespace HotelDashboard.Helper
                 return user;
             }
         }
+
+
+
+
     }
 }

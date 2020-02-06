@@ -53,10 +53,7 @@ namespace HotelDashboard
             HotelDashboard.WpfClient.Models.TokenResponse res= new HotelDashboard.Helper.UserService().getAuthenticate(username.Text, password.Text);
             if (res.userToken != null && !res.userToken.Equals(CommonMessage.SYS_500_ERROR))
             {
-                this.Invoke(new MethodInvoker(delegate(){
-                    this.Hide();
-                    new Dashboard().Show();
-                }));
+                this.invokeDashboard();
             }else{
                 loginButton.Enabled = false;
                 new UserService().showErrorMessage(CommonMessage.LOGIN_USERPASS_WORNG);
@@ -82,6 +79,16 @@ namespace HotelDashboard
                 progressBar.Step = 10;
             }
            progressBar.Visible = progressBarvalue;
+        }
+
+        // This is the invoking the dashboard form
+        public void invokeDashboard()
+        {
+            this.Invoke(new MethodInvoker(delegate()
+            {
+                this.Hide();
+                new Dashboard().Show();
+            }));
         }
     }
 }
