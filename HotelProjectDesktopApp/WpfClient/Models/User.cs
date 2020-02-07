@@ -8,7 +8,7 @@ namespace HotelDashboard.WpfClient.Models
     // This User model class
     class User
     {
-        public int Id { get; set; }
+        public int user_id { get; set; }
         public string name { get; set; }
         public string userEmail { get; set; }
         public string userPassword { get; set; }

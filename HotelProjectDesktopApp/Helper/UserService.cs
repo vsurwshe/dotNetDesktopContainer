@@ -48,32 +48,7 @@ namespace HotelDashboard.Helper
             MessageBox.Show(message, messageBoxHeader.APP_SUCCESS.ToString(), MessageBoxButtons.OK, MessageBoxIcon.None);
         }
         
-        // This method take username and password calling Api and setting response of api in setting variables
-        public TokenResponse getAuthenticate(String username, String password)
-        {
-            TokenResponse user=null;
-            try
-            {
-                if (Properties.Settings.Default.userToken == "")
-                {
-                    user = new ApiOperations().AuthenticateUser(username, password);
-                    Properties.Settings.Default.userToken = user.userToken;
-                    Properties.Settings.Default.refreshToekn = user.userRefreshToken;
-                }
-                else
-                {
-                    user=new TokenResponse();
-                    user.userToken = Properties.Settings.Default.userToken;
-                    user.userRefreshToken = Properties.Settings.Default.refreshToekn;
-                }
-                return user;
-            }
-            catch (Exception msg)
-            {
-                new UserExceptions().showExceptions(msg.Message);
-                return user;
-            }
-        }
+      
 
 
 

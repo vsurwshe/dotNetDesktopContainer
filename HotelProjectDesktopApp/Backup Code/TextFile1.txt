@@ -32,3 +32,153 @@
                     }
 
                     Console.WriteLine(String.Format(retVal));
+
+
+					--------------------------- 500 error sloved
+		    try
+            {
+                string response = wc.UploadString(endpoint, method, json);
+                return JsonConvert.DeserializeObject<TokenResponse>(response);
+            }
+            catch (WebException msg)
+            {
+                TokenResponse token = new TokenResponse();
+                if (msg.Status == WebExceptionStatus.ProtocolError)
+                {
+                    HttpWebResponse response = (HttpWebResponse)msg.Response;
+                    // This condtions checking 500 error got or not
+                    if ((int)response.StatusCode == 500)
+                    { token.userToken = CommonMessage.SYS_500_ERROR; }
+                }
+                else
+                {
+                    new UserExceptions().showExceptions(msg.Message);
+                    token.userToken = null;
+                }
+                return token;
+            }
+
+
+			-------------------------------- Authenticat method
+			 public TokenResponse AuthenticateUser(string username, string password)
+        {
+            string endpoint = this.baseUrl + "auth/user/token";
+            string method = "POST";
+            string json = JsonConvert.SerializeObject(new
+            {
+                userEmail = username,
+                userPassword = password
+            });
+            WebClient wc = new WebClient();
+            wc.Headers["Content-Type"] = "application/json";
+            try
+            {
+                string response = wc.UploadString(endpoint, method, json);
+                return JsonConvert.DeserializeObject<TokenResponse>(response);
+            }
+            catch (WebException msg)
+            {
+                TokenResponse token = new TokenResponse();
+                if (msg.Status == WebExceptionStatus.ProtocolError)
+                {
+                    HttpWebResponse response = (HttpWebResponse)msg.Response;
+                    // This condtions checking 500 error got or not
+                    if ((int)response.StatusCode == 500)
+                    { token.userToken=CommonMessage.SYS_500_ERROR;}
+                }
+                else
+                {
+                    new UserExceptions().showExceptions(msg.Message);
+                    token.userToken = null;
+                }
+                return token;
+            }
+        }
+
+
+		--------------------------------- Properties Setting Token
+		  // This method take username and password calling Api and setting response of api in setting variables
+        public TokenResponse getAuthenticate(String username, String password)
+        {
+            TokenResponse user=null;
+            try
+            {
+                if (Properties.Settings.Default.userToken == "")
+                {
+                    user = new AuthApiService().AuthenticateUser(username, password);
+                    Properties.Settings.Default.userToken = user.userToken;
+                    Properties.Settings.Default.refreshToekn = user.userRefreshToken;
+                }
+                else
+                {
+                    user=new TokenResponse();
+                    user.userToken = Properties.Settings.Default.userToken;
+                    user.userRefreshToken = Properties.Settings.Default.refreshToekn;
+                }
+                return user;
+            }
+            catch (Exception msg)
+            {
+                new UserExceptions().showExceptions(msg.Message);
+                return user;
+            }
+        }
+
+
+		----------------------------------- Token Functions
+		 // this method common for all api with access token needs to be call 
+        public string callApiUsingAccessToken(string userUrl,string userMethod, string userBody)
+        {   // this line makes final url for the api call using user url and base url.
+            string endpoint = this.baseUrl + userUrl;
+            string response=null;
+            // this condtions checking user token is there or not
+            if (Properties.Settings.Default.userToken != "")
+            {   // this line creating new object for WebClient call
+                WebClient wc = new WebClient();
+                // this line setting content type of request
+                wc.Headers["Content-Type"] = "application/json";
+                // this line adding Authoriazations with our user token
+                wc.Headers["Authorization"] = ""+Properties.Settings.Default.userToken;
+                try
+                {   //this checking which method want to execute the user Ex. POST and PUT
+                    if (userMethod == "POST" || userMethod == "PUT")
+                    {
+                        response = wc.UploadString(endpoint, userMethod, userBody);
+                    }else{ // this executing for the GET and DELETE method
+                        response = wc.UploadString(endpoint, userMethod);
+                    }
+                }
+                catch (WebException msg)
+                {
+                    response = null;
+                }
+            }
+            return response;
+        }
+
+        // this method common for all api with access token needs to be call 
+        public string callApiUsingWithOutToken(string userUrl, string userMethod, string userBody)
+        {   // this line makes final url for the api call using user url and base url.
+            string endpoint = this.baseUrl + userUrl;
+            string response = null;
+                WebClient wc = new WebClient();
+                // this line setting content type of request
+                wc.Headers["Content-Type"] = "application/json";
+                try
+                {   //this checking which method want to execute the user Ex. POST and PUT
+                    if (userMethod == "POST" || userMethod == "PUT")
+                    {
+                        response = wc.UploadString(endpoint, userMethod, userBody);
+                    }
+                    else
+                    { // this executing for the GET and DELETE method
+                        response = wc.UploadString(endpoint, userMethod);
+                    }
+                }
+                catch (WebException msg)
+                {
+                    response = null;
+                }
+            
+            return response;
+        }

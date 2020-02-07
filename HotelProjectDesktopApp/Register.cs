@@ -18,6 +18,7 @@ namespace HotelDashboard
         public Register()
         {
             InitializeComponent();
+            this.setProgressBar(false);
         }
 
         private void cancleButton_Click(object sender, EventArgs e)
@@ -43,19 +44,14 @@ namespace HotelDashboard
                 }
                 else
                 {
-                    User tempUser = new User();
-                    tempUser.name = name.Text;
-                    tempUser.userEmail = email.Text;
-                    tempUser.userPassword = password.Text;
-                    User res= new ApiOperations().registerUser(tempUser);
-                    if (res != null)
+                    this.setProgressBar(true);
+                    if (!bgWorker.IsBusy)
                     {
-                        UserService.showSuccessMessage(CommonMessage.APP_USER_CREATION.ToString());
+                        signUpButton.Enabled = false;
+                        progressBar.Style = ProgressBarStyle.Continuous;
+                        bgWorker.RunWorkerAsync();
                     }
-                    else
-                    {
-                        throw new Exception(CommonMessage.APP_USER_CREATION_FAIL);
-                    }
+                    
                 }
             }
             catch (Exception msg)
@@ -63,6 +59,43 @@ namespace HotelDashboard
                 new UserExceptions().showExceptions(msg.Message);
             }
             
+        }
+
+        private void bgWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            User tempUser = new User();
+            tempUser.name = name.Text;
+            tempUser.userEmail = email.Text;
+            tempUser.userPassword = password.Text;
+            if (new AuthApiService().registerUser(tempUser) != null)
+            {
+                UserService.showSuccessMessage(CommonMessage.APP_USER_CREATION.ToString());
+            }
+            else
+            {
+                throw new Exception(CommonMessage.APP_USER_CREATION_FAIL);
+            }
+        }
+
+        private void bgWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            progressBar.Style = ProgressBarStyle.Blocks;
+            progressBar.Visible = false;
+            signUpButton.Enabled = true;
+        }
+
+        //------- Custome Method Implementions
+        // This method seting values of progress bar
+        private void setProgressBar(Boolean progressBarvalue)
+        {
+            if (progressBarvalue)
+            {// This lines setting progress bar values 
+                progressBar.Minimum = 0;
+                progressBar.Maximum = 100;
+                progressBar.Value = 10;
+                progressBar.Step = 10;
+            }
+            progressBar.Visible = progressBarvalue;
         }
     }
 }

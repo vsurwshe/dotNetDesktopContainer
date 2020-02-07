@@ -18,7 +18,6 @@ namespace HotelDashboard.UiScreen
 
         private void UserDashboard_Load(object sender, EventArgs e)
         {
-            new HotelDashboard.Helper.UserService().getAuthenticate("v@v.com", "123456");
             l2.Text = "User Token " + Properties.Settings.Default.userToken;
         }
 

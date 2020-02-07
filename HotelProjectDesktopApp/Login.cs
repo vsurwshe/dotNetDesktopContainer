@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 //---
 using System.Windows.Forms;
+using HotelDashboard.WpfClient.Models;
+using HotelDashboard.WpfClient.Operations;
 using HotelDashboard.Helper;
 
 namespace HotelDashboard
@@ -22,7 +24,9 @@ namespace HotelDashboard
         private void loginButton_Click(object sender, EventArgs e)
         { // This condtions checking username or password filed empty or null
             if (String.IsNullOrEmpty(username.Text) || String.IsNullOrEmpty(password.Text))
-            { new HotelDashboard.Helper.UserService().showWarningMessage(CommonMessage.LOGIN_USERPASS_VAILD); }
+            { 
+                new UserService().showWarningMessage(CommonMessage.LOGIN_USERPASS_VAILD); 
+            }
             else
             {
                 this.setProgressBar(true);
@@ -50,14 +54,23 @@ namespace HotelDashboard
 
         private void bgWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            HotelDashboard.WpfClient.Models.TokenResponse res= new HotelDashboard.Helper.UserService().getAuthenticate(username.Text, password.Text);
-            if (res.userToken != null && !res.userToken.Equals(CommonMessage.SYS_500_ERROR))
-            {
-                this.invokeDashboard();
-            }else{
-                loginButton.Enabled = false;
-                new UserService().showErrorMessage(CommonMessage.LOGIN_USERPASS_WORNG);
-            }
+           if (Properties.Settings.Default.userToken != "")
+           {
+               this.invokeDashboard();
+           }
+           else
+           {
+              string res = new AuthApiService().AuthenticateUser(username.Text, password.Text);
+              if (res != null)
+              {
+                  this.invokeDashboard();
+              }
+              else
+              {
+                  loginButton.Enabled = false;
+                  new UserService().showErrorMessage(CommonMessage.LOGIN_USERPASS_WORNG);
+              }
+           }
         }
 
         private void bgWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)

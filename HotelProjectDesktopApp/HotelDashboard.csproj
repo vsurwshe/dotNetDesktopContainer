@@ -166,6 +166,7 @@
     </Compile>
     <Compile Include="WpfClient\Models\User.cs" />
     <Compile Include="WpfClient\Operations\ApiOperations.cs" />
+    <Compile Include="WpfClient\Operations\AuthApiService.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Dashboard.resx">

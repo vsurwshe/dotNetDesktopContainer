@@ -38,6 +38,8 @@
             this.signUpButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.email = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.bgWorker = new System.ComponentModel.BackgroundWorker();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +50,7 @@
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.Tomato;
+            this.bunifuCards1.Controls.Add(this.progressBar);
             this.bunifuCards1.Controls.Add(this.bunifuThinButton21);
             this.bunifuCards1.Controls.Add(this.bunifuCustomLabel4);
             this.bunifuCards1.Controls.Add(this.password);
@@ -62,7 +65,7 @@
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(441, 419);
+            this.bunifuCards1.Size = new System.Drawing.Size(441, 475);
             this.bunifuCards1.TabIndex = 0;
             // 
             // bunifuThinButton21
@@ -223,11 +226,23 @@
             this.name.TabIndex = 12;
             this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(94, 423);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(245, 23);
+            this.progressBar.TabIndex = 13;
+            // 
+            // bgWorker
+            // 
+            this.bgWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorker_DoWork);
+            this.bgWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgWorker_RunWorkerCompleted);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(441, 419);
+            this.ClientSize = new System.Drawing.Size(441, 475);
             this.Controls.Add(this.bunifuCards1);
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -250,5 +265,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox password;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.ComponentModel.BackgroundWorker bgWorker;
     }
 }
