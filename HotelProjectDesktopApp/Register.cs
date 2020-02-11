@@ -15,6 +15,7 @@ namespace HotelDashboard
 {
     public partial class Register : Form
     {
+        public Boolean loginSucess;
         public Register()
         {
             InitializeComponent();
@@ -63,17 +64,25 @@ namespace HotelDashboard
 
         private void bgWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            User tempUser = new User();
-            tempUser.name = name.Text;
-            tempUser.userEmail = email.Text;
-            tempUser.userPassword = password.Text;
-            if (new AuthApiService().registerUser(tempUser) != null)
+            try
             {
-                UserService.showSuccessMessage(CommonMessage.APP_USER_CREATION.ToString());
+                User tempUser = new User();
+                tempUser.name = name.Text;
+                tempUser.userEmail = email.Text;
+                tempUser.userPassword = password.Text;
+                if (new AuthApiService().registerUser(tempUser) != null)
+                {
+                    UserService.showSuccessMessage(CommonMessage.APP_USER_CREATION.ToString());
+                    this.loginSucess = true;
+                }
+                else
+                {
+                    throw new Exception(CommonMessage.APP_USER_CREATION_FAIL);
+                }
             }
-            else
+            catch (Exception msg)
             {
-                throw new Exception(CommonMessage.APP_USER_CREATION_FAIL);
+                new UserExceptions().showExceptions(msg.Message);
             }
         }
 
@@ -82,6 +91,12 @@ namespace HotelDashboard
             progressBar.Style = ProgressBarStyle.Blocks;
             progressBar.Visible = false;
             signUpButton.Enabled = true;
+            if (loginSucess)
+            {
+                this.Hide();
+                this.succcessFull();
+            }
+           
         }
 
         //------- Custome Method Implementions
@@ -95,7 +110,14 @@ namespace HotelDashboard
                 progressBar.Value = 10;
                 progressBar.Step = 10;
             }
+            this.loginSucess = false;
             progressBar.Visible = progressBarvalue;
         }
+
+        public void succcessFull()
+        {
+            new Dashboard().Show();
+        }
+       
     }
 }

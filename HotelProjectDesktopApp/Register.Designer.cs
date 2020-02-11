@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.password = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -38,7 +39,6 @@
             this.signUpButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.email = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.bgWorker = new System.ComponentModel.BackgroundWorker();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,6 +68,13 @@
             this.bunifuCards1.Size = new System.Drawing.Size(441, 475);
             this.bunifuCards1.TabIndex = 0;
             // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(94, 423);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(245, 23);
+            this.progressBar.TabIndex = 13;
+            // 
             // bunifuThinButton21
             // 
             this.bunifuThinButton21.ActiveBorderThickness = 1;
@@ -90,7 +97,7 @@
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(98, 17);
-            this.bunifuThinButton21.TabIndex = 19;
+            this.bunifuThinButton21.TabIndex = 5;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.cancleButton_Click);
             // 
@@ -121,7 +128,7 @@
             this.password.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(320, 25);
-            this.password.TabIndex = 17;
+            this.password.TabIndex = 2;
             this.password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // cancleButton
@@ -146,7 +153,7 @@
             this.cancleButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.cancleButton.Name = "cancleButton";
             this.cancleButton.Size = new System.Drawing.Size(140, 37);
-            this.cancleButton.TabIndex = 16;
+            this.cancleButton.TabIndex = 4;
             this.cancleButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cancleButton.Click += new System.EventHandler(this.cancleButton_Click);
             // 
@@ -184,7 +191,7 @@
             this.signUpButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.signUpButton.Name = "signUpButton";
             this.signUpButton.Size = new System.Drawing.Size(140, 37);
-            this.signUpButton.TabIndex = 14;
+            this.signUpButton.TabIndex = 3;
             this.signUpButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
             // 
@@ -204,7 +211,7 @@
             this.email.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(320, 25);
-            this.email.TabIndex = 13;
+            this.email.TabIndex = 1;
             this.email.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // name
@@ -223,15 +230,8 @@
             this.name.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(320, 37);
-            this.name.TabIndex = 12;
+            this.name.TabIndex = 0;
             this.name.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // progressBar
-            // 
-            this.progressBar.Location = new System.Drawing.Point(94, 423);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(245, 23);
-            this.progressBar.TabIndex = 13;
             // 
             // bgWorker
             // 
