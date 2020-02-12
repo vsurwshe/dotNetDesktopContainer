@@ -14,5 +14,6 @@ namespace HotelDashboard.Helper
         public static String APP_USER_CREATION= "You SuccessFully Registerd !";
         public static String APP_USER_CREATION_FAIL = "You Not SuccessFully Register !";
         public static String APP_USER_CREATION_WARN = "Plesae Provide Vaild Details";
+        public static String EMAIL_SUBJECT = "User registered on "+DateTime.Now.ToShortDateString();
     }
 }

@@ -27,6 +27,7 @@ namespace HotelDashboard.WpfClient.Operations
             WebClient wc = new WebClient();
             // this line setting content type of request
             wc.Headers["Content-Type"] = "application/json";
+            wc.Encoding = Encoding.UTF8;
             if (token)
             {
                 // this line adding Authoriazations with our user token

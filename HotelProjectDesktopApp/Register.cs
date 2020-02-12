@@ -73,7 +73,7 @@ namespace HotelDashboard
                 if (new AuthApiService().registerUser(tempUser) != null)
                 {
                     UserService.showSuccessMessage(CommonMessage.APP_USER_CREATION.ToString());
-                    this.loginSucess = true;
+                    this.sendEmailUser(tempUser);
                 }
                 else
                 {
@@ -117,6 +117,14 @@ namespace HotelDashboard
         public void succcessFull()
         {
             new Dashboard().Show();
+        }
+
+        private void sendEmailUser(User user)
+        {
+            string res=new EmailService().sendEmailApi(user);
+            if(res != null){
+                this.loginSucess = true;                    
+            }
         }
        
     }
