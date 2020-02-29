@@ -15,5 +15,10 @@ namespace HotelDashboard.UiScreen
         {
             InitializeComponent();
         }
+
+        private void createProfile_Click(object sender, EventArgs e)
+        {
+            new HotelDashboard.UiScreen.CreateProfile().Show();
+        }
     }
 }

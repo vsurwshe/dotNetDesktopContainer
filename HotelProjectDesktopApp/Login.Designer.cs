@@ -34,10 +34,10 @@
             this.password = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.progressBar = new System.Windows.Forms.ProgressBar();
-            this.bgWorker = new System.ComponentModel.BackgroundWorker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.signupButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.loginButton = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bgWorker = new System.ComponentModel.BackgroundWorker();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +70,7 @@
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(320, 37);
             this.username.TabIndex = 7;
+            this.username.Text = "v@v.com";
             this.username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // password
@@ -89,6 +90,7 @@
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(320, 25);
             this.password.TabIndex = 8;
+            this.password.Text = "123456";
             this.password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // bunifuCards1
@@ -119,11 +121,6 @@
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(245, 23);
             this.progressBar.TabIndex = 12;
-            // 
-            // bgWorker
-            // 
-            this.bgWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorker_DoWork);
-            this.bgWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgWorker_RunWorkerCompleted);
             // 
             // pictureBox1
             // 
@@ -188,6 +185,11 @@
             this.loginButton.TabIndex = 9;
             this.loginButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            // 
+            // bgWorker
+            // 
+            this.bgWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorker_DoWork);
+            this.bgWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgWorker_RunWorkerCompleted);
             // 
             // Login
             // 

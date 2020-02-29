@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profile));
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.createProfile = new Bunifu.Framework.UI.BunifuTileButton();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel1
@@ -41,11 +43,32 @@
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Profile Forms";
             // 
+            // createProfile
+            // 
+            this.createProfile.BackColor = System.Drawing.Color.SeaGreen;
+            this.createProfile.color = System.Drawing.Color.SeaGreen;
+            this.createProfile.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.createProfile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.createProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.createProfile.ForeColor = System.Drawing.Color.White;
+            this.createProfile.Image = ((System.Drawing.Image)(resources.GetObject("createProfile.Image")));
+            this.createProfile.ImagePosition = 20;
+            this.createProfile.ImageZoom = 50;
+            this.createProfile.LabelPosition = 41;
+            this.createProfile.LabelText = "Create Profile";
+            this.createProfile.Location = new System.Drawing.Point(61, 95);
+            this.createProfile.Margin = new System.Windows.Forms.Padding(6);
+            this.createProfile.Name = "createProfile";
+            this.createProfile.Size = new System.Drawing.Size(185, 143);
+            this.createProfile.TabIndex = 1;
+            this.createProfile.Click += new System.EventHandler(this.createProfile_Click);
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1096, 587);
+            this.Controls.Add(this.createProfile);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Profile";
@@ -58,5 +81,6 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private Bunifu.Framework.UI.BunifuTileButton createProfile;
     }
 }

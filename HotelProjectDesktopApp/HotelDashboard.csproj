@@ -122,6 +122,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="UiScreen\CreateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UiScreen\CreateProfile.Designer.cs">
+      <DependentUpon>CreateProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="UiScreen\Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,7 @@
     <Compile Include="WpfClient\Operations\ApiOperations.cs" />
     <Compile Include="WpfClient\Operations\AuthApiService.cs" />
     <Compile Include="WpfClient\Operations\EmailService.cs" />
+    <Compile Include="WpfClient\Operations\ProfileService.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Dashboard.resx">
@@ -185,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UiScreen\CreateProfile.resx">
+      <DependentUpon>CreateProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UiScreen\Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>

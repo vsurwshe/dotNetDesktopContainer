@@ -31,7 +31,7 @@ namespace HotelDashboard.WpfClient.Operations
             if (token)
             {
                 // this line adding Authoriazations with our user token
-                wc.Headers["Authorization"] = "" + Properties.Settings.Default.userToken;
+                wc.Headers["Authorization"] = "Bearer " + Properties.Settings.Default.userToken;
             }
             try
             {   //this checking which method want to execute the user Ex. POST and PUT
@@ -41,14 +41,14 @@ namespace HotelDashboard.WpfClient.Operations
                 }
                 else
                 { // this executing for the GET and DELETE method
-                    response = wc.UploadString(endpoint, userMethod);
+                    response = wc.DownloadString(endpoint);
                 }
             }
             catch (WebException msg)
             {
+                new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
                 response = null;
             }
-
             return response;
         }
     }
