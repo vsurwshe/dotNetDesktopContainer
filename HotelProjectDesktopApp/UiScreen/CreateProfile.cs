@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 //----
 using HotelDashboard.WpfClient.Models;
+using HotelDashboard.Helper;
+using HotelDashboard.WpfClient.Operations;
 
 
 namespace HotelDashboard.UiScreen
@@ -21,7 +23,7 @@ namespace HotelDashboard.UiScreen
         }
 
         public void setProfileTypes(){
-          List<ProfileTypes> result= new HotelDashboard.WpfClient.Operations.ProfileService().getProfileTypes();
+          List<ProfileTypes> result= new ProfileService().getProfileTypes();
           if (result.Any())
           {
               infoProfileTabel.Visible = true;
@@ -50,6 +52,26 @@ namespace HotelDashboard.UiScreen
             infoProfileTabel.Columns["cost"].HeaderText = "Cost PerMonth";
             infoProfileTabel.Columns["cost"].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
             infoProfileTabel.Columns["cost"].Width = 80;
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ProfileModel userProfile = new ProfileModel();
+                userProfile.name = profileNameText.Text;
+                userProfile.type = profileTypeDrop.selectedValue.ToString();
+                ProfileModel tempResutl= new ProfileService().createProfile(userProfile);
+                if (!tempResutl.Equals(null))
+                {
+                    UserService.showSuccessMessage(CommonMessage.PROFILE_SUCCESS);
+                    this.Close();
+                }
+            }
+            catch (Exception msg)
+            {
+                new UserExceptions().showExceptions(msg.Message);
+            }
         }
     }
 }

@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateProfile));
             this.profileTypeDrop = new Bunifu.Framework.UI.BunifuDropdown();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.profileNameText = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.infoProfileTabel = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.infoProfileTabel)).BeginInit();
@@ -44,13 +44,13 @@
             this.profileTypeDrop.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.profileTypeDrop.ForeColor = System.Drawing.Color.White;
             this.profileTypeDrop.Items = new string[0];
-            this.profileTypeDrop.Location = new System.Drawing.Point(224, 38);
+            this.profileTypeDrop.Location = new System.Drawing.Point(183, 38);
             this.profileTypeDrop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.profileTypeDrop.Name = "profileTypeDrop";
             this.profileTypeDrop.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.profileTypeDrop.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.profileTypeDrop.selectedIndex = -1;
-            this.profileTypeDrop.Size = new System.Drawing.Size(217, 35);
+            this.profileTypeDrop.Size = new System.Drawing.Size(258, 35);
             this.profileTypeDrop.TabIndex = 0;
             // 
             // label1
@@ -63,24 +63,24 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Select Profile Type";
             // 
-            // bunifuMaterialTextbox1
+            // profileNameText
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "Enter Profile Name";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineThickness = 4;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(37, 99);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(416, 52);
-            this.bunifuMaterialTextbox1.TabIndex = 3;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.profileNameText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.profileNameText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileNameText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.profileNameText.HintForeColor = System.Drawing.Color.Empty;
+            this.profileNameText.HintText = "Enter Profile Name";
+            this.profileNameText.isPassword = false;
+            this.profileNameText.LineFocusedColor = System.Drawing.Color.Blue;
+            this.profileNameText.LineIdleColor = System.Drawing.Color.Gray;
+            this.profileNameText.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.profileNameText.LineThickness = 4;
+            this.profileNameText.Location = new System.Drawing.Point(37, 99);
+            this.profileNameText.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.profileNameText.Name = "profileNameText";
+            this.profileNameText.Size = new System.Drawing.Size(416, 52);
+            this.profileNameText.TabIndex = 3;
+            this.profileNameText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // bunifuThinButton21
             // 
@@ -106,6 +106,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
             this.bunifuThinButton21.TabIndex = 4;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // infoProfileTabel
             // 
@@ -131,7 +132,7 @@
             this.ClientSize = new System.Drawing.Size(466, 532);
             this.Controls.Add(this.infoProfileTabel);
             this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.profileNameText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.profileTypeDrop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -148,7 +149,7 @@
 
         private Bunifu.Framework.UI.BunifuDropdown profileTypeDrop;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox profileNameText;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.DataGridView infoProfileTabel;
     }

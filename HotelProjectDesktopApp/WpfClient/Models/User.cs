@@ -21,6 +21,14 @@ namespace HotelDashboard.WpfClient.Models
         public string userRefreshToken { get; set; }
     }
 
+    // This is profile Model Class
+    class ProfileModel
+    {
+        public string name { get; set; }
+        public string type { get; set; }
+        public string[] features { get; set; }
+    }
+    
     // This is Profile Types model class
     class ProfileTypes
     {
