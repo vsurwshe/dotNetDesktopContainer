@@ -50,6 +50,10 @@ namespace HotelDashboard.WpfClient.Operations
                 {
                     profileResult = JsonConvert.DeserializeObject<ProfileModel>(apiResult);
                 }
+                else
+                {
+                    throw new Exception("Your Profile is not Save");
+                }
             }
             catch (Exception msg)
             {
@@ -57,6 +61,32 @@ namespace HotelDashboard.WpfClient.Operations
             }
             return profileResult;
         }
+
+        public List<ProfileModel> getProfiles()
+        {
+            List<ProfileModel> profiles = null;
+
+            try
+            {
+                String apiResult = new ApiOperations().callApi(this.commonURL + "getAll", "GET", null, true);
+                if (!apiResult.Equals(null))
+                {
+                    profiles = JsonConvert.DeserializeObject<List<ProfileModel>>(apiResult);
+                }
+                else
+                {
+                    throw new Exception("No Profiles found");
+                }
+            }
+            catch (Exception msg)
+            {
+                throw new Exception(msg.Message);
+            }
+
+            return profiles;
+
+        }
+
 
     }
 }

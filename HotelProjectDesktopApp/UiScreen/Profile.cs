@@ -6,6 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+//------
+using HotelDashboard.UiScreen;
+using HotelDashboard.WpfClient.Operations;
+using HotelDashboard.Helper;
 
 namespace HotelDashboard.UiScreen
 {
@@ -18,7 +22,26 @@ namespace HotelDashboard.UiScreen
 
         private void createProfile_Click(object sender, EventArgs e)
         {
-            new HotelDashboard.UiScreen.CreateProfile().Show();
+            new CreateProfile().Show();
+        }
+
+        private void Profile_Load(object sender, EventArgs e)
+        {
+            this.setProfileGird();
+        }
+
+
+        private void setProfileGird()
+        {
+            try
+            {
+                new ProfileService().getProfiles();
+            }
+            catch (Exception msg)
+            {
+                new UserExceptions().showExceptions(msg.Message);
+            }
+        
         }
     }
 }
