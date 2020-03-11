@@ -7,6 +7,7 @@ using System.Text;
 using HotelDashboard.WpfClient.Models;
 using HotelDashboard.Helper;
 using Newtonsoft.Json;
+using System.Configuration;
 
 
 namespace HotelDashboard.WpfClient.Operations
@@ -16,7 +17,8 @@ namespace HotelDashboard.WpfClient.Operations
         private string baseUrl;
         public ApiOperations()
         {
-            this.baseUrl = "http://10.10.10.15:7000/";
+            //this.baseUrl = "http://10.10.10.15:7000/";
+            this.baseUrl = ConfigurationManager.AppSettings.Get("URL");
         }
 
         // this method common for all api with access token needs to be call 
