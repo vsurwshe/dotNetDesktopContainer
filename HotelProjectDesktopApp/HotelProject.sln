@@ -8,22 +8,62 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{6A8875
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "HotelSetupProject", "..\HotelSetupProject\HotelSetupProject.isproj", "{65FAD76B-B0B8-4017-84F7-FD96D90BB849}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|x64 = CD_ROM|x64
+		CD_ROM|x86 = CD_ROM|x86
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		DVD-5|x64 = DVD-5|x64
+		DVD-5|x86 = DVD-5|x86
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
+		SingleImage|x64 = SingleImage|x64
+		SingleImage|x86 = SingleImage|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.CD_ROM|x64.ActiveCfg = Debug|x64
+		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.CD_ROM|x64.Build.0 = Debug|x64
+		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.CD_ROM|x86.ActiveCfg = Release|x86
+		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.CD_ROM|x86.Build.0 = Release|x86
 		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.Debug|x64.ActiveCfg = Debug|x86
 		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.Debug|x64.Build.0 = Debug|x86
 		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.Debug|x86.ActiveCfg = Debug|x86
 		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.Debug|x86.Build.0 = Debug|x86
+		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.DVD-5|x64.ActiveCfg = Debug|x64
+		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.DVD-5|x64.Build.0 = Debug|x64
+		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.DVD-5|x86.ActiveCfg = Debug|x86
+		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.DVD-5|x86.Build.0 = Debug|x86
 		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.Release|x64.ActiveCfg = Release|x64
 		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.Release|x64.Build.0 = Release|x64
 		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.Release|x86.ActiveCfg = Release|x86
 		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.Release|x86.Build.0 = Release|x86
+		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.SingleImage|x64.ActiveCfg = Debug|x64
+		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.SingleImage|x64.Build.0 = Debug|x64
+		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.SingleImage|x86.ActiveCfg = Release|x86
+		{8CDE8FA4-5CBF-4398-925B-AE095E6B9B5A}.SingleImage|x86.Build.0 = Release|x86
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.CD_ROM|x64.ActiveCfg = CD_ROM
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.CD_ROM|x64.Build.0 = CD_ROM
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.CD_ROM|x86.ActiveCfg = CD_ROM
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.CD_ROM|x86.Build.0 = CD_ROM
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.Debug|x64.ActiveCfg = DVD-5
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.Debug|x64.Build.0 = DVD-5
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.Debug|x86.ActiveCfg = DVD-5
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.Debug|x86.Build.0 = DVD-5
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.DVD-5|x64.ActiveCfg = DVD-5
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.DVD-5|x64.Build.0 = DVD-5
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.DVD-5|x86.ActiveCfg = DVD-5
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.DVD-5|x86.Build.0 = DVD-5
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.Release|x64.ActiveCfg = SingleImage
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.Release|x64.Build.0 = SingleImage
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.Release|x86.ActiveCfg = SingleImage
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.Release|x86.Build.0 = SingleImage
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.SingleImage|x64.ActiveCfg = SingleImage
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.SingleImage|x64.Build.0 = SingleImage
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.SingleImage|x86.ActiveCfg = SingleImage
+		{65FAD76B-B0B8-4017-84F7-FD96D90BB849}.SingleImage|x86.Build.0 = SingleImage
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
