@@ -100,7 +100,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(127, 182);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(146, 161);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
@@ -118,10 +118,10 @@
             this.infoProfileTabel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.infoProfileTabel.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.infoProfileTabel.Enabled = false;
-            this.infoProfileTabel.Location = new System.Drawing.Point(2, 244);
+            this.infoProfileTabel.Location = new System.Drawing.Point(2, 266);
             this.infoProfileTabel.Name = "infoProfileTabel";
             this.infoProfileTabel.RowHeadersVisible = false;
-            this.infoProfileTabel.Size = new System.Drawing.Size(463, 285);
+            this.infoProfileTabel.Size = new System.Drawing.Size(451, 215);
             this.infoProfileTabel.TabIndex = 5;
             this.infoProfileTabel.Visible = false;
             // 
@@ -129,13 +129,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(466, 532);
+            this.ClientSize = new System.Drawing.Size(450, 493);
             this.Controls.Add(this.infoProfileTabel);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.profileNameText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.profileTypeDrop);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "CreateProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create a Profile";

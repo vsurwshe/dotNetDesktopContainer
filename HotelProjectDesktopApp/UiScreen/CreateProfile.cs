@@ -73,5 +73,12 @@ namespace HotelDashboard.UiScreen
                 new UserExceptions().showExceptions(msg.Message);
             }
         }
+
+        private void cancleButton_Click(object sender, EventArgs e)
+        {
+            ((Form)this.TopLevelControl).Close();
+        }
+
+      
     }
 }
