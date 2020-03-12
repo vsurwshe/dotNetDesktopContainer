@@ -1,4 +1,4 @@
-﻿namespace HotelDashboard.UiScreen
+﻿namespace HotelDashboard.UiScreen.Customer
 {
     partial class Customer
     {
@@ -50,6 +50,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Customer";
             this.Text = "Customer";
+            this.Load += new System.EventHandler(this.Customer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

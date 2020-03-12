@@ -8,6 +8,12 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//-----
+using HotelDashboard.UiScreen;
+using HotelDashboard.UiScreen.Customer;
+using HotelDashboard.UiScreen.Foods;
+using HotelDashboard.UiScreen.Profile;
+
 
 namespace HotelDashboard
 {
@@ -26,7 +32,7 @@ namespace HotelDashboard
         {
             try
             {
-                Type typeOfUserDashboard = typeof(HotelDashboard.UiScreen.UserDashboard);
+                Type typeOfUserDashboard = typeof(UserDashboard);
                 this.createShowForm(typeOfUserDashboard);
             }
             catch (Exception msg)
@@ -39,7 +45,7 @@ namespace HotelDashboard
         {
             try
             {
-                Type typeOfCustomer = typeof(HotelDashboard.UiScreen.Customer);
+                Type typeOfCustomer = typeof(Customer);
                 this.createShowForm(typeOfCustomer);
             }
             catch (Exception msg)
@@ -52,7 +58,7 @@ namespace HotelDashboard
         {
             try
             {
-                Type typeOfFoods = typeof(HotelDashboard.UiScreen.Foods);
+                Type typeOfFoods = typeof(Foods);
                 this.createShowForm(typeOfFoods);
             }
             catch (Exception msg)
@@ -65,7 +71,7 @@ namespace HotelDashboard
         {
             try
             {
-                Type typeOfProfile = typeof(HotelDashboard.UiScreen.Profile);
+                Type typeOfProfile = typeof(Profile);
                 this.createShowForm(typeOfProfile);
             }
             catch (Exception msg)
@@ -78,7 +84,7 @@ namespace HotelDashboard
         {
             try
             {
-                Type typeOfHelp = typeof(HotelDashboard.UiScreen.Help);
+                Type typeOfHelp = typeof(HotelDashboard.UiScreen.Help.Help);
                 this.createShowForm(typeOfHelp);
             }
             catch (Exception msg)

@@ -12,7 +12,7 @@ using HotelDashboard.Helper;
 using HotelDashboard.WpfClient.Operations;
 
 
-namespace HotelDashboard.UiScreen
+namespace HotelDashboard.UiScreen.Profile
 {
     public partial class CreateProfile : Form
     {
@@ -77,6 +77,11 @@ namespace HotelDashboard.UiScreen
         private void cancleButton_Click(object sender, EventArgs e)
         {
             ((Form)this.TopLevelControl).Close();
+        }
+
+        private void CreateProfile_Load(object sender, EventArgs e)
+        {
+
         }
 
       

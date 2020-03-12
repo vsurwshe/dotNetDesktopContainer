@@ -7,13 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace HotelDashboard.UiScreen
+namespace HotelDashboard.UiScreen.Customer
 {
     public partial class Customer : Form
     {
         public Customer()
         {
             InitializeComponent();
+        }
+
+        private void Customer_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

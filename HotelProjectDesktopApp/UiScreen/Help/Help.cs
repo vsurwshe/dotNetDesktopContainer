@@ -7,13 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace HotelDashboard.UiScreen
+namespace HotelDashboard.UiScreen.Help
 {
     public partial class Help : Form
     {
         public Help()
         {
             InitializeComponent();
+        }
+
+        private void Help_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace HotelDashboard.UiScreen
+﻿namespace HotelDashboard.UiScreen.Profile
 {
     partial class Profile
     {

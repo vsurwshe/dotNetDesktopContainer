@@ -1,4 +1,4 @@
-﻿namespace HotelDashboard.UiScreen
+﻿namespace HotelDashboard.UiScreen.Profile
 {
     partial class CreateProfile
     {
@@ -138,6 +138,7 @@
             this.Name = "CreateProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create a Profile";
+            this.Load += new System.EventHandler(this.CreateProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.infoProfileTabel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

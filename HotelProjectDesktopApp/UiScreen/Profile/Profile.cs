@@ -11,7 +11,7 @@ using HotelDashboard.UiScreen;
 using HotelDashboard.WpfClient.Operations;
 using HotelDashboard.Helper;
 
-namespace HotelDashboard.UiScreen
+namespace HotelDashboard.UiScreen.Profile
 {
     public partial class Profile : Form
     {

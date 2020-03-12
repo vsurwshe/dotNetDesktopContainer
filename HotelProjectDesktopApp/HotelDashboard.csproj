@@ -123,34 +123,34 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="UiScreen\CreateProfile.cs">
+    <Compile Include="UiScreen\Profile\CreateProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UiScreen\CreateProfile.Designer.cs">
+    <Compile Include="UiScreen\Profile\CreateProfile.Designer.cs">
       <DependentUpon>CreateProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="UiScreen\Customer.cs">
+    <Compile Include="UiScreen\Customer\Customer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UiScreen\Customer.Designer.cs">
+    <Compile Include="UiScreen\Customer\Customer.Designer.cs">
       <DependentUpon>Customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="UiScreen\Foods.cs">
+    <Compile Include="UiScreen\Food\Foods.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UiScreen\Foods.Designer.cs">
+    <Compile Include="UiScreen\Food\Foods.Designer.cs">
       <DependentUpon>Foods.cs</DependentUpon>
     </Compile>
-    <Compile Include="UiScreen\Help.cs">
+    <Compile Include="UiScreen\Help\Help.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UiScreen\Help.Designer.cs">
+    <Compile Include="UiScreen\Help\Help.Designer.cs">
       <DependentUpon>Help.cs</DependentUpon>
     </Compile>
-    <Compile Include="UiScreen\Profile.cs">
+    <Compile Include="UiScreen\Profile\Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UiScreen\Profile.Designer.cs">
+    <Compile Include="UiScreen\Profile\Profile.Designer.cs">
       <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="UiScreen\UserDashboard.cs">
@@ -194,19 +194,19 @@
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UiScreen\CreateProfile.resx">
+    <EmbeddedResource Include="UiScreen\Profile\CreateProfile.resx">
       <DependentUpon>CreateProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UiScreen\Customer.resx">
+    <EmbeddedResource Include="UiScreen\Customer\Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UiScreen\Foods.resx">
+    <EmbeddedResource Include="UiScreen\Food\Foods.resx">
       <DependentUpon>Foods.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UiScreen\Help.resx">
+    <EmbeddedResource Include="UiScreen\Help\Help.resx">
       <DependentUpon>Help.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UiScreen\Profile.resx">
+    <EmbeddedResource Include="UiScreen\Profile\Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UiScreen\UserDashboard.resx">
