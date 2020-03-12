@@ -33,12 +33,12 @@
             this.username = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.password = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.signupButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.loginButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bgWorker = new System.ComponentModel.BackgroundWorker();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +48,7 @@
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(10, 363);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(12, 359);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(262, 17);
             this.bunifuCustomLabel4.TabIndex = 6;
@@ -114,12 +114,23 @@
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(282, 411);
+            this.bunifuCards1.Size = new System.Drawing.Size(282, 412);
             this.bunifuCards1.TabIndex = 1;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Red;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(62, 117);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(164, 24);
+            this.bunifuCustomLabel1.TabIndex = 13;
+            this.bunifuCustomLabel1.Text = "Login to Account";
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(13, 324);
+            this.progressBar.Location = new System.Drawing.Point(24, 324);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(245, 23);
             this.progressBar.TabIndex = 12;
@@ -154,10 +165,10 @@
             this.signupButton.IdleFillColor = System.Drawing.Color.White;
             this.signupButton.IdleForecolor = System.Drawing.Color.Red;
             this.signupButton.IdleLineColor = System.Drawing.Color.Transparent;
-            this.signupButton.Location = new System.Drawing.Point(55, 384);
+            this.signupButton.Location = new System.Drawing.Point(57, 377);
             this.signupButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.signupButton.Name = "signupButton";
-            this.signupButton.Size = new System.Drawing.Size(155, 17);
+            this.signupButton.Size = new System.Drawing.Size(155, 24);
             this.signupButton.TabIndex = 10;
             this.signupButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.signupButton.Click += new System.EventHandler(this.signupButton_Click);
@@ -193,22 +204,11 @@
             this.bgWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorker_DoWork);
             this.bgWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgWorker_RunWorkerCompleted);
             // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Red;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(62, 117);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(164, 24);
-            this.bunifuCustomLabel1.TabIndex = 13;
-            this.bunifuCustomLabel1.Text = "Login to Account";
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 411);
+            this.ClientSize = new System.Drawing.Size(282, 412);
             this.Controls.Add(this.bunifuCards1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Login";

@@ -49,7 +49,7 @@ namespace HotelDashboard
                     if (!bgWorker.IsBusy)
                     {
                         signUpButton.Enabled = false;
-                        progressBar.Style = ProgressBarStyle.Continuous;
+                        progressBar.Style = ProgressBarStyle.Marquee;
                         bgWorker.RunWorkerAsync();
                     }
                     

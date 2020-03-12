@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -39,7 +40,6 @@
             this.email = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bgWorker = new System.ComponentModel.BackgroundWorker();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -68,11 +68,22 @@
             this.bunifuCards1.Size = new System.Drawing.Size(317, 430);
             this.bunifuCards1.TabIndex = 0;
             // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Red;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(59, 114);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(211, 24);
+            this.bunifuCustomLabel1.TabIndex = 19;
+            this.bunifuCustomLabel1.Text = "Create a New Account";
+            // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(35, 347);
+            this.progressBar.Location = new System.Drawing.Point(13, 347);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(245, 23);
+            this.progressBar.Size = new System.Drawing.Size(294, 23);
             this.progressBar.TabIndex = 13;
             // 
             // bunifuThinButton21
@@ -211,17 +222,6 @@
             // 
             this.bgWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorker_DoWork);
             this.bgWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgWorker_RunWorkerCompleted);
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Red;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(59, 114);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(211, 24);
-            this.bunifuCustomLabel1.TabIndex = 19;
-            this.bunifuCustomLabel1.Text = "Create a New Account";
             // 
             // Register
             // 

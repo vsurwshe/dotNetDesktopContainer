@@ -32,8 +32,10 @@
             this.profileTypeDrop = new Bunifu.Framework.UI.BunifuDropdown();
             this.label1 = new System.Windows.Forms.Label();
             this.profileNameText = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.infoProfileTabel = new System.Windows.Forms.DataGridView();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bgWorker = new System.ComponentModel.BackgroundWorker();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.infoProfileTabel)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +46,7 @@
             this.profileTypeDrop.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.profileTypeDrop.ForeColor = System.Drawing.Color.White;
             this.profileTypeDrop.Items = new string[0];
-            this.profileTypeDrop.Location = new System.Drawing.Point(183, 38);
+            this.profileTypeDrop.Location = new System.Drawing.Point(70, 46);
             this.profileTypeDrop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.profileTypeDrop.Name = "profileTypeDrop";
             this.profileTypeDrop.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
@@ -56,10 +58,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 38);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(147, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 22);
+            this.label1.Size = new System.Drawing.Size(123, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "Select Profile Type";
             // 
@@ -75,12 +77,29 @@
             this.profileNameText.LineIdleColor = System.Drawing.Color.Gray;
             this.profileNameText.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.profileNameText.LineThickness = 4;
-            this.profileNameText.Location = new System.Drawing.Point(37, 99);
+            this.profileNameText.Location = new System.Drawing.Point(68, 79);
             this.profileNameText.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.profileNameText.Name = "profileNameText";
-            this.profileNameText.Size = new System.Drawing.Size(416, 52);
+            this.profileNameText.Size = new System.Drawing.Size(260, 52);
             this.profileNameText.TabIndex = 3;
             this.profileNameText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // infoProfileTabel
+            // 
+            this.infoProfileTabel.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.infoProfileTabel.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.infoProfileTabel.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.infoProfileTabel.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            this.infoProfileTabel.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.infoProfileTabel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.infoProfileTabel.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.infoProfileTabel.Enabled = false;
+            this.infoProfileTabel.Location = new System.Drawing.Point(2, 231);
+            this.infoProfileTabel.Name = "infoProfileTabel";
+            this.infoProfileTabel.RowHeadersVisible = false;
+            this.infoProfileTabel.Size = new System.Drawing.Size(416, 258);
+            this.infoProfileTabel.TabIndex = 5;
+            this.infoProfileTabel.Visible = false;
             // 
             // bunifuThinButton21
             // 
@@ -100,7 +119,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(146, 161);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(119, 141);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
@@ -108,28 +127,20 @@
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
-            // infoProfileTabel
+            // progressBar
             // 
-            this.infoProfileTabel.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.infoProfileTabel.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.infoProfileTabel.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.infoProfileTabel.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            this.infoProfileTabel.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.infoProfileTabel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.infoProfileTabel.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.infoProfileTabel.Enabled = false;
-            this.infoProfileTabel.Location = new System.Drawing.Point(2, 266);
-            this.infoProfileTabel.Name = "infoProfileTabel";
-            this.infoProfileTabel.RowHeadersVisible = false;
-            this.infoProfileTabel.Size = new System.Drawing.Size(451, 215);
-            this.infoProfileTabel.TabIndex = 5;
-            this.infoProfileTabel.Visible = false;
+            this.progressBar.Location = new System.Drawing.Point(58, 190);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(294, 23);
+            this.progressBar.TabIndex = 14;
+            this.progressBar.Visible = false;
             // 
             // CreateProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 493);
+            this.ClientSize = new System.Drawing.Size(420, 493);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.infoProfileTabel);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.profileNameText);
@@ -138,7 +149,6 @@
             this.Name = "CreateProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create a Profile";
-            this.Load += new System.EventHandler(this.CreateProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.infoProfileTabel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -152,5 +162,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox profileNameText;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.DataGridView infoProfileTabel;
+        private System.ComponentModel.BackgroundWorker bgWorker;
+        private System.Windows.Forms.ProgressBar progressBar;
     }
 }

@@ -79,11 +79,5 @@ namespace HotelDashboard.UiScreen.Profile
             ((Form)this.TopLevelControl).Close();
         }
 
-        private void CreateProfile_Load(object sender, EventArgs e)
-        {
-
-        }
-
-      
     }
 }
