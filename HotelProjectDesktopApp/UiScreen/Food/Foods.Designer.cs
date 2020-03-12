@@ -37,9 +37,9 @@
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(33, 39);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(113, 23);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(228, 23);
             this.bunifuCustomLabel1.TabIndex = 0;
-            this.bunifuCustomLabel1.Text = "Foods Form";
+            this.bunifuCustomLabel1.Text = "Foods Deatils Managment";
             // 
             // Foods
             // 

@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.profileTypeDrop = new Bunifu.Framework.UI.BunifuDropdown();
             this.bgWorker = new System.ComponentModel.BackgroundWorker();
-            this.progressBar = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // updateProfileButton
@@ -55,7 +55,7 @@
             this.updateProfileButton.IdleFillColor = System.Drawing.Color.White;
             this.updateProfileButton.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.updateProfileButton.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.updateProfileButton.Location = new System.Drawing.Point(84, 141);
+            this.updateProfileButton.Location = new System.Drawing.Point(72, 141);
             this.updateProfileButton.Margin = new System.Windows.Forms.Padding(5);
             this.updateProfileButton.Name = "updateProfileButton";
             this.updateProfileButton.Size = new System.Drawing.Size(181, 41);
@@ -109,27 +109,23 @@
             // 
             // progressBar
             // 
-            this.progressBar.BackColor = System.Drawing.Color.Silver;
-            this.progressBar.BorderRadius = 5;
-            this.progressBar.Location = new System.Drawing.Point(33, 199);
-            this.progressBar.MaximumValue = 100;
+            this.progressBar.Location = new System.Drawing.Point(13, 190);
             this.progressBar.Name = "progressBar";
-            this.progressBar.ProgressColor = System.Drawing.Color.Teal;
-            this.progressBar.Size = new System.Drawing.Size(267, 10);
-            this.progressBar.TabIndex = 9;
-            this.progressBar.Value = 0;
+            this.progressBar.Size = new System.Drawing.Size(294, 11);
+            this.progressBar.TabIndex = 15;
             this.progressBar.Visible = false;
             // 
             // UpdateProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(319, 246);
+            this.ClientSize = new System.Drawing.Size(319, 220);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.updateProfileButton);
             this.Controls.Add(this.profileNameText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.profileTypeDrop);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "UpdateProfile";
             this.Text = "Update Profile";
             this.ResumeLayout(false);
@@ -144,6 +140,6 @@
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuDropdown profileTypeDrop;
         private System.ComponentModel.BackgroundWorker bgWorker;
-        private Bunifu.Framework.UI.BunifuProgressBar progressBar;
+        private System.Windows.Forms.ProgressBar progressBar;
     }
 }

@@ -94,7 +94,7 @@
             this.infoProfileTabel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.infoProfileTabel.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.infoProfileTabel.Enabled = false;
-            this.infoProfileTabel.Location = new System.Drawing.Point(2, 231);
+            this.infoProfileTabel.Location = new System.Drawing.Point(2, 206);
             this.infoProfileTabel.Name = "infoProfileTabel";
             this.infoProfileTabel.RowHeadersVisible = false;
             this.infoProfileTabel.Size = new System.Drawing.Size(416, 258);
@@ -131,7 +131,7 @@
             // 
             this.progressBar.Location = new System.Drawing.Point(58, 190);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(294, 23);
+            this.progressBar.Size = new System.Drawing.Size(294, 10);
             this.progressBar.TabIndex = 14;
             this.progressBar.Visible = false;
             // 
@@ -139,13 +139,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(420, 493);
+            this.ClientSize = new System.Drawing.Size(420, 458);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.infoProfileTabel);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.profileNameText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.profileTypeDrop);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "CreateProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create a Profile";
