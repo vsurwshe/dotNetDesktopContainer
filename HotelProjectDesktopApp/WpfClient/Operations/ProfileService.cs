@@ -6,6 +6,7 @@ using System.Text;
 using Newtonsoft.Json;
 using HotelDashboard.WpfClient.Models;
 using HotelDashboard.WpfClient.Operations;
+using HotelDashboard.Helper;
 
 namespace HotelDashboard.WpfClient.Operations
 {
@@ -40,7 +41,7 @@ namespace HotelDashboard.WpfClient.Operations
             ProfileModel profileResult = null;
             String userBodyData = JsonConvert.SerializeObject(new
             {
-                profileName = userProfile.name,
+                profileName = userProfile.profileName,
                 type = userProfile.type
             });
             try
@@ -52,7 +53,7 @@ namespace HotelDashboard.WpfClient.Operations
                 }
                 else
                 {
-                    throw new Exception("Your Profile is not Save");
+                    throw new Exception(CommonMessage.PROFILE_NOT_SAVE);
                 }
             }
             catch (Exception msg)
@@ -75,16 +76,35 @@ namespace HotelDashboard.WpfClient.Operations
                 }
                 else
                 {
-                    throw new Exception("No Profiles found");
+                    throw new Exception(CommonMessage.PROFILE_NOT_FOUND);
                 }
             }
             catch (Exception msg)
             {
                 throw new Exception(msg.Message);
             }
-
             return profiles;
+        }
 
+        public ProfileModel updateProfile(ProfileModel userProfile)
+        {
+            ProfileModel profileResult = null;
+            String userBodyData = JsonConvert.SerializeObject(new { 
+            profileId=userProfile.profileId,
+            profileName=userProfile.profileName,
+            type=userProfile.type,
+            version=userProfile.version
+            });
+            String apiResult = new ApiOperations().callApi(this.commonURL+userProfile.profileId+"/updateProfile","PUT",userBodyData,true);
+            if (apiResult != null)
+            {
+                profileResult = JsonConvert.DeserializeObject<ProfileModel>(apiResult);
+            }
+            else
+            {
+                throw new Exception(CommonMessage.PROFILE_UPDATE_UNSUCCESS);
+            }
+            return profileResult;
         }
 
 

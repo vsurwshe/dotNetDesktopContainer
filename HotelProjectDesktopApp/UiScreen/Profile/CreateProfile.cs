@@ -59,7 +59,7 @@ namespace HotelDashboard.UiScreen.Profile
             try
             {
                 ProfileModel userProfile = new ProfileModel();
-                userProfile.name = profileNameText.Text;
+                userProfile.profileName = profileNameText.Text;
                 userProfile.type = profileTypeDrop.selectedValue.ToString();
                 ProfileModel tempResutl= new ProfileService().createProfile(userProfile);
                 if (!tempResutl.Equals(null))

@@ -6,7 +6,7 @@ using System.Text;
 namespace HotelDashboard.WpfClient.Models
 {
     // This User model class
-    class User
+    public class User
     {
         public int user_id { get; set; }
         public string name { get; set; }
@@ -15,22 +15,24 @@ namespace HotelDashboard.WpfClient.Models
     }
 
     // This is token respoense model class
-    class TokenResponse
+    public class TokenResponse
     {
         public string userToken { get; set; }
         public string userRefreshToken { get; set; }
     }
 
     // This is profile Model Class
-    class ProfileModel
+    public class ProfileModel
     {
-        public string name { get; set; }
+        public Int32 profileId { get; set; }
+        public string profileName { get; set; }
         public string type { get; set; }
         public string[] features { get; set; }
+        public int version { get; set; }
     }
     
     // This is Profile Types model class
-    class ProfileTypes
+    public class ProfileTypes
     {
         public int id { get; set; }
         public string name { get; set; }

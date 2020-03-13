@@ -33,12 +33,12 @@
             this.subject = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.task_image = new System.Windows.Forms.PictureBox();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.edit = new Bunifu.Framework.UI.BunifuImageButton();
             this.delete = new Bunifu.Framework.UI.BunifuImageButton();
+            this.edit = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.task_image)).BeginInit();
             this.bunifuCards1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.edit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edit)).BeginInit();
             this.SuspendLayout();
             // 
             // subtitle
@@ -100,21 +100,6 @@
             this.bunifuCards1.Size = new System.Drawing.Size(205, 176);
             this.bunifuCards1.TabIndex = 48;
             // 
-            // edit
-            // 
-            this.edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.edit.BackColor = System.Drawing.Color.Transparent;
-            this.edit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.edit.Image = ((System.Drawing.Image)(resources.GetObject("edit.Image")));
-            this.edit.ImageActive = null;
-            this.edit.Location = new System.Drawing.Point(58, 140);
-            this.edit.Name = "edit";
-            this.edit.Size = new System.Drawing.Size(25, 21);
-            this.edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.edit.TabIndex = 49;
-            this.edit.TabStop = false;
-            this.edit.Zoom = 10;
-            // 
             // delete
             // 
             this.delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -130,6 +115,22 @@
             this.delete.TabStop = false;
             this.delete.Zoom = 10;
             // 
+            // edit
+            // 
+            this.edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.edit.BackColor = System.Drawing.Color.Transparent;
+            this.edit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.edit.Image = ((System.Drawing.Image)(resources.GetObject("edit.Image")));
+            this.edit.ImageActive = null;
+            this.edit.Location = new System.Drawing.Point(58, 140);
+            this.edit.Name = "edit";
+            this.edit.Size = new System.Drawing.Size(25, 21);
+            this.edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.edit.TabIndex = 49;
+            this.edit.TabStop = false;
+            this.edit.Zoom = 10;
+            this.edit.Click += new System.EventHandler(this.edit_Click);
+            // 
             // ProfileItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -139,8 +140,8 @@
             this.Size = new System.Drawing.Size(201, 174);
             ((System.ComponentModel.ISupportInitialize)(this.task_image)).EndInit();
             this.bunifuCards1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.edit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edit)).EndInit();
             this.ResumeLayout(false);
 
         }
