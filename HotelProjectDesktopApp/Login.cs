@@ -90,11 +90,8 @@ namespace HotelDashboard
                 progressBar.Maximum = 100;
                 progressBar.Value = 10;
                 progressBar.Step = 10;
-                bProgressBar.Value = 10;
-                bProgressBar.MaximumValue = 100;
             }
            progressBar.Visible = progressBarvalue;
-           bProgressBar.Visible = progressBarvalue;
         }
 
         // This is the invoking the dashboard form

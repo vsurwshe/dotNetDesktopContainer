@@ -195,6 +195,12 @@
     <Compile Include="UiScreen\Profile\Profile.Designer.cs">
       <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="UiScreen\Profile\ProfileItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UiScreen\Profile\ProfileItems.Designer.cs">
+      <DependentUpon>ProfileItems.cs</DependentUpon>
+    </Compile>
     <Compile Include="UiScreen\Profile\UpdateProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -292,6 +298,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UiScreen\Profile\Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UiScreen\Profile\ProfileItems.resx">
+      <DependentUpon>ProfileItems.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UiScreen\Profile\UpdateProfile.resx">
       <DependentUpon>UpdateProfile.cs</DependentUpon>

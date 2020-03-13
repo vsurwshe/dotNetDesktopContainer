@@ -28,6 +28,19 @@ namespace HotelDashboard.UiScreen.Profile
         private void Profile_Load(object sender, EventArgs e)
         {
             this.setProfileGird();
+            this.loadProfiles();
+        }
+
+        private void loadProfiles()
+        {
+            ProfileItems pr = new ProfileItems();
+            pr.subject.Text = "Free";
+            pr.subtitle.Text = "Free";
+            profilePanel.Controls.Add(pr);
+            ProfileItems pr2 = new ProfileItems();
+            pr2.subject.Text = "Free1";
+            pr2.subtitle.Text = "Free1";
+            profilePanel.Controls.Add(pr2);
         }
 
 
