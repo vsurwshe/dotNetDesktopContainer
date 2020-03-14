@@ -26,16 +26,13 @@ namespace HotelDashboard.UiScreen.Profile
             new CreateProfile().Show();
         }
 
-        private void Profile_Load(object sender, EventArgs e)
-        {
-            this.loadProfiles();
-        }
-
+      
         private void loadProfiles()
         {
             try
             {
                 List<ProfileModel> userProfiles= new ProfileService().getProfiles();
+                profilePanel.Controls.Clear();
                 userProfiles.ForEach(delegate(ProfileModel profile){
                     ProfileItems setProfile = new ProfileItems(profile);
                     profilePanel.Controls.Add(setProfile);
@@ -46,6 +43,11 @@ namespace HotelDashboard.UiScreen.Profile
                 new UserExceptions().showExceptions(msg.Message);
             }
         
+        }
+
+        public void Profile_Activated(object sender, EventArgs e)
+        {
+            this.loadProfiles();
         }
 
     }

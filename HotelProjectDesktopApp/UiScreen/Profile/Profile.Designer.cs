@@ -54,7 +54,7 @@
             // 
             // createProfile
             // 
-            this.createProfile.BackColor = System.Drawing.Color.Green;
+            this.createProfile.BackColor = System.Drawing.Color.SeaGreen;
             this.createProfile.color = System.Drawing.Color.SeaGreen;
             this.createProfile.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.createProfile.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -95,7 +95,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Profile";
             this.Text = "Profile";
-            this.Load += new System.EventHandler(this.Profile_Load);
+            this.Activated += new System.EventHandler(this.Profile_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
 

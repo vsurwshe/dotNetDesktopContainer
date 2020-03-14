@@ -24,7 +24,15 @@ namespace HotelDashboard.UiScreen.Profile
 
         private void edit_Click(object sender, EventArgs e)
         {
-            new UpdateProfile(this.tempProfile).Show();
+            //UpdateProfile updateProfile = new UpdateProfile(this.tempProfile);
+            //updateProfile.FormClosed += new FormClosedEventHandler(form_Close);
+            //updateProfile.Show();
+            new UpdateProfile(this.tempProfile).Show(this);
+        }
+
+        public void form_Close(object sender, EventArgs e)
+        {
+            new Profile().Profile_Activated(sender,e);
         }
     }
 }

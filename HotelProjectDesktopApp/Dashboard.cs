@@ -67,7 +67,7 @@ namespace HotelDashboard
             }
         }
 
-        private void ProfileButton_Click(object sender, EventArgs e)
+        public void ProfileButton_Click(object sender, EventArgs e)
         {
             try
             {

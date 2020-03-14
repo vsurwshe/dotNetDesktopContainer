@@ -35,6 +35,8 @@ namespace HotelDashboard.UiScreen.Profile
                    if (result != null)
                    {
                        UserService.showSuccessMessage(CommonMessage.PROFILE_UPDATE_SUCCESS);
+                       Dashboard myParent = (Dashboard)this.Owner;
+                       myParent.ProfileButton_Click(sender,e);
                        this.Close();
                    }
                 }
