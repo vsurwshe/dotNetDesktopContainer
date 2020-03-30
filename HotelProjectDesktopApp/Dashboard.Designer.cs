@@ -38,7 +38,7 @@
             this.SettingButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.SignOut = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.leftSideMenu = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuTileButton6 = new Bunifu.Framework.UI.BunifuTileButton();
@@ -51,7 +51,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leftSideMenu)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -91,6 +91,7 @@
             this.ProfileButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ProfileButton.Textcolor = System.Drawing.Color.White;
             this.ProfileButton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProfileButton.Visible = false;
             this.ProfileButton.Click += new System.EventHandler(this.ProfileButton_Click);
             // 
             // FoodsButton
@@ -237,6 +238,7 @@
             this.HelpButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.HelpButton.Textcolor = System.Drawing.Color.White;
             this.HelpButton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HelpButton.Visible = false;
             this.HelpButton.Click += new System.EventHandler(this.HelpButton_Click);
             // 
             // SettingButton
@@ -278,7 +280,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(109)))), ((int)(((byte)(216)))));
             this.panel2.Controls.Add(this.SignOut);
-            this.panel2.Controls.Add(this.bunifuImageButton1);
+            this.panel2.Controls.Add(this.leftSideMenu);
             this.panel2.Controls.Add(this.SettingButton);
             this.panel2.Controls.Add(this.HelpButton);
             this.panel2.Controls.Add(this.DashboardButton);
@@ -324,20 +326,22 @@
             this.SignOut.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.SignOut.Textcolor = System.Drawing.Color.White;
             this.SignOut.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignOut.Visible = false;
             this.SignOut.Click += new System.EventHandler(this.SignOut_Click);
             // 
-            // bunifuImageButton1
+            // leftSideMenu
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1261, 12);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(30, 25);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 12;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 12;
+            this.leftSideMenu.BackColor = System.Drawing.Color.SeaGreen;
+            this.leftSideMenu.Image = ((System.Drawing.Image)(resources.GetObject("leftSideMenu.Image")));
+            this.leftSideMenu.ImageActive = null;
+            this.leftSideMenu.Location = new System.Drawing.Point(1261, 12);
+            this.leftSideMenu.Name = "leftSideMenu";
+            this.leftSideMenu.Size = new System.Drawing.Size(30, 25);
+            this.leftSideMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.leftSideMenu.TabIndex = 12;
+            this.leftSideMenu.TabStop = false;
+            this.leftSideMenu.Zoom = 12;
+            this.leftSideMenu.Click += new System.EventHandler(this.leftSideMenu_Click);
             // 
             // panel1
             // 
@@ -511,7 +515,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leftSideMenu)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -527,7 +531,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton HelpButton;
         private Bunifu.Framework.UI.BunifuFlatButton SettingButton;
         private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuImageButton leftSideMenu;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton6;

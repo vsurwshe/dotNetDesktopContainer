@@ -130,6 +130,39 @@ namespace HotelDashboard
                 new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
             }
         }
+        public ContextMenuStrip menu = new ContextMenuStrip();
+        private void leftSideMenu_Click(object sender, EventArgs e)
+        {
+            menu.Items.Clear();
+            menu.Items.Add("Profile Management");
+            menu.Items.Add("User Setting");
+            menu.Items.Add("User Help Menu");
+            menu.Items.Add("User Sign Out");
+            menu.ItemClicked += this.menu_ItemClicked;
+            menu.Show(leftSideMenu, new Point(0, leftSideMenu.Height));
+        }
+
+        private void menu_ItemClicked(Object sender, ToolStripItemClickedEventArgs e)
+        { 
+            switch(e.ClickedItem.Text){
+                case "Profile Management":
+                    this.ProfileButton_Click(sender, e);
+                    e.ClickedItem.Text = "";
+                    break;
+                case "User Setting":
+                    this.ProfileButton_Click(sender, e);
+                    e.ClickedItem.Text = "";
+                    break;
+                case "User Help Menu":
+                    this.HelpButton_Click(sender, e);
+                    e.ClickedItem.Text = "";
+                    break;
+                case "User Sign Out":
+                    this.SignOut_Click(sender, e);
+                    e.ClickedItem.Text = "";
+                    break;
+            }
+        }
     }
 }
 
