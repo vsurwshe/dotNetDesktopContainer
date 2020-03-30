@@ -22,5 +22,8 @@ namespace HotelDashboard.Helper
         public static String PROFILE_UPDATE_UNSUCCESS = "Your Profile Not Updated Successfully";
         public static String PROFILE_NOT_FOUND = "No Profiles found";
         public static String PROFILE_NOT_SAVE = "Your Profile is not Save";
+        public static String PROFILE_DELETE_MESSAGE = "Are you sure want to delete this profile ?";
+        public static String PROFILE_DELETE_UNSUCCESS_MESSAGE = "Sorry your profile is not deleted successfully";
+        public static String PROFILE_DELETE_SUCCESS_MESSAGE = "Your profile is deleted successfully";
     }
 }

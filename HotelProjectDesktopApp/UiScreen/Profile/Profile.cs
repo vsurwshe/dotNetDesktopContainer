@@ -23,7 +23,7 @@ namespace HotelDashboard.UiScreen.Profile
 
         private void createProfile_Click(object sender, EventArgs e)
         {
-            new CreateProfile().Show();
+            new CreateProfile().Show(this);
         }
 
       

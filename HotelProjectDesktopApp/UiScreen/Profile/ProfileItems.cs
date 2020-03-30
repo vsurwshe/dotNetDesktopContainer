@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 //-------
 using HotelDashboard.WpfClient.Models;
+using HotelDashboard.WpfClient.Operations;
+using HotelDashboard.Helper;
 
 namespace HotelDashboard.UiScreen.Profile
 {
@@ -33,6 +35,28 @@ namespace HotelDashboard.UiScreen.Profile
         public void form_Close(object sender, EventArgs e)
         {
             new Profile().Profile_Activated(sender,e);
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(CommonMessage.PROFILE_DELETE_MESSAGE, "Profile Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                   String apiResult = new ProfileService().deleteProfile(this.tempProfile);
+                   if (apiResult.Equals(CommonMessage.PROFILE_DELETE_SUCCESS_MESSAGE))
+                   {
+                       UserService.showSuccessMessage(CommonMessage.PROFILE_DELETE_SUCCESS_MESSAGE);
+                       new Dashboard().ProfileButton_Click(sender, e);
+                       this.Dispose();
+                   }
+                }
+                catch (Exception msg)
+                {
+                    new UserExceptions().showExceptions(msg.Message); 
+                }
+            }
         }
     }
 }

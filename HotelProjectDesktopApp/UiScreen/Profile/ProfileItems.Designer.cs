@@ -114,6 +114,7 @@
             this.delete.TabIndex = 48;
             this.delete.TabStop = false;
             this.delete.Zoom = 10;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // edit
             // 

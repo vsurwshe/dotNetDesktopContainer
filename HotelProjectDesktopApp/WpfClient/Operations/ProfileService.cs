@@ -107,6 +107,9 @@ namespace HotelDashboard.WpfClient.Operations
             return profileResult;
         }
 
-
+        public String deleteProfile(ProfileModel userProfile)
+        {
+            return new ApiOperations().callApi(this.commonURL + userProfile.profileId, "DELETE", null, true);
+        }
     }
 }

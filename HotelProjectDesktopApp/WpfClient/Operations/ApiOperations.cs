@@ -8,6 +8,8 @@ using HotelDashboard.WpfClient.Models;
 using HotelDashboard.Helper;
 using Newtonsoft.Json;
 using System.Configuration;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 
 namespace HotelDashboard.WpfClient.Operations
@@ -22,7 +24,7 @@ namespace HotelDashboard.WpfClient.Operations
         }
 
         // this method common for all api with access token needs to be call 
-        public string callApi(string userUrl, string userMethod, string userBody,Boolean token)
+        public string callApi(string userUrl, string userMethod, string userBody, Boolean token)
         {   // this line makes final url for the api call using user url and base url.
             string endpoint = this.baseUrl + userUrl;
             string response = null;
@@ -42,8 +44,24 @@ namespace HotelDashboard.WpfClient.Operations
                     response = wc.UploadString(endpoint, userMethod, userBody);
                 }
                 else
-                { // this executing for the GET and DELETE method
-                    response = wc.DownloadString(endpoint);
+                {
+                    if (userMethod == "DELETE")
+                    {
+                        using (var httpClient = new HttpClient())
+                        {
+                            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Properties.Settings.Default.userToken);
+                            var result = httpClient.DeleteAsync(endpoint).Result;
+                            if(result.IsSuccessStatusCode){
+                                response = CommonMessage.PROFILE_DELETE_SUCCESS_MESSAGE;
+                            }else{
+                                response = CommonMessage.PROFILE_DELETE_UNSUCCESS_MESSAGE;
+                            }
+                        }
+                    }
+                    else
+                    {   // this executing for the GET and DELETE method
+                        response = wc.DownloadString(endpoint);
+                    }
                 }
             }
             catch (WebException msg)
