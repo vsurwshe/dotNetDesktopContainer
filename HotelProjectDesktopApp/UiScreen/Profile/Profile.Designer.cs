@@ -47,9 +47,9 @@
             // 
             // profilePanel
             // 
-            this.profilePanel.Location = new System.Drawing.Point(395, 113);
+            this.profilePanel.Location = new System.Drawing.Point(292, 113);
             this.profilePanel.Name = "profilePanel";
-            this.profilePanel.Size = new System.Drawing.Size(689, 519);
+            this.profilePanel.Size = new System.Drawing.Size(792, 519);
             this.profilePanel.TabIndex = 18;
             // 
             // createProfile
@@ -58,17 +58,17 @@
             this.createProfile.color = System.Drawing.Color.SeaGreen;
             this.createProfile.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.createProfile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.createProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.createProfile.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.createProfile.ForeColor = System.Drawing.Color.White;
             this.createProfile.Image = ((System.Drawing.Image)(resources.GetObject("createProfile.Image")));
-            this.createProfile.ImagePosition = 20;
+            this.createProfile.ImagePosition = 15;
             this.createProfile.ImageZoom = 50;
-            this.createProfile.LabelPosition = 41;
-            this.createProfile.LabelText = "Create a New Profile";
+            this.createProfile.LabelPosition = 31;
+            this.createProfile.LabelText = "Create User Profile";
             this.createProfile.Location = new System.Drawing.Point(15, 113);
             this.createProfile.Margin = new System.Windows.Forms.Padding(6);
             this.createProfile.Name = "createProfile";
-            this.createProfile.Size = new System.Drawing.Size(214, 164);
+            this.createProfile.Size = new System.Drawing.Size(156, 136);
             this.createProfile.TabIndex = 1;
             this.createProfile.Click += new System.EventHandler(this.createProfile_Click);
             // 
@@ -77,11 +77,11 @@
             this.BunifuCustomLabel26.AutoSize = true;
             this.BunifuCustomLabel26.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BunifuCustomLabel26.ForeColor = System.Drawing.Color.Red;
-            this.BunifuCustomLabel26.Location = new System.Drawing.Point(391, 75);
+            this.BunifuCustomLabel26.Location = new System.Drawing.Point(288, 79);
             this.BunifuCustomLabel26.Name = "BunifuCustomLabel26";
-            this.BunifuCustomLabel26.Size = new System.Drawing.Size(180, 22);
+            this.BunifuCustomLabel26.Size = new System.Drawing.Size(117, 22);
             this.BunifuCustomLabel26.TabIndex = 17;
-            this.BunifuCustomLabel26.Text = "You Created Profiles";
+            this.BunifuCustomLabel26.Text = "Your Profiles";
             // 
             // Profile
             // 

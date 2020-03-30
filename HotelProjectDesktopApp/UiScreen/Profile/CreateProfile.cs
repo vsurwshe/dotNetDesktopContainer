@@ -32,6 +32,7 @@ namespace HotelDashboard.UiScreen.Profile
               {
                   profileTypeDrop.AddItem(profileType.type);
               });
+              profileTypeDrop.selectedIndex = 0;
           }
               
         }
@@ -61,14 +62,19 @@ namespace HotelDashboard.UiScreen.Profile
                 ProfileModel userProfile = new ProfileModel();
                 userProfile.profileName = profileNameText.Text;
                 userProfile.type = profileTypeDrop.selectedValue.ToString();
-                ProfileModel tempResutl= new ProfileService().createProfile(userProfile);
-                if (!tempResutl.Equals(null))
-                {
-                    UserService.showSuccessMessage(CommonMessage.PROFILE_SUCCESS);
-                    Dashboard myParent = (Dashboard)this.Owner;
-                    myParent.ProfileButton_Click(sender, e);
-                    this.Close();
+                if(userProfile.profileName != "" && userProfile.type != "" ){
+                    ProfileModel tempResutl = new ProfileService().createProfile(userProfile);
+                    if (!tempResutl.Equals(null))
+                    {
+                        UserService.showSuccessMessage(CommonMessage.PROFILE_SUCCESS);
+                        Dashboard myParent = (Dashboard)this.Owner;
+                        myParent.ProfileButton_Click(sender, e);
+                        this.Close();
+                    }
+                }else{
+                    throw new Exception(CommonMessage.PROFILE_VALID_MESSAGE);
                 }
+                
             }
             catch (Exception msg)
             {

@@ -30,14 +30,25 @@ namespace HotelDashboard.UiScreen.Profile
             {
                 if (tempProfile != null)
                 {
-                    tempProfile.profileName = profileName.Text;
-                   ProfileModel result= new ProfileService().updateProfile(tempProfile);
-                   if (result != null)
+                   tempProfile.profileName = profileName.Text;
+                   if (tempProfile.profileName != "")
                    {
-                       UserService.showSuccessMessage(CommonMessage.PROFILE_UPDATE_SUCCESS);
-                       Dashboard myParent = (Dashboard)this.Owner;
-                       myParent.ProfileButton_Click(sender,e);
-                       this.Dispose();
+                       ProfileModel result = new ProfileService().updateProfile(tempProfile);
+                       if (result != null)
+                       {
+                           UserService.showSuccessMessage(CommonMessage.PROFILE_UPDATE_SUCCESS);
+                           Dashboard myParent = (Dashboard)this.Owner;
+                           myParent.ProfileButton_Click(sender, e);
+                           this.Dispose();
+                       }
+                       else
+                       {
+                           throw new Exception(CommonMessage.PROFILE_UPDATE_UNSUCCESS);
+                       }
+                   }
+                   else
+                   {
+                       throw new Exception(CommonMessage.PROFILE_VALID_MESSAGE);
                    }
                 }
                 else
@@ -49,7 +60,6 @@ namespace HotelDashboard.UiScreen.Profile
             {
                 new UserExceptions().showExceptions(msg.Message);
             }
-
         }
     }
 }

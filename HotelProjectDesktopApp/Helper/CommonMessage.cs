@@ -18,6 +18,7 @@ namespace HotelDashboard.Helper
 
         //----- Profile
         public static String PROFILE_SUCCESS = "Your Profile Created Successfully";
+        public static String PROFILE_VALID_MESSAGE = "Please enter valid data";
         public static String PROFILE_UPDATE_SUCCESS = "Your Profile Updated Successfully";
         public static String PROFILE_UPDATE_UNSUCCESS = "Your Profile Not Updated Successfully";
         public static String PROFILE_NOT_FOUND = "No Profiles found";
