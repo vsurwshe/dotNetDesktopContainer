@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\reqFiles\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialSkin">
       <HintPath>..\HotelProjectDesktopApp\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
     </Reference>
@@ -47,6 +50,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Component\CustomerTabel\TabelManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\CustomerTabel\TabelManagement.Designer.cs">
+      <DependentUpon>TabelManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Food\FoodManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\Food\FoodManagement.Designer.cs">
+      <DependentUpon>FoodManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Dashborad\CommonDashborad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\Dashborad\CommonDashborad.Designer.cs">
+      <DependentUpon>CommonDashborad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Help\HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\Help\HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Profile\ProfileManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\Profile\ProfileManagement.Designer.cs">
+      <DependentUpon>ProfileManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Setting\UserSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\Setting\UserSetting.Designer.cs">
+      <DependentUpon>UserSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\UserDashborad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\UserDashborad.Designer.cs">
+      <DependentUpon>UserDashborad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\CommonMessage.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +108,27 @@
     <Compile Include="Regsiter.Designer.cs">
       <DependentUpon>Regsiter.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Component\CustomerTabel\TabelManagement.resx">
+      <DependentUpon>TabelManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Dashborad\CommonDashborad.resx">
+      <DependentUpon>CommonDashborad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Food\FoodManagement.resx">
+      <DependentUpon>FoodManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Help\HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Profile\ProfileManagement.resx">
+      <DependentUpon>ProfileManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Setting\UserSetting.resx">
+      <DependentUpon>UserSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\UserDashborad.resx">
+      <DependentUpon>UserDashborad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,10 +160,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Component\" />
+    <None Include="Resources\user.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user.png" />
+    <None Include="Resources\icons8-male-user-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashborad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foods.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant-table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

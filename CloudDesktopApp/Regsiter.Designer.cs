@@ -49,7 +49,7 @@
             this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton2.Name = "materialFlatButton2";
-            this.materialFlatButton2.Primary = false;
+            this.materialFlatButton2.Primary = true;
             this.materialFlatButton2.Size = new System.Drawing.Size(140, 36);
             this.materialFlatButton2.TabIndex = 13;
             this.materialFlatButton2.Text = "Login to Account";
@@ -104,7 +104,7 @@
             this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton1.Name = "materialFlatButton1";
-            this.materialFlatButton1.Primary = false;
+            this.materialFlatButton1.Primary = true;
             this.materialFlatButton1.Size = new System.Drawing.Size(149, 36);
             this.materialFlatButton1.TabIndex = 8;
             this.materialFlatButton1.Text = "Signup to Account";

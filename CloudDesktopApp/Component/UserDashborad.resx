@@ -117,23 +117,46 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icons8-male-user-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-male-user-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>219, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuTileButton6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
-  <data name="restaurant-table" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\restaurant-table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dashborad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dashborad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="foods" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\foods.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shutdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shutdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>

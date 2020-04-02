@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//----
+using CloudDesktopApp.Component;
 
 namespace CloudDesktopApp
 {
@@ -16,7 +18,7 @@ namespace CloudDesktopApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Regsiter());
+            Application.Run(new UserDashborad());
         }
     }
 }
