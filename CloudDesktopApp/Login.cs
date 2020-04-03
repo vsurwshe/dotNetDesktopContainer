@@ -24,7 +24,15 @@ namespace CloudDesktopApp
             SkinClass.SetSkiner(this);
         }
 
-        private void loginButton_Click(object sender, EventArgs e)
+        public Login(string userName, string password)
+        {
+            InitializeComponent();
+            SkinClass.SetSkiner(this);
+            this.username.Text = userName;
+            this.password.Text = password;
+        }
+
+        public void loginButton_Click(object sender, EventArgs e)
         {
             // This condtions checking username or password filed empty or null
             if (String.IsNullOrEmpty(username.Text) || String.IsNullOrEmpty(password.Text))
@@ -52,7 +60,7 @@ namespace CloudDesktopApp
             }
             else
             {
-                this.loginUser();
+                this.loginUser(username.Text,password.Text);
             }
         }
 
@@ -63,14 +71,14 @@ namespace CloudDesktopApp
             loginButton.Enabled = true;
         }
 
-        public void loginUser()
+        public void loginUser(String username, String password)
         {
             try
             {
                 String userBodyData = JsonConvert.SerializeObject(new
                 {
-                    userEmail = username.Text,
-                    userPassword = password.Text
+                    userEmail = username,
+                    userPassword = password
                 });
                 TokenResponse result = new LoginRegsiter().loginUser(userBodyData);
                 if (result != null)
@@ -117,6 +125,12 @@ namespace CloudDesktopApp
                 this.Hide();
                 new UserDashborad().Show();
             }));
+        }
+
+        private void singupButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Regsiter().Show();
         }
 
     }

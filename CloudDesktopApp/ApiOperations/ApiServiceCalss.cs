@@ -39,5 +39,27 @@ namespace CloudDesktopApp.ApiOperations
                }
                return result;
         }
+        
+        // This method use for the regsiter the user.
+        public User registerUser(User user)
+        {
+            User result = null;
+            var userBodyData = JsonConvert.SerializeObject(new
+            {
+                userEmail = user.userEmail,
+                userPassword = user.userPassword,
+                userName=user.userName
+            });
+            Object resultApi = new CommonApiOperation().apiCall(this.commonUrl + "register", "POST", userBodyData, false);
+            if (resultApi != null)
+            {
+                result = JsonConvert.DeserializeObject<User>(resultApi.ToString());
+            }
+            else
+            {
+                throw new Exception(CommonMessage.APP_USER_CREATION_FAIL);
+            }
+            return result;
+        }
     }
 }

@@ -47,7 +47,7 @@ namespace HotelDashboard.WpfClient.Operations
             });
 
             // This line calling api using access token and store result of api into res varilabel
-            string res = new ApiOperations().callApi( this.commonUrl+"regsiter", "POST", userBodyData,false);
+            string res = new ApiOperations().callApi( this.commonUrl+"register", "POST", userBodyData,false);
             return (res != null) ? JsonConvert.DeserializeObject<User>(res) : null;
         }
 

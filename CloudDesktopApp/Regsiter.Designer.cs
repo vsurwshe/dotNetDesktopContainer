@@ -28,32 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.materialFlatButton2 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.LoginButton = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField3 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.email = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.SignUp = new MaterialSkin.Controls.MaterialFlatButton();
+            this.name = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.password = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.bgWorker = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // materialFlatButton2
+            // LoginButton
             // 
-            this.materialFlatButton2.AutoSize = true;
-            this.materialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton2.BackColor = System.Drawing.Color.Lime;
-            this.materialFlatButton2.Depth = 0;
-            this.materialFlatButton2.ForeColor = System.Drawing.Color.Blue;
-            this.materialFlatButton2.Location = new System.Drawing.Point(102, 386);
-            this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton2.Name = "materialFlatButton2";
-            this.materialFlatButton2.Primary = true;
-            this.materialFlatButton2.Size = new System.Drawing.Size(140, 36);
-            this.materialFlatButton2.TabIndex = 13;
-            this.materialFlatButton2.Text = "Login to Account";
-            this.materialFlatButton2.UseVisualStyleBackColor = false;
+            this.LoginButton.AutoSize = true;
+            this.LoginButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.LoginButton.BackColor = System.Drawing.Color.Lime;
+            this.LoginButton.Depth = 0;
+            this.LoginButton.ForeColor = System.Drawing.Color.Blue;
+            this.LoginButton.Location = new System.Drawing.Point(86, 386);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.LoginButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Primary = true;
+            this.LoginButton.Size = new System.Drawing.Size(140, 36);
+            this.LoginButton.TabIndex = 13;
+            this.LoginButton.Text = "Login to Account";
+            this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // materialLabel2
             // 
@@ -62,7 +65,7 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(22, 361);
+            this.materialLabel2.Location = new System.Drawing.Point(6, 361);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(302, 19);
@@ -73,87 +76,97 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::CloudDesktopApp.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(140, 77);
+            this.pictureBox1.Location = new System.Drawing.Point(117, 67);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(75, 91);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // materialSingleLineTextField2
+            // email
             // 
-            this.materialSingleLineTextField2.Depth = 0;
-            this.materialSingleLineTextField2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.materialSingleLineTextField2.Hint = "Enter User Email";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(43, 231);
-            this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
-            this.materialSingleLineTextField2.PasswordChar = '\0';
-            this.materialSingleLineTextField2.SelectedText = "";
-            this.materialSingleLineTextField2.SelectionLength = 0;
-            this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(257, 23);
-            this.materialSingleLineTextField2.TabIndex = 9;
-            this.materialSingleLineTextField2.UseSystemPasswordChar = false;
+            this.email.Depth = 0;
+            this.email.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.email.Hint = "Enter User Email";
+            this.email.Location = new System.Drawing.Point(27, 231);
+            this.email.MouseState = MaterialSkin.MouseState.HOVER;
+            this.email.Name = "email";
+            this.email.PasswordChar = '\0';
+            this.email.SelectedText = "";
+            this.email.SelectionLength = 0;
+            this.email.SelectionStart = 0;
+            this.email.Size = new System.Drawing.Size(257, 23);
+            this.email.TabIndex = 9;
+            this.email.UseSystemPasswordChar = false;
             // 
-            // materialFlatButton1
+            // SignUp
             // 
-            this.materialFlatButton1.AutoSize = true;
-            this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.Location = new System.Drawing.Point(102, 303);
-            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton1.Name = "materialFlatButton1";
-            this.materialFlatButton1.Primary = true;
-            this.materialFlatButton1.Size = new System.Drawing.Size(149, 36);
-            this.materialFlatButton1.TabIndex = 8;
-            this.materialFlatButton1.Text = "Signup to Account";
-            this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.SignUp.AutoSize = true;
+            this.SignUp.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.SignUp.Depth = 0;
+            this.SignUp.Location = new System.Drawing.Point(77, 303);
+            this.SignUp.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.SignUp.MouseState = MaterialSkin.MouseState.HOVER;
+            this.SignUp.Name = "SignUp";
+            this.SignUp.Primary = true;
+            this.SignUp.Size = new System.Drawing.Size(149, 36);
+            this.SignUp.TabIndex = 8;
+            this.SignUp.Text = "Signup to Account";
+            this.SignUp.UseVisualStyleBackColor = true;
+            this.SignUp.Click += new System.EventHandler(this.SignUp_Click);
             // 
-            // materialSingleLineTextField1
+            // name
             // 
-            this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.materialSingleLineTextField1.Hint = "Enter User Name";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(43, 191);
-            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.PasswordChar = '\0';
-            this.materialSingleLineTextField1.SelectedText = "";
-            this.materialSingleLineTextField1.SelectionLength = 0;
-            this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(257, 23);
-            this.materialSingleLineTextField1.TabIndex = 7;
-            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            this.name.Depth = 0;
+            this.name.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.name.Hint = "Enter User Name";
+            this.name.Location = new System.Drawing.Point(27, 191);
+            this.name.MouseState = MaterialSkin.MouseState.HOVER;
+            this.name.Name = "name";
+            this.name.PasswordChar = '\0';
+            this.name.SelectedText = "";
+            this.name.SelectionLength = 0;
+            this.name.SelectionStart = 0;
+            this.name.Size = new System.Drawing.Size(257, 23);
+            this.name.TabIndex = 7;
+            this.name.UseSystemPasswordChar = false;
             // 
-            // materialSingleLineTextField3
+            // password
             // 
-            this.materialSingleLineTextField3.Depth = 0;
-            this.materialSingleLineTextField3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.materialSingleLineTextField3.Hint = "Enter User Password";
-            this.materialSingleLineTextField3.Location = new System.Drawing.Point(43, 268);
-            this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField3.Name = "materialSingleLineTextField3";
-            this.materialSingleLineTextField3.PasswordChar = '\0';
-            this.materialSingleLineTextField3.SelectedText = "";
-            this.materialSingleLineTextField3.SelectionLength = 0;
-            this.materialSingleLineTextField3.SelectionStart = 0;
-            this.materialSingleLineTextField3.Size = new System.Drawing.Size(257, 23);
-            this.materialSingleLineTextField3.TabIndex = 14;
-            this.materialSingleLineTextField3.UseSystemPasswordChar = false;
+            this.password.Depth = 0;
+            this.password.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.password.Hint = "Enter User Password";
+            this.password.Location = new System.Drawing.Point(27, 268);
+            this.password.MouseState = MaterialSkin.MouseState.HOVER;
+            this.password.Name = "password";
+            this.password.PasswordChar = '\0';
+            this.password.SelectedText = "";
+            this.password.SelectionLength = 0;
+            this.password.SelectionStart = 0;
+            this.password.Size = new System.Drawing.Size(257, 23);
+            this.password.TabIndex = 14;
+            this.password.UseSystemPasswordChar = false;
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(23, 348);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(261, 10);
+            this.progressBar.TabIndex = 15;
+            this.progressBar.Visible = false;
             // 
             // Regsiter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(343, 427);
-            this.Controls.Add(this.materialSingleLineTextField3);
-            this.Controls.Add(this.materialFlatButton2);
+            this.ClientSize = new System.Drawing.Size(310, 427);
+            this.Controls.Add(this.progressBar);
+            this.Controls.Add(this.password);
+            this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.materialSingleLineTextField2);
-            this.Controls.Add(this.materialFlatButton1);
-            this.Controls.Add(this.materialSingleLineTextField1);
+            this.Controls.Add(this.email);
+            this.Controls.Add(this.SignUp);
+            this.Controls.Add(this.name);
             this.Name = "Regsiter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Regsiter User";
@@ -165,12 +178,14 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton2;
+        private MaterialSkin.Controls.MaterialFlatButton LoginButton;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField3;
+        private MaterialSkin.Controls.MaterialSingleLineTextField email;
+        private MaterialSkin.Controls.MaterialFlatButton SignUp;
+        private MaterialSkin.Controls.MaterialSingleLineTextField name;
+        private MaterialSkin.Controls.MaterialSingleLineTextField password;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.ComponentModel.BackgroundWorker bgWorker;
     }
 }

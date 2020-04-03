@@ -35,8 +35,8 @@
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.singupButton = new MaterialSkin.Controls.MaterialFlatButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.bgWorker = new System.ComponentModel.BackgroundWorker();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -133,6 +133,7 @@
             this.singupButton.TabIndex = 6;
             this.singupButton.Text = "Signup Account";
             this.singupButton.UseVisualStyleBackColor = false;
+            this.singupButton.Click += new System.EventHandler(this.singupButton_Click);
             // 
             // pictureBox1
             // 
@@ -146,10 +147,10 @@
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(27, 339);
+            this.progressBar.Location = new System.Drawing.Point(24, 339);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(261, 10);
-            this.progressBar.TabIndex = 13;
+            this.progressBar.TabIndex = 14;
             this.progressBar.Visible = false;
             // 
             // Login
@@ -184,8 +185,8 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialFlatButton singupButton;
-        private System.Windows.Forms.ProgressBar progressBar;
         private System.ComponentModel.BackgroundWorker bgWorker;
+        private System.Windows.Forms.ProgressBar progressBar;
     }
 }
 
