@@ -18,7 +18,7 @@ namespace CloudDesktopApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UserDashborad());
+            Application.Run(new Login());
         }
     }
 }

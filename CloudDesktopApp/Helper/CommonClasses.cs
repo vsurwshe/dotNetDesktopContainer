@@ -52,7 +52,7 @@ namespace CloudDesktopApp.Helper
         }
 
         // This mehod use for show warning message in applications
-        public void showWarningMessage(String message)
+        public static void showWarningMessage(String message)
         {
             MessageBox.Show(message, messageBoxHeader.APP_WARN.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
