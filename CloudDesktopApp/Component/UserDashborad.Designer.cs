@@ -36,6 +36,9 @@
             this.Dashboard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Food = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Tabel = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.helpIconButton = new Bunifu.Framework.UI.BunifuTileButton();
+            this.settingIconButton = new Bunifu.Framework.UI.BunifuTileButton();
+            this.profileIcon = new Bunifu.Framework.UI.BunifuTileButton();
             this.logout = new Bunifu.Framework.UI.BunifuTileButton();
             this.TabelIconButton = new Bunifu.Framework.UI.BunifuTileButton();
             this.FoodsIconButton = new Bunifu.Framework.UI.BunifuTileButton();
@@ -198,6 +201,66 @@
             this.Tabel.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tabel.Click += new System.EventHandler(this.Tabel_Click);
             // 
+            // helpIconButton
+            // 
+            this.helpIconButton.BackColor = System.Drawing.Color.Lime;
+            this.helpIconButton.color = System.Drawing.Color.Lime;
+            this.helpIconButton.colorActive = System.Drawing.Color.Yellow;
+            this.helpIconButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.helpIconButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.helpIconButton.ForeColor = System.Drawing.Color.Transparent;
+            this.helpIconButton.Image = global::CloudDesktopApp.Properties.Resources.help;
+            this.helpIconButton.ImagePosition = 10;
+            this.helpIconButton.ImageZoom = 35;
+            this.helpIconButton.LabelPosition = 10;
+            this.helpIconButton.LabelText = "";
+            this.helpIconButton.Location = new System.Drawing.Point(0, 417);
+            this.helpIconButton.Margin = new System.Windows.Forms.Padding(6);
+            this.helpIconButton.Name = "helpIconButton";
+            this.helpIconButton.Size = new System.Drawing.Size(61, 45);
+            this.helpIconButton.TabIndex = 35;
+            this.helpIconButton.Click += new System.EventHandler(this.helpIconButton_Click);
+            // 
+            // settingIconButton
+            // 
+            this.settingIconButton.BackColor = System.Drawing.Color.Lime;
+            this.settingIconButton.color = System.Drawing.Color.Lime;
+            this.settingIconButton.colorActive = System.Drawing.Color.Yellow;
+            this.settingIconButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingIconButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.settingIconButton.ForeColor = System.Drawing.Color.Transparent;
+            this.settingIconButton.Image = global::CloudDesktopApp.Properties.Resources.setting;
+            this.settingIconButton.ImagePosition = 10;
+            this.settingIconButton.ImageZoom = 35;
+            this.settingIconButton.LabelPosition = 10;
+            this.settingIconButton.LabelText = "";
+            this.settingIconButton.Location = new System.Drawing.Point(0, 360);
+            this.settingIconButton.Margin = new System.Windows.Forms.Padding(6);
+            this.settingIconButton.Name = "settingIconButton";
+            this.settingIconButton.Size = new System.Drawing.Size(61, 45);
+            this.settingIconButton.TabIndex = 34;
+            this.settingIconButton.Click += new System.EventHandler(this.settingIconButton_Click);
+            // 
+            // profileIcon
+            // 
+            this.profileIcon.BackColor = System.Drawing.Color.Lime;
+            this.profileIcon.color = System.Drawing.Color.Lime;
+            this.profileIcon.colorActive = System.Drawing.Color.Yellow;
+            this.profileIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.profileIcon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.profileIcon.ForeColor = System.Drawing.Color.Transparent;
+            this.profileIcon.Image = global::CloudDesktopApp.Properties.Resources.profileMage;
+            this.profileIcon.ImagePosition = 10;
+            this.profileIcon.ImageZoom = 35;
+            this.profileIcon.LabelPosition = 10;
+            this.profileIcon.LabelText = "";
+            this.profileIcon.Location = new System.Drawing.Point(0, 303);
+            this.profileIcon.Margin = new System.Windows.Forms.Padding(6);
+            this.profileIcon.Name = "profileIcon";
+            this.profileIcon.Size = new System.Drawing.Size(61, 45);
+            this.profileIcon.TabIndex = 33;
+            this.profileIcon.Click += new System.EventHandler(this.profileIcon_Click);
+            // 
             // logout
             // 
             this.logout.BackColor = System.Drawing.Color.Lime;
@@ -211,7 +274,7 @@
             this.logout.ImageZoom = 35;
             this.logout.LabelPosition = 10;
             this.logout.LabelText = "";
-            this.logout.Location = new System.Drawing.Point(0, 313);
+            this.logout.Location = new System.Drawing.Point(0, 474);
             this.logout.Margin = new System.Windows.Forms.Padding(6);
             this.logout.Name = "logout";
             this.logout.Size = new System.Drawing.Size(61, 45);
@@ -231,7 +294,7 @@
             this.TabelIconButton.ImageZoom = 35;
             this.TabelIconButton.LabelPosition = 10;
             this.TabelIconButton.LabelText = "";
-            this.TabelIconButton.Location = new System.Drawing.Point(0, 225);
+            this.TabelIconButton.Location = new System.Drawing.Point(0, 246);
             this.TabelIconButton.Margin = new System.Windows.Forms.Padding(6);
             this.TabelIconButton.Name = "TabelIconButton";
             this.TabelIconButton.Size = new System.Drawing.Size(61, 45);
@@ -251,7 +314,7 @@
             this.FoodsIconButton.ImageZoom = 35;
             this.FoodsIconButton.LabelPosition = 10;
             this.FoodsIconButton.LabelText = "";
-            this.FoodsIconButton.Location = new System.Drawing.Point(0, 142);
+            this.FoodsIconButton.Location = new System.Drawing.Point(0, 189);
             this.FoodsIconButton.Margin = new System.Windows.Forms.Padding(6);
             this.FoodsIconButton.Name = "FoodsIconButton";
             this.FoodsIconButton.Size = new System.Drawing.Size(61, 45);
@@ -271,7 +334,7 @@
             this.DashboradIconButton.ImageZoom = 35;
             this.DashboradIconButton.LabelPosition = 10;
             this.DashboradIconButton.LabelText = "";
-            this.DashboradIconButton.Location = new System.Drawing.Point(0, 64);
+            this.DashboradIconButton.Location = new System.Drawing.Point(0, 132);
             this.DashboradIconButton.Margin = new System.Windows.Forms.Padding(6);
             this.DashboradIconButton.Name = "DashboradIconButton";
             this.DashboradIconButton.Size = new System.Drawing.Size(61, 45);
@@ -316,6 +379,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 749);
+            this.Controls.Add(this.helpIconButton);
+            this.Controls.Add(this.settingIconButton);
+            this.Controls.Add(this.profileIcon);
             this.Controls.Add(this.logout);
             this.Controls.Add(this.TabelIconButton);
             this.Controls.Add(this.FoodsIconButton);
@@ -359,5 +425,8 @@
         private Bunifu.Framework.UI.BunifuTileButton FoodsIconButton;
         private Bunifu.Framework.UI.BunifuTileButton TabelIconButton;
         private Bunifu.Framework.UI.BunifuTileButton logout;
+        private Bunifu.Framework.UI.BunifuTileButton profileIcon;
+        private Bunifu.Framework.UI.BunifuTileButton settingIconButton;
+        private Bunifu.Framework.UI.BunifuTileButton helpIconButton;
     }
 }

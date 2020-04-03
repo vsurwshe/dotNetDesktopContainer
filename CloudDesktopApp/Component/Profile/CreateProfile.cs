@@ -7,19 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//-----------
+using MaterialSkin.Controls;
+using CloudDesktopApp.Helper;
 
 namespace CloudDesktopApp.Component.Profile
 {
-    public partial class ProfileManagement : Form
+    public partial class CreateProfile : MaterialForm
     {
-        public ProfileManagement()
+        public CreateProfile()
         {
             InitializeComponent();
-        }
-
-        private void profileCreate_Click(object sender, EventArgs e)
-        {
-            new CreateProfile().Show();
+            SkinClass.SetSkiner(this);
         }
     }
 }

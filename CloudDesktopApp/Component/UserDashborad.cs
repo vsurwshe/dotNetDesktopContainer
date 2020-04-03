@@ -152,6 +152,20 @@ namespace CloudDesktopApp.Component
             this.signOut();
         }
 
+        private void profileIcon_Click(object sender, EventArgs e)
+        {
+            this.profileLoad();
+        }
+
+        private void settingIconButton_Click(object sender, EventArgs e)
+        {
+            this.settingLoad();
+        }
+
+        private void helpIconButton_Click(object sender, EventArgs e)
+        {
+            this.helpLoad();
+        }
 
         //--------------  Private Method implemente
         private void materialContextStrip_ItemClicked(Object sender, ToolStripItemClickedEventArgs e)
@@ -201,8 +215,5 @@ namespace CloudDesktopApp.Component
                 CloudDesktopApp.Helper.UserMessage.ShowExceptions(msg.Message);
             }
         }
-
-       
-        
     }
 }

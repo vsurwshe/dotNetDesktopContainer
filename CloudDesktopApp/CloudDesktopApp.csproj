@@ -82,6 +82,18 @@
     <Compile Include="Component\Help\HelpForm.Designer.cs">
       <DependentUpon>HelpForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Component\Profile\CreateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\Profile\CreateProfile.Designer.cs">
+      <DependentUpon>CreateProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Profile\ProfileItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Profile\ProfileItems.Designer.cs">
+      <DependentUpon>ProfileItems.cs</DependentUpon>
+    </Compile>
     <Compile Include="Component\Profile\ProfileManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +139,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Component\Help\HelpForm.resx">
       <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Profile\CreateProfile.resx">
+      <DependentUpon>CreateProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Profile\ProfileItems.resx">
+      <DependentUpon>ProfileItems.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Component\Profile\ProfileManagement.resx">
       <DependentUpon>ProfileManagement.cs</DependentUpon>
@@ -184,6 +202,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shutdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profileMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profileIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

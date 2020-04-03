@@ -62,4 +62,22 @@ namespace CloudDesktopApp.ApiOperations
             return result;
         }
     }
+
+    // This method used for the 
+    class ProfileApiService
+    {
+        public string commonUrl;
+        public ProfileApiService()
+        {
+            this.commonUrl = "user/profile/";
+        }
+
+        // This method get the profile types 
+        public ProfileTypes getProfilesType()
+        {
+            ProfileTypes result = null;
+            Object resultApi = new CommonApiOperation().apiCall();
+            return result;
+        }
+    }
 }
