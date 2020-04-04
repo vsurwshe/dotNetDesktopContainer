@@ -88,7 +88,7 @@ namespace CloudDesktopApp.ApiOperations
         {
             List<ProfileModel> result = null;
             Object resultApi = new CommonApiOperation().apiCall(this.commonUrl + "getAll", "GET", null, true);
-            if (resultApi != null)
+            if (resultApi != null && !resultApi.Equals(CommonMessage.NOT_FOUND) )
             {
                 result = JsonConvert.DeserializeObject<List<ProfileModel>>(resultApi.ToString());
             }

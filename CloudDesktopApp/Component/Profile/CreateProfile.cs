@@ -79,7 +79,7 @@ namespace CloudDesktopApp.Component.Profile
             // This condtions checking username or password filed empty or null
             if (String.IsNullOrEmpty(ProfileName.Text))
             {
-                UserMessage.showWarningMessage(CommonMessage.LOGIN_USERPASS_VAILD);
+                UserMessage.showWarningMessage(CommonMessage.PROFILE_VALID_MESSAGE);
             }
             else
             {

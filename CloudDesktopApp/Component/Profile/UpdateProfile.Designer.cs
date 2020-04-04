@@ -48,7 +48,7 @@
             this.updateProfileButton.AutoSize = true;
             this.updateProfileButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.updateProfileButton.Depth = 0;
-            this.updateProfileButton.Location = new System.Drawing.Point(67, 259);
+            this.updateProfileButton.Location = new System.Drawing.Point(78, 258);
             this.updateProfileButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.updateProfileButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.updateProfileButton.Name = "updateProfileButton";

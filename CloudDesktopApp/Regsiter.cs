@@ -28,7 +28,7 @@ namespace CloudDesktopApp
             // This condtions checking username or password filed empty or null
             if (String.IsNullOrEmpty(name.Text) || String.IsNullOrEmpty(password.Text) || String.IsNullOrEmpty(email.Text))
             {
-                UserMessage.showWarningMessage(CommonMessage.LOGIN_USERPASS_VAILD);
+                UserMessage.showWarningMessage(CommonMessage.APP_USER_CREATION_WARN);
             }
             else
             {

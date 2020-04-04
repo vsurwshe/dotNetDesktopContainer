@@ -43,7 +43,7 @@
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Image = global::CloudDesktopApp.Properties.Resources.profile;
-            this.materialLabel1.Location = new System.Drawing.Point(121, 69);
+            this.materialLabel1.Location = new System.Drawing.Point(93, 68);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(108, 90);
@@ -60,7 +60,7 @@
             this.ProfileName.SelectedText = "";
             this.ProfileName.SelectionLength = 0;
             this.ProfileName.SelectionStart = 0;
-            this.ProfileName.Size = new System.Drawing.Size(327, 23);
+            this.ProfileName.Size = new System.Drawing.Size(282, 23);
             this.ProfileName.TabIndex = 2;
             this.ProfileName.UseSystemPasswordChar = false;
             // 
@@ -69,7 +69,7 @@
             this.CreateProfileButton.AutoSize = true;
             this.CreateProfileButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.CreateProfileButton.Depth = 0;
-            this.CreateProfileButton.Location = new System.Drawing.Point(113, 261);
+            this.CreateProfileButton.Location = new System.Drawing.Point(85, 261);
             this.CreateProfileButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.CreateProfileButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.CreateProfileButton.Name = "CreateProfileButton";
@@ -86,7 +86,7 @@
             this.ProfileTypesComboBox.FormattingEnabled = true;
             this.ProfileTypesComboBox.Location = new System.Drawing.Point(16, 192);
             this.ProfileTypesComboBox.Name = "ProfileTypesComboBox";
-            this.ProfileTypesComboBox.Size = new System.Drawing.Size(327, 27);
+            this.ProfileTypesComboBox.Size = new System.Drawing.Size(282, 27);
             this.ProfileTypesComboBox.TabIndex = 4;
             // 
             // infoProfileTabel
@@ -111,7 +111,7 @@
             // 
             this.progressBar.Location = new System.Drawing.Point(12, 306);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(331, 11);
+            this.progressBar.Size = new System.Drawing.Size(286, 12);
             this.progressBar.TabIndex = 15;
             this.progressBar.Visible = false;
             // 
@@ -119,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 504);
+            this.ClientSize = new System.Drawing.Size(316, 504);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.infoProfileTabel);
             this.Controls.Add(this.ProfileTypesComboBox);
@@ -129,7 +129,7 @@
             this.Name = "CreateProfile";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Create User Profile";
+            this.Text = "Create New User Profile";
             this.Load += new System.EventHandler(this.CreateProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.infoProfileTabel)).EndInit();
             this.ResumeLayout(false);

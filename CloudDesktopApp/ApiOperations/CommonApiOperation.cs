@@ -8,6 +8,7 @@ using System.Configuration;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using CloudDesktopApp.Helper;
 
 namespace CloudDesktopApp.ApiOperations
 {
@@ -55,18 +56,27 @@ namespace CloudDesktopApp.ApiOperations
 
         async public Task<HttpResponseMessage> getRequest(String userUrl, Boolean token)
         {
+            HttpResponseMessage response = null;
             if (token)
             {
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Properties.Settings.Default.userToken);
             }
-            HttpResponseMessage response = await client.GetAsync(userUrl).ConfigureAwait(false);
+            response = await client.GetAsync(userUrl).ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
                 return response;
             }
             else
             {
-                return null;
+                if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                {
+                    response.Content = new StringContent(CommonMessage.NOT_FOUND);
+                    return response;
+                }
+                else
+                {
+                    return null;
+                }
             }
         }
 

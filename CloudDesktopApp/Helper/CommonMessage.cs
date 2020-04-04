@@ -7,6 +7,9 @@ namespace CloudDesktopApp.Helper
 {
     class CommonMessage
     {
+        //---- Common string ---
+        public static String NOT_FOUND = "Not Found";
+        //----- User realted string message ---
         public static String LOGIN_USERPASS_WORNG = "You Provided Username and Password are Wrong !";
         public static String LOGIN_USERPASS_VAILD = "Please Enter Vaild Username or Password !";
         public static String SYS_500_ERROR = "500 Error";
@@ -16,7 +19,7 @@ namespace CloudDesktopApp.Helper
         public static String APP_USER_CREATION_WARN = "Plesae Provide Vaild Details";
         public static String EMAIL_SUBJECT = "User registered on "+DateTime.Now.ToShortDateString();
 
-        //----- Profile
+        //----- Profile related string
         public static String PROFILE_SUCCESS = "Your Profile Created Successfully";
         public static String PROFILE_VALID_MESSAGE = "Please enter valid data";
         public static String PROFILE_UPDATE_SUCCESS = "Your Profile Updated Successfully";
