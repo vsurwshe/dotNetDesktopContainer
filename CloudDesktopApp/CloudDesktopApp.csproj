@@ -90,6 +90,12 @@
     <Compile Include="Component\Profile\CreateProfile.Designer.cs">
       <DependentUpon>CreateProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Component\Profile\DeleteProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\Profile\DeleteProfile.Designer.cs">
+      <DependentUpon>DeleteProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Component\Profile\ProfileItems.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Component\Profile\CreateProfile.resx">
       <DependentUpon>CreateProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Profile\DeleteProfile.resx">
+      <DependentUpon>DeleteProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Component\Profile\ProfileItems.resx">
       <DependentUpon>ProfileItems.cs</DependentUpon>

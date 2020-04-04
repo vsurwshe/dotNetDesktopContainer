@@ -130,5 +130,21 @@ namespace CloudDesktopApp.ApiOperations
             }
             return result;
         }
+
+        // This method used for the update the profile
+        public String deleteProfile(ProfileModel profileModel)
+        {
+            String result = null;
+            Object resultApi = new CommonApiOperation().apiCall(this.commonUrl+profileModel.profileId,"DELETE",null,true);
+            if (resultApi != null)
+            {
+                result = resultApi.ToString();
+            }
+            else
+            {
+                throw new Exception(CommonMessage.PROFILE_DELETE_UNSUCCESS_MESSAGE);
+            }
+            return result;
+        }
     }
 }

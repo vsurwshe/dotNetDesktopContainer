@@ -35,7 +35,12 @@ namespace CloudDesktopApp.Component.Profile
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-
+            Form formExits = Application.OpenForms["DeleteProfile"];
+            if (formExits != null)
+            {
+                formExits.Close();
+            }
+            new DeleteProfile(this.tempProfile).Show(this);
         }
     }
 }

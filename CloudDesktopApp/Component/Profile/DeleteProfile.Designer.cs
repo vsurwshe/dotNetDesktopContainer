@@ -1,6 +1,6 @@
 ﻿namespace CloudDesktopApp.Component.Profile
 {
-    partial class UpdateProfile
+    partial class DeleteProfile
     {
         /// <summary>
         /// Required designer variable.
@@ -28,58 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.progressBar = new System.Windows.Forms.ProgressBar();
-            this.updateProfileButton = new MaterialSkin.Controls.MaterialFlatButton();
-            this.profileName = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.profileType = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.deleteProfileButton = new MaterialSkin.Controls.MaterialFlatButton();
+            this.profileName = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
-            // 
-            // progressBar
-            // 
-            this.progressBar.Location = new System.Drawing.Point(12, 304);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(251, 11);
-            this.progressBar.TabIndex = 19;
-            this.progressBar.Visible = false;
-            // 
-            // updateProfileButton
-            // 
-            this.updateProfileButton.AutoSize = true;
-            this.updateProfileButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.updateProfileButton.Depth = 0;
-            this.updateProfileButton.Location = new System.Drawing.Point(67, 259);
-            this.updateProfileButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.updateProfileButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.updateProfileButton.Name = "updateProfileButton";
-            this.updateProfileButton.Primary = true;
-            this.updateProfileButton.Size = new System.Drawing.Size(121, 36);
-            this.updateProfileButton.TabIndex = 18;
-            this.updateProfileButton.Text = "Update Profile";
-            this.updateProfileButton.UseVisualStyleBackColor = true;
-            this.updateProfileButton.Click += new System.EventHandler(this.updateProfileButton_Click);
-            // 
-            // profileName
-            // 
-            this.profileName.Depth = 0;
-            this.profileName.Hint = "Enter the profile name";
-            this.profileName.Location = new System.Drawing.Point(16, 227);
-            this.profileName.MouseState = MaterialSkin.MouseState.HOVER;
-            this.profileName.Name = "profileName";
-            this.profileName.PasswordChar = '\0';
-            this.profileName.SelectedText = "";
-            this.profileName.SelectionLength = 0;
-            this.profileName.SelectionStart = 0;
-            this.profileName.Size = new System.Drawing.Size(247, 23);
-            this.profileName.TabIndex = 17;
-            this.profileName.UseSystemPasswordChar = false;
             // 
             // profileType
             // 
             this.profileType.Depth = 0;
             this.profileType.Enabled = false;
             this.profileType.Hint = "Enter the profile Type";
-            this.profileType.Location = new System.Drawing.Point(16, 182);
+            this.profileType.Location = new System.Drawing.Point(30, 185);
             this.profileType.MouseState = MaterialSkin.MouseState.HOVER;
             this.profileType.Name = "profileType";
             this.profileType.PasswordChar = '\0';
@@ -87,8 +48,48 @@
             this.profileType.SelectionLength = 0;
             this.profileType.SelectionStart = 0;
             this.profileType.Size = new System.Drawing.Size(247, 23);
-            this.profileType.TabIndex = 20;
+            this.profileType.TabIndex = 25;
             this.profileType.UseSystemPasswordChar = false;
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(26, 307);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(251, 11);
+            this.progressBar.TabIndex = 24;
+            this.progressBar.Visible = false;
+            // 
+            // deleteProfileButton
+            // 
+            this.deleteProfileButton.AutoSize = true;
+            this.deleteProfileButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.deleteProfileButton.Depth = 0;
+            this.deleteProfileButton.Location = new System.Drawing.Point(85, 262);
+            this.deleteProfileButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.deleteProfileButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.deleteProfileButton.Name = "deleteProfileButton";
+            this.deleteProfileButton.Primary = true;
+            this.deleteProfileButton.Size = new System.Drawing.Size(117, 36);
+            this.deleteProfileButton.TabIndex = 23;
+            this.deleteProfileButton.Text = "Delete Profile";
+            this.deleteProfileButton.UseVisualStyleBackColor = true;
+            this.deleteProfileButton.Click += new System.EventHandler(this.deleteProfileButton_Click);
+            // 
+            // profileName
+            // 
+            this.profileName.Depth = 0;
+            this.profileName.Enabled = false;
+            this.profileName.Hint = "Enter the profile name";
+            this.profileName.Location = new System.Drawing.Point(30, 230);
+            this.profileName.MouseState = MaterialSkin.MouseState.HOVER;
+            this.profileName.Name = "profileName";
+            this.profileName.PasswordChar = '\0';
+            this.profileName.SelectedText = "";
+            this.profileName.SelectionLength = 0;
+            this.profileName.SelectionStart = 0;
+            this.profileName.Size = new System.Drawing.Size(247, 23);
+            this.profileName.TabIndex = 22;
+            this.profileName.UseSystemPasswordChar = false;
             // 
             // materialLabel1
             // 
@@ -96,26 +97,26 @@
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Image = global::CloudDesktopApp.Properties.Resources.profile;
-            this.materialLabel1.Location = new System.Drawing.Point(79, 69);
+            this.materialLabel1.Location = new System.Drawing.Point(94, 74);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(108, 90);
-            this.materialLabel1.TabIndex = 16;
+            this.materialLabel1.TabIndex = 21;
             // 
-            // UpdateProfile
+            // DeleteProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 344);
+            this.ClientSize = new System.Drawing.Size(302, 351);
             this.Controls.Add(this.profileType);
             this.Controls.Add(this.progressBar);
-            this.Controls.Add(this.updateProfileButton);
+            this.Controls.Add(this.deleteProfileButton);
             this.Controls.Add(this.profileName);
             this.Controls.Add(this.materialLabel1);
-            this.Name = "UpdateProfile";
+            this.Name = "DeleteProfile";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Update User Profile";
+            this.Text = "Delete User Profile";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,10 +124,10 @@
 
         #endregion
 
+        private MaterialSkin.Controls.MaterialSingleLineTextField profileType;
         private System.Windows.Forms.ProgressBar progressBar;
-        private MaterialSkin.Controls.MaterialFlatButton updateProfileButton;
+        private MaterialSkin.Controls.MaterialFlatButton deleteProfileButton;
         private MaterialSkin.Controls.MaterialSingleLineTextField profileName;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField profileType;
     }
 }
