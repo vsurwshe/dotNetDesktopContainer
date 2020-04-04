@@ -20,6 +20,7 @@ namespace CloudDesktopApp.Component.Profile
             InitializeComponent();
             tempProfile = profile;
             this.profileName.Text = profile.profileName;
+            this.profileType.Text = profile.type;
         }
     }
 }

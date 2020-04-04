@@ -84,13 +84,33 @@ namespace CloudDesktopApp.ApiOperations
             return result;
         }
 
+        public List<ProfileModel> loadProfiles()
+        {
+            List<ProfileModel> result = null;
+            Object resultApi = new CommonApiOperation().apiCall(this.commonUrl + "getAll", "GET", null, true);
+            if (resultApi != null)
+            {
+                result = JsonConvert.DeserializeObject<List<ProfileModel>>(resultApi.ToString());
+            }
+            else
+            {
+                throw new Exception(CommonMessage.PROFILE_NOT_FOUND);
+            }
+            return result;
+        }
+
         // This method used for the creating profile
         public ProfileModel createProfile(string userBodyData)
         {
             ProfileModel result = null;
             Object resultApi = new CommonApiOperation().apiCall(this.commonUrl + "saveProfile", "POST", userBodyData, true);
-            if(resultApi != null){
+            if (resultApi != null)
+            {
                 result = JsonConvert.DeserializeObject<ProfileModel>(resultApi.ToString());
+            }
+            else
+            {
+                throw new Exception(CommonMessage.PROFILE_NOT_SAVE);
             }
             return result;
         }

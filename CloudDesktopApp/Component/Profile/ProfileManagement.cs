@@ -23,6 +23,29 @@ namespace CloudDesktopApp.Component.Profile
         }
         private void ProfileManagement_Load(object sender, EventArgs e)
         {
+            this.loadProfiles();
+        }
+
+        public void loadProfiles()
+        {
+            try
+            {
+              List<ProfileModel> profiles= new ProfileApiService().loadProfiles();
+              if (profiles != null)
+              {
+                  profilePanel.Controls.Clear();
+                  UserProfileLable.Visible = true;
+                  profiles.ForEach(delegate(ProfileModel profile)
+                  {
+                      ProfileItems setProfile = new ProfileItems(profile);
+                      profilePanel.Controls.Add(setProfile);
+                  });
+              }
+            }
+            catch (Exception msg)
+            {
+                UserMessage.ShowExceptions(msg.Message);
+            }
         }
         
 
@@ -35,7 +58,5 @@ namespace CloudDesktopApp.Component.Profile
             }
             new CreateProfile().Show(this);
         }
-
-      
     }
 }

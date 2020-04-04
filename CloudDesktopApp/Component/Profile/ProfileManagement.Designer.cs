@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.UserProfileLable = new MaterialSkin.Controls.MaterialLabel();
+            this.profilePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.profileCreate = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
@@ -38,42 +38,46 @@
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(24, 20);
+            this.materialLabel1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.materialLabel1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.materialLabel1.ForeColor = System.Drawing.Color.Blue;
+            this.materialLabel1.Location = new System.Drawing.Point(12, 9);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(179, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(239, 24);
             this.materialLabel1.TabIndex = 0;
             this.materialLabel1.Text = "User Profile Management";
             // 
-            // materialLabel2
+            // UserProfileLable
             // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(177, 67);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(152, 19);
-            this.materialLabel2.TabIndex = 1;
-            this.materialLabel2.Text = "Your Created Profiles";
+            this.UserProfileLable.Depth = 0;
+            this.UserProfileLable.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.UserProfileLable.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UserProfileLable.ForeColor = System.Drawing.Color.Red;
+            this.UserProfileLable.Location = new System.Drawing.Point(252, 68);
+            this.UserProfileLable.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UserProfileLable.Name = "UserProfileLable";
+            this.UserProfileLable.Size = new System.Drawing.Size(152, 19);
+            this.UserProfileLable.TabIndex = 1;
+            this.UserProfileLable.Text = "Your Created Profiles";
+            this.UserProfileLable.Visible = false;
             // 
-            // flowLayoutPanel1
+            // profilePanel
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(181, 90);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(950, 487);
-            this.flowLayoutPanel1.TabIndex = 2;
+            this.profilePanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.profilePanel.Location = new System.Drawing.Point(247, 90);
+            this.profilePanel.Name = "profilePanel";
+            this.profilePanel.Size = new System.Drawing.Size(1002, 550);
+            this.profilePanel.TabIndex = 2;
             // 
             // profileCreate
             // 
+            this.profileCreate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.profileCreate.Depth = 0;
             this.profileCreate.Font = new System.Drawing.Font("Roboto", 11F);
             this.profileCreate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.profileCreate.Image = global::CloudDesktopApp.Properties.Resources.profile;
-            this.profileCreate.Location = new System.Drawing.Point(12, 90);
+            this.profileCreate.Location = new System.Drawing.Point(12, 68);
             this.profileCreate.MouseState = MaterialSkin.MouseState.HOVER;
             this.profileCreate.Name = "profileCreate";
             this.profileCreate.Size = new System.Drawing.Size(119, 121);
@@ -86,10 +90,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1161, 589);
+            this.ClientSize = new System.Drawing.Size(1283, 636);
             this.Controls.Add(this.profileCreate);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.materialLabel2);
+            this.Controls.Add(this.profilePanel);
+            this.Controls.Add(this.UserProfileLable);
             this.Controls.Add(this.materialLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ProfileManagement";
@@ -103,8 +107,8 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private MaterialSkin.Controls.MaterialLabel UserProfileLable;
+        private System.Windows.Forms.FlowLayoutPanel profilePanel;
         private MaterialSkin.Controls.MaterialLabel profileCreate;
     }
 }
