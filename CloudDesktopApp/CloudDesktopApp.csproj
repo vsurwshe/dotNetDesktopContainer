@@ -102,6 +102,12 @@
     <Compile Include="Component\Profile\ProfileManagement.Designer.cs">
       <DependentUpon>ProfileManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Component\Profile\UpdateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\Profile\UpdateProfile.Designer.cs">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Component\Setting\UserSetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Component\Profile\ProfileManagement.resx">
       <DependentUpon>ProfileManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Profile\UpdateProfile.resx">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Component\Setting\UserSetting.resx">
       <DependentUpon>UserSetting.cs</DependentUpon>

@@ -22,5 +22,20 @@ namespace CloudDesktopApp.Component.Profile
             this.profileName.Text = profile.profileName;
             this.profileType.Text = profile.type;
         }
+
+        private void EditButton_Click(object sender, EventArgs e)
+        {
+            Form formExits = Application.OpenForms["UpdateProfile"];
+            if (formExits != null)
+            {
+                formExits.Close();
+            }
+            new UpdateProfile(this.tempProfile).Show(this);
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

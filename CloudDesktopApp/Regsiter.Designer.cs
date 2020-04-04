@@ -168,6 +168,7 @@
             this.Controls.Add(this.SignUp);
             this.Controls.Add(this.name);
             this.Name = "Regsiter";
+            this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Regsiter User";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

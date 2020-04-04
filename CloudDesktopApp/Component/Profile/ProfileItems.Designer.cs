@@ -53,6 +53,7 @@
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(50, 45);
             this.DeleteButton.TabIndex = 29;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // EditButton
             // 
@@ -72,6 +73,7 @@
             this.EditButton.Name = "EditButton";
             this.EditButton.Size = new System.Drawing.Size(50, 45);
             this.EditButton.TabIndex = 28;
+            this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
             // 
             // materialLabel1
             // 
@@ -103,7 +105,7 @@
             // profileType
             // 
             this.profileType.Depth = 0;
-            this.profileType.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.profileType.Font = new System.Drawing.Font("Roboto", 11F);
             this.profileType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.profileType.Location = new System.Drawing.Point(3, 104);
             this.profileType.MouseState = MaterialSkin.MouseState.HOVER;

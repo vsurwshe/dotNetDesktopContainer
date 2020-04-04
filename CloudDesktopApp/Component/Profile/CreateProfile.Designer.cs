@@ -127,6 +127,7 @@
             this.Controls.Add(this.ProfileName);
             this.Controls.Add(this.materialLabel1);
             this.Name = "CreateProfile";
+            this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create User Profile";
             this.Load += new System.EventHandler(this.CreateProfile_Load);

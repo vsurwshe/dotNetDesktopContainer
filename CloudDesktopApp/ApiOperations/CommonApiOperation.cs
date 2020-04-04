@@ -39,9 +39,14 @@ namespace CloudDesktopApp.ApiOperations
                 {
                     if (userMethod == "PUT")
                     {
+                        result = this.putRequest(CommonUrl + url, userBody, token).Result.Content.ReadAsStringAsync().Result.ToString();
                     }
                     else
                     {
+                        if (userMethod == "DELETE")
+                        {
+                            result = this.deleteRequest(CommonUrl + url, token).Result.Content.ReadAsStringAsync().Result.ToString();
+                        }    
                     }
                 }
             }
@@ -63,11 +68,6 @@ namespace CloudDesktopApp.ApiOperations
             {
                 return null;
             }
-            //using(HttpClient client=new HttpClient()){
-            //    using(HttpResponseMessage response=await client.GetAsync(userUrl).ConfigureAwait(false)){
-            //        return response;
-            //    }
-            //}
         }
 
         async public Task<HttpResponseMessage> postRequest(String userUrl, Object modelName, Boolean token)
@@ -86,5 +86,39 @@ namespace CloudDesktopApp.ApiOperations
               return null;
           }
         }
+
+        async public Task<HttpResponseMessage> putRequest(String userUrl, Object modelName, Boolean token)
+        {
+            if (token)
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Properties.Settings.Default.userToken);
+            }
+            HttpResponseMessage response = await client.PutAsync(userUrl, new StringContent(modelName.ToString(), Encoding.UTF8, "application/json")).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode)
+            {
+                return response;
+            }
+            else
+            {
+                return null;
+            }
+        }
+        async public Task<HttpResponseMessage> deleteRequest(String userUrl,Boolean token)
+        {
+            if (token)
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Properties.Settings.Default.userToken);
+            }
+            HttpResponseMessage response = await client.DeleteAsync(userUrl).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode)
+            {
+                return response;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
     }
 }

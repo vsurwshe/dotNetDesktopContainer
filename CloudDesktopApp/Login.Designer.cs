@@ -168,6 +168,8 @@
             this.Controls.Add(this.username);
             this.Name = "Login";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cloud Desktop App";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

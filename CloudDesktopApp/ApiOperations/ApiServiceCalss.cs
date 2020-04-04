@@ -114,5 +114,21 @@ namespace CloudDesktopApp.ApiOperations
             }
             return result;
         }
+
+        // This method used for the update the profile
+        public ProfileModel updateProfile(ProfileModel userProfile,string userBodyData)
+        {
+            ProfileModel result = null;
+            Object resultApi = new CommonApiOperation().apiCall(this.commonUrl+userProfile.profileId+"/updateProfile","PUT",userBodyData,true);
+            if (resultApi != null)
+            {
+                result = JsonConvert.DeserializeObject<ProfileModel>(resultApi.ToString());
+            }
+            else
+            {
+                throw new Exception(CommonMessage.PROFILE_UPDATE_UNSUCCESS);
+            }
+            return result;
+        }
     }
 }
