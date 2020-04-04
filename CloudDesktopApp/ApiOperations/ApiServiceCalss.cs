@@ -73,10 +73,25 @@ namespace CloudDesktopApp.ApiOperations
         }
 
         // This method get the profile types 
-        public ProfileTypes getProfilesType()
+        public List<ProfileTypes> getProfilesType()
         {
-            ProfileTypes result = null;
-            Object resultApi = new CommonApiOperation().apiCall();
+            List<ProfileTypes> result = null;
+            Object resultApi = new CommonApiOperation().apiCall(this.commonUrl + "types", "GET", null, true);
+            if(resultApi != null)
+            {
+                result = JsonConvert.DeserializeObject<List<ProfileTypes>>(resultApi.ToString());
+            }
+            return result;
+        }
+
+        // This method used for the creating profile
+        public ProfileModel createProfile(string userBodyData)
+        {
+            ProfileModel result = null;
+            Object resultApi = new CommonApiOperation().apiCall(this.commonUrl + "saveProfile", "POST", userBodyData, true);
+            if(resultApi != null){
+                result = JsonConvert.DeserializeObject<ProfileModel>(resultApi.ToString());
+            }
             return result;
         }
     }

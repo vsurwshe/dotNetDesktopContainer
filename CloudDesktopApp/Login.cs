@@ -47,6 +47,7 @@ namespace CloudDesktopApp
                     loginButton.Enabled = false;
                     progressBar.Style = ProgressBarStyle.Marquee;
                     bgWorker.DoWork += new DoWorkEventHandler(bgWorker_DoWork);
+                    bgWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(bgWorker_RunWorkerCompleted);
                     bgWorker.RunWorkerAsync();
                 }
             }

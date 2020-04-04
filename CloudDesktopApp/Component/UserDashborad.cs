@@ -115,7 +115,7 @@ namespace CloudDesktopApp.Component
             }
         }
 
-        private void profileLoad()
+        public void profileLoad()
         {
             try
             {

@@ -7,6 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//----------------
+using CloudDesktopApp.Helper;
+using CloudDesktopApp.ApiOperations;
+
+
 
 namespace CloudDesktopApp.Component.Profile
 {
@@ -16,10 +21,21 @@ namespace CloudDesktopApp.Component.Profile
         {
             InitializeComponent();
         }
+        private void ProfileManagement_Load(object sender, EventArgs e)
+        {
+        }
+        
 
         private void profileCreate_Click(object sender, EventArgs e)
         {
-            new CreateProfile().Show();
+            Form formExits = Application.OpenForms["CreateProfile"];
+            if (formExits != null)
+            {
+                formExits.Close();
+            }
+            new CreateProfile().Show(this);
         }
+
+      
     }
 }

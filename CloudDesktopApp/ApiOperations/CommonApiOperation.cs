@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Configuration;
 using Newtonsoft.Json;
 using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace CloudDesktopApp.ApiOperations
 {
@@ -49,15 +50,32 @@ namespace CloudDesktopApp.ApiOperations
 
         async public Task<HttpResponseMessage> getRequest(String userUrl, Boolean token)
         {
-            using(HttpClient client=new HttpClient()){
-                using(HttpResponseMessage response=await client.GetAsync(userUrl).ConfigureAwait(false)){
-                    return response;
-                }
+            if (token)
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Properties.Settings.Default.userToken);
             }
+            HttpResponseMessage response = await client.GetAsync(userUrl).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode)
+            {
+                return response;
+            }
+            else
+            {
+                return null;
+            }
+            //using(HttpClient client=new HttpClient()){
+            //    using(HttpResponseMessage response=await client.GetAsync(userUrl).ConfigureAwait(false)){
+            //        return response;
+            //    }
+            //}
         }
 
         async public Task<HttpResponseMessage> postRequest(String userUrl, Object modelName, Boolean token)
         {
+            if (token)
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Properties.Settings.Default.userToken);
+            }
           HttpResponseMessage response= await client.PostAsync(userUrl, new StringContent(modelName.ToString(),Encoding.UTF8,"application/json")).ConfigureAwait(false);
           if (response.IsSuccessStatusCode)
           {

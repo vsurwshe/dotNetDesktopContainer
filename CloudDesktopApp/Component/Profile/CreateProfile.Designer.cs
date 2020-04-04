@@ -29,36 +29,25 @@
         private void InitializeComponent()
         {
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.ProfileName = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.ProfileTypes = new System.Windows.Forms.ComboBox();
+            this.CreateProfileButton = new MaterialSkin.Controls.MaterialFlatButton();
+            this.ProfileTypesComboBox = new System.Windows.Forms.ComboBox();
+            this.infoProfileTabel = new System.Windows.Forms.DataGridView();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            ((System.ComponentModel.ISupportInitialize)(this.infoProfileTabel)).BeginInit();
             this.SuspendLayout();
             // 
             // materialLabel1
             // 
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.Transparent;
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Image = global::CloudDesktopApp.Properties.Resources.profile;
-            this.materialLabel1.Location = new System.Drawing.Point(121, 77);
+            this.materialLabel1.Location = new System.Drawing.Point(121, 69);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(108, 90);
             this.materialLabel1.TabIndex = 0;
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(12, 192);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(164, 19);
-            this.materialLabel2.TabIndex = 1;
-            this.materialLabel2.Text = "Select the Profile types";
             // 
             // ProfileName
             // 
@@ -71,46 +60,77 @@
             this.ProfileName.SelectedText = "";
             this.ProfileName.SelectionLength = 0;
             this.ProfileName.SelectionStart = 0;
-            this.ProfileName.Size = new System.Drawing.Size(309, 23);
+            this.ProfileName.Size = new System.Drawing.Size(327, 23);
             this.ProfileName.TabIndex = 2;
             this.ProfileName.UseSystemPasswordChar = false;
             // 
-            // materialFlatButton1
+            // CreateProfileButton
             // 
-            this.materialFlatButton1.AutoSize = true;
-            this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.Location = new System.Drawing.Point(107, 278);
-            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton1.Name = "materialFlatButton1";
-            this.materialFlatButton1.Primary = true;
-            this.materialFlatButton1.Size = new System.Drawing.Size(132, 36);
-            this.materialFlatButton1.TabIndex = 3;
-            this.materialFlatButton1.Text = "Create a Profile";
-            this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.CreateProfileButton.AutoSize = true;
+            this.CreateProfileButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.CreateProfileButton.Depth = 0;
+            this.CreateProfileButton.Location = new System.Drawing.Point(113, 261);
+            this.CreateProfileButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.CreateProfileButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.CreateProfileButton.Name = "CreateProfileButton";
+            this.CreateProfileButton.Primary = true;
+            this.CreateProfileButton.Size = new System.Drawing.Size(132, 36);
+            this.CreateProfileButton.TabIndex = 3;
+            this.CreateProfileButton.Text = "Create a Profile";
+            this.CreateProfileButton.UseVisualStyleBackColor = true;
+            this.CreateProfileButton.Click += new System.EventHandler(this.CreateProfileButton_Click);
             // 
-            // ProfileTypes
+            // ProfileTypesComboBox
             // 
-            this.ProfileTypes.FormattingEnabled = true;
-            this.ProfileTypes.Location = new System.Drawing.Point(182, 192);
-            this.ProfileTypes.Name = "ProfileTypes";
-            this.ProfileTypes.Size = new System.Drawing.Size(143, 21);
-            this.ProfileTypes.TabIndex = 4;
+            this.ProfileTypesComboBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ProfileTypesComboBox.FormattingEnabled = true;
+            this.ProfileTypesComboBox.Location = new System.Drawing.Point(16, 192);
+            this.ProfileTypesComboBox.Name = "ProfileTypesComboBox";
+            this.ProfileTypesComboBox.Size = new System.Drawing.Size(327, 27);
+            this.ProfileTypesComboBox.TabIndex = 4;
+            // 
+            // infoProfileTabel
+            // 
+            this.infoProfileTabel.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.infoProfileTabel.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.infoProfileTabel.BackgroundColor = System.Drawing.Color.White;
+            this.infoProfileTabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.infoProfileTabel.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            this.infoProfileTabel.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.infoProfileTabel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.infoProfileTabel.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.infoProfileTabel.Enabled = false;
+            this.infoProfileTabel.Location = new System.Drawing.Point(1, 340);
+            this.infoProfileTabel.Name = "infoProfileTabel";
+            this.infoProfileTabel.RowHeadersVisible = false;
+            this.infoProfileTabel.Size = new System.Drawing.Size(358, 152);
+            this.infoProfileTabel.TabIndex = 6;
+            this.infoProfileTabel.Visible = false;
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(12, 306);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(331, 11);
+            this.progressBar.TabIndex = 15;
+            this.progressBar.Visible = false;
             // 
             // CreateProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 467);
-            this.Controls.Add(this.ProfileTypes);
-            this.Controls.Add(this.materialFlatButton1);
+            this.ClientSize = new System.Drawing.Size(361, 504);
+            this.Controls.Add(this.progressBar);
+            this.Controls.Add(this.infoProfileTabel);
+            this.Controls.Add(this.ProfileTypesComboBox);
+            this.Controls.Add(this.CreateProfileButton);
             this.Controls.Add(this.ProfileName);
-            this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialLabel1);
             this.Name = "CreateProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create User Profile";
+            this.Load += new System.EventHandler(this.CreateProfile_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.infoProfileTabel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,9 +139,10 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialSingleLineTextField ProfileName;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
-        private System.Windows.Forms.ComboBox ProfileTypes;
+        private MaterialSkin.Controls.MaterialFlatButton CreateProfileButton;
+        private System.Windows.Forms.ComboBox ProfileTypesComboBox;
+        private System.Windows.Forms.DataGridView infoProfileTabel;
+        private System.Windows.Forms.ProgressBar progressBar;
     }
 }
