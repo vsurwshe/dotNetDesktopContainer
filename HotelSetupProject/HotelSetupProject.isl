@@ -52,7 +52,7 @@
 	<summary>
 		<codepage>1252</codepage>
 		<title>Installation Database</title>
-		<subject>Cloud Hotel Desktop App </subject>
+		<subject>CloudHotelDesktopApp </subject>
 		<author>##ID_STRING3##</author>
 		<keywords>Installer,MSI,Database</keywords>
 		<comments>Contact:  Your local administrator</comments>
@@ -265,6 +265,7 @@
 		<row><td>NewBinary16</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\InstallFirstUse.ico</td></row>
 		<row><td>NewBinary17</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\InstallPartial.ico</td></row>
 		<row><td>NewBinary18</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\InstallStateMenu.ico</td></row>
+		<row><td>NewBinary19</td><td/><td>&lt;ISProductFolder&gt;\redist\Language independent\i386\SerialNumCAHelper.dll</td></row>
 		<row><td>NewBinary2</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\New.ibd</td></row>
 		<row><td>NewBinary3</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\Up.ibd</td></row>
 		<row><td>NewBinary4</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\WarningIcon.ibd</td></row>
@@ -342,12 +343,12 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>Bunifu_UI_v1.52.dll</td><td>{DCA47C92-FDBE-42F2-8DE9-032BB7C3B8CC}</td><td>INSTALLDIR</td><td>2</td><td/><td>bunifu_ui_v1.52.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>HotelDashboard.exe</td><td>{F2B8B038-B378-4B4B-BD1B-D9AA2CA17052}</td><td>INSTALLDIR</td><td>2</td><td/><td>hoteldashboard.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>HotelDashboard.vshost.exe</td><td>{41BDED1D-61B4-471A-BF7D-9F645716D093}</td><td>INSTALLDIR</td><td>2</td><td/><td>hoteldashboard.vshost.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Bunifu_UI_v1.52.dll</td><td>{271F7627-AD94-4B28-82B4-2DF337DD8D0F}</td><td>INSTALLDIR</td><td>2</td><td/><td>bunifu_ui_v1.52.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>CloudDesktopApp.exe</td><td>{7D83FB90-27C6-46BA-8DB6-B3D50F99E248}</td><td>INSTALLDIR</td><td>2</td><td/><td>clouddesktopapp.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>CloudDesktopApp.vshost.exe</td><td>{BC2C393D-DE30-4CB6-A7FE-AC96147B39B3}</td><td>INSTALLDIR</td><td>2</td><td/><td>clouddesktopapp.vshost.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{438D3A17-35D0-45C8-B26A-39E8D15DBD73}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Newtonsoft.Json.dll</td><td>{4CF06CBD-E1DF-43C9-AAD5-8A8BBF66DF16}</td><td>INSTALLDIR</td><td>2</td><td/><td>newtonsoft.json.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>WindowsApplication.exe</td><td>{25F61AE0-45BA-4648-9BBD-55AB3E08701E}</td><td>INSTALLDIR</td><td>2</td><td/><td>windowsapplication.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>MaterialSkin.dll</td><td>{671DE35F-C0C8-4E18-B62B-20082B4420D4}</td><td>INSTALLDIR</td><td>2</td><td/><td>materialskin.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Newtonsoft.Json.dll</td><td>{FAD15140-B011-4F04-8A83-3F05871EB15E}</td><td>INSTALLDIR</td><td>2</td><td/><td>newtonsoft.json.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1017,8 +1018,9 @@
 		<row><td>SetupCompleteError</td><td>Finish</td><td>DoAction</td><td>ShowMsiLog</td><td>MsiLogFileLocation And (ISSHOWMSILOG="1")</td><td>3</td></row>
 		<row><td>SetupCompleteError</td><td>Finish</td><td>EndDialog</td><td>Exit</td><td>1</td><td>2</td></row>
 		<row><td>SetupCompleteSuccess</td><td>OK</td><td>DoAction</td><td>CleanUp</td><td>ISSCRIPTRUNNING="1"</td><td>1</td></row>
-		<row><td>SetupCompleteSuccess</td><td>OK</td><td>DoAction</td><td>ShowMsiLog</td><td>MsiLogFileLocation And (ISSHOWMSILOG="1") And NOT ISENABLEDWUSFINISHDIALOG</td><td>6</td></row>
-		<row><td>SetupCompleteSuccess</td><td>OK</td><td>EndDialog</td><td>Exit</td><td>1</td><td>2</td></row>
+		<row><td>SetupCompleteSuccess</td><td>OK</td><td>DoAction</td><td>LaunchProgramFileFromSetupCompleteSuccess</td><td>LAUNCHPROGRAM And PROGRAMFILETOLAUNCHATEND &lt;&gt; "" And NOT Installed</td><td>2</td></row>
+		<row><td>SetupCompleteSuccess</td><td>OK</td><td>DoAction</td><td>ShowMsiLog</td><td>MsiLogFileLocation And (ISSHOWMSILOG="1") And NOT ISENABLEDWUSFINISHDIALOG</td><td>7</td></row>
+		<row><td>SetupCompleteSuccess</td><td>OK</td><td>EndDialog</td><td>Exit</td><td>1</td><td>3</td></row>
 		<row><td>SetupError</td><td>A</td><td>EndDialog</td><td>ErrorAbort</td><td>1</td><td>0</td></row>
 		<row><td>SetupError</td><td>C</td><td>EndDialog</td><td>ErrorCancel</td><td>1</td><td>0</td></row>
 		<row><td>SetupError</td><td>I</td><td>EndDialog</td><td>ErrorIgnore</td><td>1</td><td>0</td></row>
@@ -1057,11 +1059,11 @@
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>INSTALLDIR</td><td>Bunifu_UI_v1.52.dll</td></row>
-		<row><td>INSTALLDIR</td><td>HotelDashboard.exe</td></row>
-		<row><td>INSTALLDIR</td><td>HotelDashboard.vshost.exe</td></row>
+		<row><td>INSTALLDIR</td><td>CloudDesktopApp.exe</td></row>
+		<row><td>INSTALLDIR</td><td>CloudDesktopApp.vshost.exe</td></row>
 		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT</td></row>
+		<row><td>INSTALLDIR</td><td>MaterialSkin.dll</td></row>
 		<row><td>INSTALLDIR</td><td>Newtonsoft.Json.dll</td></row>
-		<row><td>INSTALLDIR</td><td>WindowsApplication.exe</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1078,6 +1080,7 @@
 		<row><td>ISSelfRegisterFiles</td><td>3073</td><td>ISSELFREG.DLL</td><td>ISSelfRegisterFiles</td><td/><td/></row>
 		<row><td>ISSelfRegisterFinalize</td><td>1</td><td>ISSELFREG.DLL</td><td>ISSelfRegisterFinalize</td><td/><td/></row>
 		<row><td>ISUnSelfRegisterFiles</td><td>3073</td><td>ISSELFREG.DLL</td><td>ISUnSelfRegisterFiles</td><td/><td/></row>
+		<row><td>LaunchProgramFileFromSetupCompleteSuccess</td><td>1</td><td>NewBinary19</td><td>LaunchProgram</td><td/><td/></row>
 		<row><td>SetARPINSTALLLOCATION</td><td>51</td><td>ARPINSTALLLOCATION</td><td>[INSTALLDIR]</td><td/><td/></row>
 		<row><td>SetAllUsersProfileNT</td><td>51</td><td>ALLUSERSPROFILE</td><td>[%SystemRoot]\Profiles\All Users</td><td/><td/></row>
 		<row><td>ShowMsiLog</td><td>226</td><td>SystemFolder</td><td>[SystemFolder]notepad.exe "[MsiLogFileLocation]"</td><td/><td>Shows Property-driven MSI Log</td></row>
@@ -1143,6 +1146,7 @@
 		<row><td>ALLUSERSPROFILE</td><td>TARGETDIR</td><td>.:ALLUSE~1|All Users</td><td/><td>0</td><td/></row>
 		<row><td>AdminToolsFolder</td><td>TARGETDIR</td><td>.:Admint~1|AdminTools</td><td/><td>0</td><td/></row>
 		<row><td>AppDataFolder</td><td>TARGETDIR</td><td>.:APPLIC~1|Application Data</td><td/><td>0</td><td/></row>
+		<row><td>CLOUDHOTELDESKTOPAPP_</td><td>V___Y_SOFT._TECH._PVT._LTD.</td><td>CLOUDH~1|CloudHotelDesktopApp </td><td/><td>0</td><td/></row>
 		<row><td>CLOUD_HOTEL_DESKTOP_APP_</td><td>V___Y_SOFT._TECH._PVT._LTD.</td><td>CLOUDH~1|Cloud Hotel Desktop App </td><td/><td>0</td><td/></row>
 		<row><td>CommonAppDataFolder</td><td>TARGETDIR</td><td>.:Common~1|CommonAppData</td><td/><td>0</td><td/></row>
 		<row><td>CommonFiles64Folder</td><td>TARGETDIR</td><td>.:Common64</td><td/><td>0</td><td/></row>
@@ -1152,7 +1156,7 @@
 		<row><td>FavoritesFolder</td><td>TARGETDIR</td><td>.:FAVORI~1|Favorites</td><td/><td>0</td><td/></row>
 		<row><td>FontsFolder</td><td>TARGETDIR</td><td>.:Fonts</td><td/><td>0</td><td/></row>
 		<row><td>GlobalAssemblyCache</td><td>TARGETDIR</td><td>.:Global~1|GlobalAssemblyCache</td><td/><td>0</td><td/></row>
-		<row><td>INSTALLDIR</td><td>CLOUD_HOTEL_DESKTOP_APP_</td><td>.</td><td/><td>0</td><td/></row>
+		<row><td>INSTALLDIR</td><td>CLOUDHOTELDESKTOPAPP_</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>ISCommonFilesFolder</td><td>CommonFilesFolder</td><td>Instal~1|InstallShield</td><td/><td>0</td><td/></row>
 		<row><td>ISMyCompanyDir</td><td>ProgramFilesFolder</td><td>MYCOMP~1|My Company Name</td><td/><td>0</td><td/></row>
 		<row><td>ISMyProductDir</td><td>ISMyCompanyDir</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
@@ -1182,6 +1186,7 @@
 		<row><td>WindowsFolder</td><td>TARGETDIR</td><td>.:Windows</td><td/><td>0</td><td/></row>
 		<row><td>WindowsVolume</td><td>TARGETDIR</td><td>.:WinRoot</td><td/><td>0</td><td/></row>
 		<row><td>cloudh_1_cloud_hotel_desktop_app_</td><td>v_ysof_1.ltd_v___y_soft._tech._pvt._ltd.</td><td>CLOUDH~1|Cloud Hotel Desktop App </td><td/><td>1</td><td/></row>
+		<row><td>cloudh_1_cloudhoteldesktopapp_</td><td>v_ysof_1.ltd_v___y_soft._tech._pvt._ltd.</td><td>CLOUDH~1|CloudHotelDesktopApp </td><td/><td>1</td><td/></row>
 		<row><td>v_ysof_1.ltd_v___y_soft._tech._pvt._ltd.</td><td>ProgramMenuFolder</td><td>V&amp;YSOF~1.LTD|V &amp; Y Soft. Tech. Pvt. Ltd.</td><td/><td>1</td><td/></row>
 	</table>
 
@@ -1875,11 +1880,11 @@
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>AlwaysInstall</td><td>Bunifu_UI_v1.52.dll</td></row>
-		<row><td>AlwaysInstall</td><td>HotelDashboard.exe</td></row>
-		<row><td>AlwaysInstall</td><td>HotelDashboard.vshost.exe</td></row>
+		<row><td>AlwaysInstall</td><td>CloudDesktopApp.exe</td></row>
+		<row><td>AlwaysInstall</td><td>CloudDesktopApp.vshost.exe</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
+		<row><td>AlwaysInstall</td><td>MaterialSkin.dll</td></row>
 		<row><td>AlwaysInstall</td><td>Newtonsoft.Json.dll</td></row>
-		<row><td>AlwaysInstall</td><td>WindowsApplication.exe</td></row>
 	</table>
 
 	<table name="File">
@@ -1894,20 +1899,16 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>bunifu_ui_v1.52.dll</td><td>Bunifu_UI_v1.52.dll</td><td>BUNIFU~1.DLL|Bunifu_UI_v1.52.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\@vishva\@MyCode\dotNetDesktopContainer\HotelProjectDesktopApp\bin\Debug\Bunifu_UI_v1.52.dll</td><td>1</td><td/></row>
-		<row><td>hoteldashboard.exe</td><td>HotelDashboard.exe</td><td>HOTELD~1.EXE|HotelDashboard.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\@vishva\@MyCode\dotNetDesktopContainer\HotelProjectDesktopApp\bin\Debug\HotelDashboard.exe</td><td>1</td><td/></row>
-		<row><td>hoteldashboard.exe.config</td><td>ISX_DEFAULTCOMPONENT</td><td>HOTELD~1.CON|HotelDashboard.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>C:\@vishva\@MyCode\dotNetDesktopContainer\HotelProjectDesktopApp\bin\Debug\HotelDashboard.exe.config</td><td>1</td><td/></row>
-		<row><td>hoteldashboard.pdb</td><td>ISX_DEFAULTCOMPONENT</td><td>HOTELD~1.PDB|HotelDashboard.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\@vishva\@MyCode\dotNetDesktopContainer\HotelProjectDesktopApp\bin\Debug\HotelDashboard.pdb</td><td>1</td><td/></row>
-		<row><td>hoteldashboard.vshost.exe</td><td>HotelDashboard.vshost.exe</td><td>HOTELD~1.EXE|HotelDashboard.vshost.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\@vishva\@MyCode\dotNetDesktopContainer\HotelProjectDesktopApp\bin\Debug\HotelDashboard.vshost.exe</td><td>1</td><td/></row>
-		<row><td>hoteldashboard.vshost.exe.co</td><td>ISX_DEFAULTCOMPONENT</td><td>HOTELD~1.CON|HotelDashboard.vshost.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>C:\@vishva\@MyCode\dotNetDesktopContainer\HotelProjectDesktopApp\bin\Debug\HotelDashboard.vshost.exe.config</td><td>1</td><td/></row>
-		<row><td>hoteldashboard.vshost.exe.ma</td><td>ISX_DEFAULTCOMPONENT</td><td>HOTELD~1.MAN|HotelDashboard.vshost.exe.manifest</td><td>0</td><td/><td/><td/><td>1</td><td>C:\@vishva\@MyCode\dotNetDesktopContainer\HotelProjectDesktopApp\bin\Debug\HotelDashboard.vshost.exe.manifest</td><td>1</td><td/></row>
-		<row><td>newtonsoft.json.dll</td><td>Newtonsoft.Json.dll</td><td>NEWTON~1.DLL|Newtonsoft.Json.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\@vishva\@MyCode\dotNetDesktopContainer\HotelProjectDesktopApp\bin\Debug\Newtonsoft.Json.dll</td><td>1</td><td/></row>
-		<row><td>newtonsoft.json.xml</td><td>ISX_DEFAULTCOMPONENT</td><td>NEWTON~1.XML|Newtonsoft.Json.xml</td><td>0</td><td/><td/><td/><td>1</td><td>C:\@vishva\@MyCode\dotNetDesktopContainer\HotelProjectDesktopApp\bin\Debug\Newtonsoft.Json.xml</td><td>1</td><td/></row>
-		<row><td>windowsapplication.exe</td><td>WindowsApplication.exe</td><td>WINDOW~1.EXE|WindowsApplication.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\@vishva\@MyCode\dotNetDesktopContainer\HotelProjectDesktopApp\bin\Debug\WindowsApplication.exe</td><td>1</td><td/></row>
-		<row><td>windowsapplication.exe.confi</td><td>ISX_DEFAULTCOMPONENT</td><td>WINDOW~1.CON|WindowsApplication.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>C:\@vishva\@MyCode\dotNetDesktopContainer\HotelProjectDesktopApp\bin\Debug\WindowsApplication.exe.config</td><td>1</td><td/></row>
-		<row><td>windowsapplication.pdb</td><td>ISX_DEFAULTCOMPONENT</td><td>WINDOW~1.PDB|WindowsApplication.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\@vishva\@MyCode\dotNetDesktopContainer\HotelProjectDesktopApp\bin\Debug\WindowsApplication.pdb</td><td>1</td><td/></row>
-		<row><td>windowsapplication.vshost.ex</td><td>ISX_DEFAULTCOMPONENT</td><td>WINDOW~1.CON|WindowsApplication.vshost.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>C:\@vishva\@MyCode\dotNetDesktopContainer\HotelProjectDesktopApp\bin\Debug\WindowsApplication.vshost.exe.config</td><td>1</td><td/></row>
-		<row><td>windowsapplication.vshost.ex1</td><td>ISX_DEFAULTCOMPONENT</td><td>WINDOW~1.MAN|WindowsApplication.vshost.exe.manifest</td><td>0</td><td/><td/><td/><td>1</td><td>C:\@vishva\@MyCode\dotNetDesktopContainer\HotelProjectDesktopApp\bin\Debug\WindowsApplication.vshost.exe.manifest</td><td>1</td><td/></row>
+		<row><td>bunifu_ui_v1.52.dll</td><td>Bunifu_UI_v1.52.dll</td><td>BUNIFU~1.DLL|Bunifu_UI_v1.52.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Vishva\git\dotNetDesktopContainer\CloudDesktopApp\bin\Release\Bunifu_UI_v1.52.dll</td><td>1</td><td/></row>
+		<row><td>clouddesktopapp.exe</td><td>CloudDesktopApp.exe</td><td>CLOUDD~1.EXE|CloudDesktopApp.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Vishva\git\dotNetDesktopContainer\CloudDesktopApp\bin\Release\CloudDesktopApp.exe</td><td>1</td><td/></row>
+		<row><td>clouddesktopapp.exe.config</td><td>ISX_DEFAULTCOMPONENT</td><td>CLOUDD~1.CON|CloudDesktopApp.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Vishva\git\dotNetDesktopContainer\CloudDesktopApp\bin\Release\CloudDesktopApp.exe.config</td><td>1</td><td/></row>
+		<row><td>clouddesktopapp.pdb</td><td>ISX_DEFAULTCOMPONENT</td><td>CLOUDD~1.PDB|CloudDesktopApp.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Vishva\git\dotNetDesktopContainer\CloudDesktopApp\bin\Release\CloudDesktopApp.pdb</td><td>1</td><td/></row>
+		<row><td>clouddesktopapp.vshost.exe</td><td>CloudDesktopApp.vshost.exe</td><td>CLOUDD~1.EXE|CloudDesktopApp.vshost.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Vishva\git\dotNetDesktopContainer\CloudDesktopApp\bin\Release\CloudDesktopApp.vshost.exe</td><td>1</td><td/></row>
+		<row><td>clouddesktopapp.vshost.exe.c</td><td>ISX_DEFAULTCOMPONENT</td><td>CLOUDD~1.CON|CloudDesktopApp.vshost.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Vishva\git\dotNetDesktopContainer\CloudDesktopApp\bin\Release\CloudDesktopApp.vshost.exe.config</td><td>1</td><td/></row>
+		<row><td>clouddesktopapp.vshost.exe.m</td><td>ISX_DEFAULTCOMPONENT</td><td>CLOUDD~1.MAN|CloudDesktopApp.vshost.exe.manifest</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Vishva\git\dotNetDesktopContainer\CloudDesktopApp\bin\Release\CloudDesktopApp.vshost.exe.manifest</td><td>1</td><td/></row>
+		<row><td>materialskin.dll</td><td>MaterialSkin.dll</td><td>MATERI~1.DLL|MaterialSkin.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Vishva\git\dotNetDesktopContainer\CloudDesktopApp\bin\Release\MaterialSkin.dll</td><td>1</td><td/></row>
+		<row><td>newtonsoft.json.dll</td><td>Newtonsoft.Json.dll</td><td>NEWTON~1.DLL|Newtonsoft.Json.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Vishva\git\dotNetDesktopContainer\CloudDesktopApp\bin\Release\Newtonsoft.Json.dll</td><td>1</td><td/></row>
+		<row><td>newtonsoft.json.xml</td><td>ISX_DEFAULTCOMPONENT</td><td>NEWTON~1.XML|Newtonsoft.Json.xml</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Vishva\git\dotNetDesktopContainer\CloudDesktopApp\bin\Release\Newtonsoft.Json.xml</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2049,12 +2050,12 @@
 		<col def="S0">FTPLocation</col>
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
-		<row><td>Bunifu_UI_v1.52.dll</td><td/><td/><td>_E39389BE_F97F_44E8_B85F_D77A6A789C8D_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>HotelDashboard.exe</td><td/><td/><td>_989CFDAE_ED21_4EBC_8239_BA76C7BB918A_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>HotelDashboard.vshost.exe</td><td/><td/><td>_5B94D826_9CB5_418C_B848_FEAF7D66F4C3_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Bunifu_UI_v1.52.dll</td><td/><td/><td>_CED26CC1_3D59_48C5_BEFB_040952C34C1E_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>CloudDesktopApp.exe</td><td/><td/><td>_6B8F21A2_B6B3_42B6_9FE7_5F29406C5AD3_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>CloudDesktopApp.vshost.exe</td><td/><td/><td>_02C1C61A_28AF_46F9_AF75_982114086A03_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_B05DDFA9_E9EF_41FB_877A_707530397BEB_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Newtonsoft.Json.dll</td><td/><td/><td>_9B239237_391E_4E0C_B15A_A408C2CECCAC_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>WindowsApplication.exe</td><td/><td/><td>_498E2946_27B6_4150_9A9E_C3F32507E51C_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>MaterialSkin.dll</td><td/><td/><td>_FB2DD39E_F850_4536_B356_969ED04DBCFB_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Newtonsoft.Json.dll</td><td/><td/><td>_5C7F286F_95F5_4ACE_9D85_E8E2B06FB15F_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -3461,6 +3462,8 @@
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>1033</td><td>LAUNCH~1.EXE|Launch HotelDashboard.vshost.exe</td><td>0</td><td/><td>1504185865</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME3</td><td>1033</td><td>LAUNCH~1.EXE|Launch WindowsApplication.exe</td><td>0</td><td/><td>1504185865</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>1033</td><td>LAUNCH~1.EXE|Launch HotelDashboard.exe</td><td>0</td><td/><td>1504232969</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME5</td><td>1033</td><td>LAUNCH~1.EXE|Launch CloudDesktopApp.exe</td><td>0</td><td/><td>1109967732</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME6</td><td>1033</td><td>LAUNCH~1.EXE|Launch CloudDesktopApp.vshost.exe</td><td>0</td><td/><td>1109967732</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>1504216489</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>1504216489</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>1504216489</td></row>
@@ -3753,6 +3756,7 @@
 		<row><td>ID_STRING2</td><td>1033</td><td>http://vany.is-best.net/</td><td>0</td><td/><td>1504239049</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>V &amp; Y Soft. Tech. Pvt. Ltd.</td><td>0</td><td/><td>1504239017</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td>LAUNCH~1.EXE|Launch HotelDashboard.exe</td><td>0</td><td/><td>1504239113</td></row>
+		<row><td>ID_STRING5</td><td>1033</td><td>LAUNCH~1.EXE|Launch CloudDesktopApp.exe</td><td>0</td><td/><td>1109920660</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>1504216489</td></row>
 	</table>
 
@@ -3867,6 +3871,9 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I2">ISIconIndex</col>
 		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\setupicon.ico</td><td>0</td></row>
+		<row><td>CloudDesktopApp.ex_28CF5E96778D4D5C92DBB6D05819E649.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>CloudDesktopApp.ex_70BFBE76350746AE8214DBAD8D706F0B.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>CloudDesktopApp.vs_42B9923E851A4B14B38A9CEBE15E0186.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>HotelDashboard.exe_4C1640B70A60415FAA48324620848AA0.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>HotelDashboard.exe_E47321F9F99B464DAB1BE7CB589A3148.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>HotelDashboard.exe_FC2DC2EFF9E541C7B33B1B37EB4A5715.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
@@ -4004,7 +4011,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{C557BBB8-64A4-4425-9ECB-E0BBBCD4EB08}</td></row>
 		<row><td>ISUSSignature</td><td>{E3C3B425-5B6A-4246-A388-336BA4E29E3E}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewISToday</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4352,6 +4359,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>IS_SQLSERVER_USERNAME</td><td>sa</td><td/></row>
 		<row><td>InstallChoice</td><td>AR</td><td/></row>
 		<row><td>LAUNCHPROGRAM</td><td>1</td><td/></row>
+		<row><td>LAUNCHPROGRAMCOMPCODE</td><td>{7D83FB90-27C6-46BA-8DB6-B3D50F99E248}</td><td/></row>
+		<row><td>LAUNCHPROGRAMFILEKEY</td><td>clouddesktopapp.exe</td><td/></row>
 		<row><td>LAUNCHREADME</td><td>1</td><td/></row>
 		<row><td>Manufacturer</td><td>##COMPANY_NAME##</td><td/></row>
 		<row><td>PIDKEY</td><td/><td/></row>
@@ -4379,9 +4388,10 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKAPPPOOLS</td><td>##IDS_PROGMSG_IIS_ROLLBACKAPPPOOLS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKVROOTS</td><td>##IDS_PROGMSG_IIS_ROLLBACKVROOTS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
+		<row><td>PROGRAMFILETOLAUNCHATEND</td><td>[INSTALLDIR]CloudDesktopApp.exe</td><td/></row>
 		<row><td>ProductCode</td><td>{8F184A97-E5FE-4870-BC7D-F2BE0C0CD634}</td><td/></row>
-		<row><td>ProductName</td><td>Cloud Hotel Desktop App </td><td/></row>
-		<row><td>ProductVersion</td><td>1.00.0000</td><td/></row>
+		<row><td>ProductName</td><td>CloudHotelDesktopApp </td><td/></row>
+		<row><td>ProductVersion</td><td>0.0.1</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
@@ -4393,6 +4403,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>RestartManagerOption</td><td>CloseRestart</td><td/></row>
 		<row><td>SERIALNUMBER</td><td/><td/></row>
 		<row><td>SERIALNUMVALSUCCESSRETVAL</td><td>1</td><td/></row>
+		<row><td>SHOWLAUNCHPROGRAM</td><td>-1</td><td/></row>
 		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;DOTNETVERSION45FULL;DOTNETVERSION40FULL;DOTNETVERSION40CLIENT</td><td/></row>
 		<row><td>SelectedSetupType</td><td>##IDS__DisplayName_Typical##</td><td/></row>
 		<row><td>SetupType</td><td>Typical</td><td/></row>
@@ -4459,12 +4470,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L255">FileName</col>
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
-		<row><td>FileKey1</td><td>HotelDashboard.exe</td><td/><td>v_ysof_1.ltd_v___y_soft._tech._pvt._ltd.</td><td>2</td></row>
-		<row><td>FileKey2</td><td>HotelDashboard.exe</td><td/><td>cloudh_1_cloud_hotel_desktop_app_</td><td>2</td></row>
-		<row><td>HotelDashboard.exe</td><td>HotelDashboard.exe</td><td/><td>cloudh_1_cloud_hotel_desktop_app_</td><td>2</td></row>
-		<row><td>HotelDashboard.exe1</td><td>HotelDashboard.exe</td><td/><td>cloudh_1_cloud_hotel_desktop_app_</td><td>2</td></row>
-		<row><td>HotelDashboard.vshost.exe</td><td>HotelDashboard.vshost.exe</td><td/><td>cloudh_1_cloud_hotel_desktop_app_</td><td>2</td></row>
-		<row><td>WindowsApplication.exe</td><td>WindowsApplication.exe</td><td/><td>cloudh_1_cloud_hotel_desktop_app_</td><td>2</td></row>
+		<row><td>CloudDesktopApp.exe</td><td>CloudDesktopApp.exe</td><td/><td>cloudh_1_cloudhoteldesktopapp_</td><td>2</td></row>
+		<row><td>CloudDesktopApp.vshost.exe</td><td>CloudDesktopApp.vshost.exe</td><td/><td>cloudh_1_cloudhoteldesktopapp_</td><td>2</td></row>
+		<row><td>FileKey1</td><td>CloudDesktopApp.exe</td><td/><td>cloudh_1_cloudhoteldesktopapp_</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4550,11 +4558,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>HotelDashboard.exe</td><td>cloudh_1_cloud_hotel_desktop_app_</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>HotelDashboard.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>HotelDashboard.exe_FC2DC2EFF9E541C7B33B1B37EB4A5715.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>HotelDashboard.exe1</td><td>cloudh_1_cloud_hotel_desktop_app_</td><td>##IDS_SHORTCUT_DISPLAY_NAME4##</td><td>HotelDashboard.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>HotelDashboard.exe_E47321F9F99B464DAB1BE7CB589A3148.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>HotelDashboard.exe11</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME4##</td><td>HotelDashboard.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>HotelDashboard.exe_4C1640B70A60415FAA48324620848AA0.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>HotelDashboard.vshost.exe</td><td>cloudh_1_cloud_hotel_desktop_app_</td><td>##IDS_SHORTCUT_DISPLAY_NAME2##</td><td>HotelDashboard.vshost.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>HotelDashboard.vsh_E6828E6A30A244EC8B76A7F79894513D.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>WindowsApplication.exe</td><td>cloudh_1_cloud_hotel_desktop_app_</td><td>##IDS_SHORTCUT_DISPLAY_NAME3##</td><td>WindowsApplication.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>WindowsApplication_19C2A152EB56495CB77427AB335A4311.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>CloudDesktopApp.exe</td><td>cloudh_1_cloudhoteldesktopapp_</td><td>##IDS_SHORTCUT_DISPLAY_NAME5##</td><td>CloudDesktopApp.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>CloudDesktopApp.ex_70BFBE76350746AE8214DBAD8D706F0B.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>CloudDesktopApp.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME5##</td><td>CloudDesktopApp.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>CloudDesktopApp.ex_28CF5E96778D4D5C92DBB6D05819E649.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>CloudDesktopApp.vshost.exe</td><td>cloudh_1_cloudhoteldesktopapp_</td><td>##IDS_SHORTCUT_DISPLAY_NAME6##</td><td>CloudDesktopApp.vshost.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>CloudDesktopApp.vs_42B9923E851A4B14B38A9CEBE15E0186.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">
