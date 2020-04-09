@@ -126,6 +126,7 @@
     <Compile Include="Component\UserDashborad.Designer.cs">
       <DependentUpon>UserDashborad.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalClass.cs" />
     <Compile Include="Helper\CommonMessage.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>

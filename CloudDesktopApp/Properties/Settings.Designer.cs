@@ -46,5 +46,16 @@ namespace CloudDesktopApp.Properties {
                 this["refreshToken"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::Newtonsoft.Json.Schema.JsonSchema User {
+            get {
+                return ((global::Newtonsoft.Json.Schema.JsonSchema)(this["User"]));
+            }
+            set {
+                this["User"] = value;
+            }
+        }
     }
 }

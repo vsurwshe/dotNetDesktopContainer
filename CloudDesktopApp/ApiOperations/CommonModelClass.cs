@@ -13,10 +13,11 @@ namespace CloudDesktopApp.ApiOperations
     // This User model class
     public class User
     {
-        public int user_id { get; set; }
+        public int userId { get; set; }
         public string userName { get; set; }
         public string userEmail { get; set; }
         public string userPassword { get; set; }
+        public Boolean enabled { get; set; }
     }
 
     // This is token respoense model class
@@ -24,6 +25,8 @@ namespace CloudDesktopApp.ApiOperations
     {
         public string userToken { get; set; }
         public string userRefreshToken { get; set; }
+        public User userDetails { get; set; }
+
     }
 
     // This is profile Model Class

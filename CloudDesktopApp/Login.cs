@@ -102,6 +102,8 @@ namespace CloudDesktopApp
         {
             Properties.Settings.Default.userToken = user.userToken;
             Properties.Settings.Default.refreshToken = user.userRefreshToken;
+            GlobalClass.user = user.userDetails;
+            GlobalClass.token = user;
             return true;
         }
 

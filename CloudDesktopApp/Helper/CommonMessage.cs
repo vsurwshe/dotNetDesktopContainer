@@ -9,6 +9,7 @@ namespace CloudDesktopApp.Helper
     {
         //---- Common string ---
         public static String NOT_FOUND = "Not Found";
+        public static String NOT_ENABLED = " Please verify your account. You are not verifyed ?";
         //----- User realted string message ---
         public static String LOGIN_USERPASS_WORNG = "You Provided Username and Password are Wrong !";
         public static String LOGIN_USERPASS_VAILD = "Please Enter Vaild Username or Password !";
