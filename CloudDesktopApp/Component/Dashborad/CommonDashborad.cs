@@ -33,5 +33,15 @@ namespace CloudDesktopApp.Component.Dashborad
                 notVerifyMessageLable.Text = CommonMessage.NOT_ENABLED;
             }
         }
+
+        private void verifyButton_Click(object sender, EventArgs e)
+        {
+            Form formExits = Application.OpenForms["VerifyUser"];
+            if (formExits != null)
+            {
+                formExits.Close();
+            }
+            new VerifyUser().Show(this);
+        }
     }
 }

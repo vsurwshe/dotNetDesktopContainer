@@ -68,7 +68,7 @@
             this.loginButton.Name = "loginButton";
             this.loginButton.Primary = true;
             this.loginButton.Size = new System.Drawing.Size(140, 36);
-            this.loginButton.TabIndex = 1;
+            this.loginButton.TabIndex = 2;
             this.loginButton.Text = "Login to Account";
             this.loginButton.UseVisualStyleBackColor = true;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
@@ -86,7 +86,7 @@
             this.password.SelectionLength = 0;
             this.password.SelectionStart = 0;
             this.password.Size = new System.Drawing.Size(247, 23);
-            this.password.TabIndex = 2;
+            this.password.TabIndex = 1;
             this.password.Text = "123456";
             this.password.UseSystemPasswordChar = true;
             // 
@@ -130,7 +130,7 @@
             this.singupButton.Name = "singupButton";
             this.singupButton.Primary = true;
             this.singupButton.Size = new System.Drawing.Size(128, 36);
-            this.singupButton.TabIndex = 6;
+            this.singupButton.TabIndex = 3;
             this.singupButton.Text = "Signup Account";
             this.singupButton.UseVisualStyleBackColor = false;
             this.singupButton.Click += new System.EventHandler(this.singupButton_Click);

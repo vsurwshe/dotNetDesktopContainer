@@ -182,3 +182,80 @@
             
             return response;
         }
+
+		=========================Http Client GET,POST,PUT or DELETE Method==================
+async public Task<HttpResponseMessage> getRequest(String userUrl, Boolean token)
+        {
+            HttpResponseMessage response = null;
+            if (token)
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Properties.Settings.Default.userToken);
+            }
+            response = await client.GetAsync(userUrl).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode)
+            {
+                return response;
+            }
+            else
+            {
+                if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                {
+                    response.Content = new StringContent(CommonMessage.NOT_FOUND);
+                    return response;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+        async public Task<HttpResponseMessage> postRequest(String userUrl, Object modelName, Boolean token)
+        {
+            if (token)
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Properties.Settings.Default.userToken);
+            }
+          HttpResponseMessage response= await client.PostAsync(userUrl, new StringContent(modelName.ToString(),Encoding.UTF8,"application/json")).ConfigureAwait(false);
+          if (response.IsSuccessStatusCode)
+          {
+              return response;
+          }
+          else
+          {
+              return null;
+          }
+        }
+
+        async public Task<HttpResponseMessage> putRequest(String userUrl, Object modelName, Boolean token)
+        {
+            if (token)
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Properties.Settings.Default.userToken);
+            }
+            HttpResponseMessage response = await client.PutAsync(userUrl, new StringContent(modelName.ToString(), Encoding.UTF8, "application/json")).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode)
+            {
+                return response;
+            }
+            else
+            {
+                return null;
+            }
+        }
+        async public Task<HttpResponseMessage> deleteRequest(String userUrl,Boolean token)
+        {
+            if (token)
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Properties.Settings.Default.userToken);
+            }
+            HttpResponseMessage response = await client.DeleteAsync(userUrl).ConfigureAwait(false);
+            if (response.IsSuccessStatusCode)
+            {
+                return response;
+            }
+            else
+            {
+                return null;
+            }
+       }

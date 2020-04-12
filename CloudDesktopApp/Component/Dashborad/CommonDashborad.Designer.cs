@@ -30,8 +30,8 @@
         {
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.notVerifyMessageBox = new Bunifu.Framework.UI.BunifuCards();
-            this.notVerifyMessageLable = new MaterialSkin.Controls.MaterialLabel();
             this.verifyButton = new MaterialSkin.Controls.MaterialFlatButton();
+            this.notVerifyMessageLable = new MaterialSkin.Controls.MaterialLabel();
             this.notVerifyMessageBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,20 +65,6 @@
             this.notVerifyMessageBox.TabIndex = 1;
             this.notVerifyMessageBox.Visible = false;
             // 
-            // notVerifyMessageLable
-            // 
-            this.notVerifyMessageLable.AutoSize = true;
-            this.notVerifyMessageLable.Depth = 0;
-            this.notVerifyMessageLable.Font = new System.Drawing.Font("Roboto", 11F);
-            this.notVerifyMessageLable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.notVerifyMessageLable.Location = new System.Drawing.Point(3, 26);
-            this.notVerifyMessageLable.MouseState = MaterialSkin.MouseState.HOVER;
-            this.notVerifyMessageLable.Name = "notVerifyMessageLable";
-            this.notVerifyMessageLable.Size = new System.Drawing.Size(108, 19);
-            this.notVerifyMessageLable.TabIndex = 1;
-            this.notVerifyMessageLable.Text = "materialLabel2";
-            this.notVerifyMessageLable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // verifyButton
             // 
             this.verifyButton.AutoSize = true;
@@ -93,6 +79,21 @@
             this.verifyButton.TabIndex = 2;
             this.verifyButton.Text = "Verify Your Account";
             this.verifyButton.UseVisualStyleBackColor = true;
+            this.verifyButton.Click += new System.EventHandler(this.verifyButton_Click);
+            // 
+            // notVerifyMessageLable
+            // 
+            this.notVerifyMessageLable.AutoSize = true;
+            this.notVerifyMessageLable.Depth = 0;
+            this.notVerifyMessageLable.Font = new System.Drawing.Font("Roboto", 11F);
+            this.notVerifyMessageLable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.notVerifyMessageLable.Location = new System.Drawing.Point(3, 26);
+            this.notVerifyMessageLable.MouseState = MaterialSkin.MouseState.HOVER;
+            this.notVerifyMessageLable.Name = "notVerifyMessageLable";
+            this.notVerifyMessageLable.Size = new System.Drawing.Size(108, 19);
+            this.notVerifyMessageLable.TabIndex = 1;
+            this.notVerifyMessageLable.Text = "materialLabel2";
+            this.notVerifyMessageLable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CommonDashborad
             // 

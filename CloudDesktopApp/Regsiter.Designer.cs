@@ -53,7 +53,7 @@
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Primary = true;
             this.LoginButton.Size = new System.Drawing.Size(140, 36);
-            this.LoginButton.TabIndex = 13;
+            this.LoginButton.TabIndex = 4;
             this.LoginButton.Text = "Login to Account";
             this.LoginButton.UseVisualStyleBackColor = false;
             this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
@@ -95,7 +95,7 @@
             this.email.SelectionLength = 0;
             this.email.SelectionStart = 0;
             this.email.Size = new System.Drawing.Size(257, 23);
-            this.email.TabIndex = 9;
+            this.email.TabIndex = 1;
             this.email.UseSystemPasswordChar = false;
             // 
             // SignUp
@@ -109,7 +109,7 @@
             this.SignUp.Name = "SignUp";
             this.SignUp.Primary = true;
             this.SignUp.Size = new System.Drawing.Size(149, 36);
-            this.SignUp.TabIndex = 8;
+            this.SignUp.TabIndex = 3;
             this.SignUp.Text = "Signup to Account";
             this.SignUp.UseVisualStyleBackColor = true;
             this.SignUp.Click += new System.EventHandler(this.SignUp_Click);
@@ -127,7 +127,7 @@
             this.name.SelectionLength = 0;
             this.name.SelectionStart = 0;
             this.name.Size = new System.Drawing.Size(257, 23);
-            this.name.TabIndex = 7;
+            this.name.TabIndex = 0;
             this.name.UseSystemPasswordChar = false;
             // 
             // password
@@ -143,7 +143,7 @@
             this.password.SelectionLength = 0;
             this.password.SelectionStart = 0;
             this.password.Size = new System.Drawing.Size(257, 23);
-            this.password.TabIndex = 14;
+            this.password.TabIndex = 2;
             this.password.UseSystemPasswordChar = false;
             // 
             // progressBar

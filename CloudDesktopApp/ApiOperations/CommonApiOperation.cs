@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 //---------
 using System.Configuration;
 using Newtonsoft.Json;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using CloudDesktopApp.Helper;
@@ -26,109 +27,51 @@ namespace CloudDesktopApp.ApiOperations
         public Object apiCall(String url, String userMethod, String userBody, Boolean token)
         {
             String result = null;
-            if (userMethod == "GET")
-            {
-                result = this.getRequest(CommonUrl + url, token).Result.Content.ReadAsStringAsync().Result.ToString();
-            }
-            else
-            {
-                if (userMethod == "POST")
-                {
-                    result = this.postRequest(CommonUrl + url, userBody, token).Result.Content.ReadAsStringAsync().Result.ToString();
-                }
-                else
-                {
-                    if (userMethod == "PUT")
-                    {
-                        result = this.putRequest(CommonUrl + url, userBody, token).Result.Content.ReadAsStringAsync().Result.ToString();
-                    }
-                    else
-                    {
-                        if (userMethod == "DELETE")
-                        {
-                            result = this.deleteRequest(CommonUrl + url, token).Result.Content.ReadAsStringAsync().Result.ToString();
-                        }    
-                    }
-                }
-            }
+            result = this.commonApiCall(CommonUrl + url, userMethod, userBody, token).Result.Content.ReadAsStringAsync().Result.ToString();
             return result;
         }
 
-        async public Task<HttpResponseMessage> getRequest(String userUrl, Boolean token)
+        async public Task<HttpResponseMessage> commonApiCall(String userUrl, String userMethod,Object modelName, Boolean token, Boolean doubleCall=false)
         {
             HttpResponseMessage response = null;
             if (token)
             {
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Properties.Settings.Default.userToken);
             }
-            response = await client.GetAsync(userUrl).ConfigureAwait(false);
+            switch (userMethod)
+            {
+                case "GET": response =  await client.GetAsync(userUrl).ConfigureAwait(false);
+                            break;
+                case "POST": response = await client.PostAsync(userUrl, new StringContent(modelName.ToString(), Encoding.UTF8, "application/json")).ConfigureAwait(false);
+                             break;
+                case "PUT":  response = await client.PutAsync(userUrl, new StringContent(modelName.ToString(), Encoding.UTF8, "application/json")).ConfigureAwait(false);
+                             break;
+                case "DELETE":response = await client.DeleteAsync(userUrl).ConfigureAwait(false);
+                              break;
+            }
             if (response.IsSuccessStatusCode)
             {
                 return response;
             }
             else
             {
-                if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                switch (response.StatusCode)
                 {
-                    response.Content = new StringContent(CommonMessage.NOT_FOUND);
-                    return response;
+                    case HttpStatusCode.Unauthorized:
+                        break;
+                    case  HttpStatusCode.NotFound:
+                        response.Content = new StringContent(CommonMessage.NOT_FOUND);
+                        break;
+                    case HttpStatusCode.InternalServerError: 
+                        response.Content = new StringContent(CommonMessage.INTERNAL_SERVER_ERROR);
+                        break;
+                    case HttpStatusCode.BadRequest: 
+                        response.Content = new StringContent(CommonMessage.BAD_REQUEST);
+                        break;
+                    default: return null;
                 }
-                else
-                {
-                    return null;
-                }
-            }
-        }
-
-        async public Task<HttpResponseMessage> postRequest(String userUrl, Object modelName, Boolean token)
-        {
-            if (token)
-            {
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Properties.Settings.Default.userToken);
-            }
-          HttpResponseMessage response= await client.PostAsync(userUrl, new StringContent(modelName.ToString(),Encoding.UTF8,"application/json")).ConfigureAwait(false);
-          if (response.IsSuccessStatusCode)
-          {
-              return response;
-          }
-          else
-          {
-              return null;
-          }
-        }
-
-        async public Task<HttpResponseMessage> putRequest(String userUrl, Object modelName, Boolean token)
-        {
-            if (token)
-            {
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Properties.Settings.Default.userToken);
-            }
-            HttpResponseMessage response = await client.PutAsync(userUrl, new StringContent(modelName.ToString(), Encoding.UTF8, "application/json")).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode)
-            {
                 return response;
             }
-            else
-            {
-                return null;
-            }
         }
-        async public Task<HttpResponseMessage> deleteRequest(String userUrl,Boolean token)
-        {
-            if (token)
-            {
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Properties.Settings.Default.userToken);
-            }
-            HttpResponseMessage response = await client.DeleteAsync(userUrl).ConfigureAwait(false);
-            if (response.IsSuccessStatusCode)
-            {
-                return response;
-            }
-            else
-            {
-                return null;
-            }
-        }
-
     }
 }

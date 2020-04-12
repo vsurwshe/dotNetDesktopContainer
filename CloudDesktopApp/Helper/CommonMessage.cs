@@ -7,9 +7,14 @@ namespace CloudDesktopApp.Helper
 {
     class CommonMessage
     {
-        //---- Common string ---
+        //---- Status Code ---
         public static String NOT_FOUND = "Not Found";
+        public static String INTERNAL_SERVER_ERROR = "Internal Server Error";
+        public static String BAD_REQUEST = "Bad Request";
+        //-------- Common string ----
         public static String NOT_ENABLED = " Please verify your account. You are not verifyed ?";
+        public static String USER_VERIFIED_UNSUCCESS = " Sorry your Verifications is not done successfully.";
+        public static String USER_VERIFIED_SUCCESS = " Your Verifications is done successfully.";
         //----- User realted string message ---
         public static String LOGIN_USERPASS_WORNG = "You Provided Username and Password are Wrong !";
         public static String LOGIN_USERPASS_VAILD = "Please Enter Vaild Username or Password !";

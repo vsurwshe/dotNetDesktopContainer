@@ -38,7 +38,7 @@ namespace CloudDesktopApp.Component
             materialContextStrip.Show(leftSideMenu, new Point(0, leftSideMenu.Height));
         }
 
-        private void Dashboard_Click(object sender, EventArgs e)
+        public void Dashboard_Click(object sender, EventArgs e)
         {
             try
             {

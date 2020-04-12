@@ -57,14 +57,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiOperations\ApiServiceCalss.cs" />
+    <Compile Include="ApiOperations\UserService.cs" />
     <Compile Include="ApiOperations\CommonApiOperation.cs" />
     <Compile Include="ApiOperations\CommonModelClass.cs" />
+    <Compile Include="ApiOperations\LoginRegsiter.cs" />
+    <Compile Include="ApiOperations\ProfileApiService.cs" />
     <Compile Include="Component\CustomerTabel\TabelManagement.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Component\CustomerTabel\TabelManagement.Designer.cs">
       <DependentUpon>TabelManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Dashborad\VerifyUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\Dashborad\VerifyUser.Designer.cs">
+      <DependentUpon>VerifyUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\Food\FoodManagement.cs">
       <SubType>Form</SubType>
@@ -148,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Component\Dashborad\CommonDashborad.resx">
       <DependentUpon>CommonDashborad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Dashborad\VerifyUser.resx">
+      <DependentUpon>VerifyUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Component\Food\FoodManagement.resx">
       <DependentUpon>FoodManagement.cs</DependentUpon>
