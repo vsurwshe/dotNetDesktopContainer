@@ -39,12 +39,12 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.materialLabel1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.materialLabel1.ForeColor = System.Drawing.Color.Blue;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(12, 9);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(239, 24);
+            this.materialLabel1.Size = new System.Drawing.Size(179, 19);
             this.materialLabel1.TabIndex = 0;
             this.materialLabel1.Text = "User Profile Management";
             // 
@@ -52,8 +52,8 @@
             // 
             this.UserProfileLable.Depth = 0;
             this.UserProfileLable.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.UserProfileLable.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UserProfileLable.ForeColor = System.Drawing.Color.Red;
+            this.UserProfileLable.Font = new System.Drawing.Font("Roboto", 11F);
+            this.UserProfileLable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.UserProfileLable.Location = new System.Drawing.Point(252, 68);
             this.UserProfileLable.MouseState = MaterialSkin.MouseState.HOVER;
             this.UserProfileLable.Name = "UserProfileLable";

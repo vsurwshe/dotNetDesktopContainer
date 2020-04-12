@@ -42,6 +42,7 @@ namespace CloudDesktopApp.Component.Profile
                     this.setDataGridViewValues(profileTypesResult);
                     ProfileTypesComboBox.DisplayMember = "Text";
                     ProfileTypesComboBox.ValueMember="Value";
+                    profilePayment.Text = GlobalClass.user.userBalance.ToString()+" /-";
                     profileTypesResult.ForEach(delegate(ProfileTypes profileType)
                     {
                         ProfileTypesComboBox.Items.Add(new { Text = "Select " + profileType.type.ToString().ToLower() + " profile and pay " + profileType.cost.ToString() + "/- monthly ", Value = profileType.type.ToString() });

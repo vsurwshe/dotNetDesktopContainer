@@ -34,6 +34,8 @@
             this.ProfileTypesComboBox = new System.Windows.Forms.ComboBox();
             this.infoProfileTabel = new System.Windows.Forms.DataGridView();
             this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.profilePayment = new MaterialSkin.Controls.MaterialLabel();
             ((System.ComponentModel.ISupportInitialize)(this.infoProfileTabel)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,10 +45,10 @@
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Image = global::CloudDesktopApp.Properties.Resources.profile;
-            this.materialLabel1.Location = new System.Drawing.Point(93, 68);
+            this.materialLabel1.Location = new System.Drawing.Point(108, 65);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(108, 90);
+            this.materialLabel1.Size = new System.Drawing.Size(89, 85);
             this.materialLabel1.TabIndex = 0;
             // 
             // ProfileName
@@ -115,11 +117,40 @@
             this.progressBar.TabIndex = 15;
             this.progressBar.Visible = false;
             // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.Red;
+            this.materialLabel2.Location = new System.Drawing.Point(12, 161);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(153, 19);
+            this.materialLabel2.TabIndex = 16;
+            this.materialLabel2.Text = "Your Profile Balance :";
+            // 
+            // profilePayment
+            // 
+            this.profilePayment.AutoSize = true;
+            this.profilePayment.Depth = 0;
+            this.profilePayment.Font = new System.Drawing.Font("Roboto", 11F);
+            this.profilePayment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.profilePayment.Location = new System.Drawing.Point(171, 161);
+            this.profilePayment.MouseState = MaterialSkin.MouseState.HOVER;
+            this.profilePayment.Name = "profilePayment";
+            this.profilePayment.Size = new System.Drawing.Size(39, 19);
+            this.profilePayment.TabIndex = 17;
+            this.profilePayment.Text = "0.0/-";
+            // 
             // CreateProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(316, 504);
+            this.Controls.Add(this.profilePayment);
+            this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.infoProfileTabel);
             this.Controls.Add(this.ProfileTypesComboBox);
@@ -145,5 +176,7 @@
         private System.Windows.Forms.ComboBox ProfileTypesComboBox;
         private System.Windows.Forms.DataGridView infoProfileTabel;
         private System.Windows.Forms.ProgressBar progressBar;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialLabel profilePayment;
     }
 }

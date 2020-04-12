@@ -17,6 +17,7 @@ namespace CloudDesktopApp.ApiOperations
         public string userName { get; set; }
         public string userEmail { get; set; }
         public string userPassword { get; set; }
+        public Double userBalance { get; set; }
         public Boolean enabled { get; set; }
     }
 
