@@ -1,4 +1,4 @@
-﻿namespace CloudDesktopApp.Component.CustomerTabel
+﻿namespace CloudDesktopApp.Component.HotelTabel
 {
     partial class Tabel
     {

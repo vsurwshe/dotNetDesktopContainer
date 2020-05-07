@@ -35,5 +35,12 @@ namespace CloudDesktopApp.Helper
         public static String PROFILE_DELETE_MESSAGE = "Are you sure want to delete this profile ?";
         public static String PROFILE_DELETE_UNSUCCESS_MESSAGE = "Sorry your profile is not deleted successfully";
         public static String PROFILE_DELETE_SUCCESS_MESSAGE = "Your profile is deleted successfully";
+        public static String PROFILE_CREATED_MESSAGE = "Please create the any profile";
+        //----- Customer realted string
+        public static String CUSTOMER_INVALID_DATA_MESSAGE = "Please create the any profile";
+        public static String CUSTOMER_SAVED_SUCCESS_MESSAGE = "Your Customer Saved Successfully";
+        public static String CUSTOMER_SAVED_UNSUCCESS_MESSAGE = "Your Customer Not Saved Successfully";
+
+
     }
 }

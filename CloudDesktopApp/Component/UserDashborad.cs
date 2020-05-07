@@ -12,9 +12,12 @@ using MaterialSkin.Controls;
 using CloudDesktopApp.Helper;
 using CloudDesktopApp.Component.Profile;
 using CloudDesktopApp.Component.Dashborad;
-using CloudDesktopApp.Component.CustomerTabel;
+using CloudDesktopApp.Component.Customer;
+using CloudDesktopApp.Component.HotelTabel;
 using CloudDesktopApp.Component.Setting;
 using CloudDesktopApp.Component.Help;
+using CloudDesktopApp.Component.MainTable;
+using CloudDesktopApp.ApiOperations;
 using System.Reflection;
 
 namespace CloudDesktopApp.Component
@@ -36,6 +39,25 @@ namespace CloudDesktopApp.Component
             materialContextStrip.Items.Add("User Sign Out");
             materialContextStrip.ItemClicked += this.materialContextStrip_ItemClicked;
             materialContextStrip.Show(leftSideMenu, new Point(0, leftSideMenu.Height));
+        }
+
+        private void UserDashborad_Load(object sender, EventArgs e)
+        {
+            this.Dashboard_Click(sender, e);
+            String profileId = Properties.Settings.Default.profileId;
+            if (profileId.Equals(""))
+            {
+                List<ProfileModel> profiles = new ProfileApiService().loadProfiles();
+                if (profiles != null)
+                {
+                    Properties.Settings.Default.profileId = profiles.First().profileId.ToString();
+                }
+                else
+                {
+                    UserMessage.showSuccessMessage(CommonMessage.PROFILE_CREATED_MESSAGE);
+                }
+            }
+            new ProfileManagement().loadProfiles();
         }
 
         public void Dashboard_Click(object sender, EventArgs e)
@@ -128,6 +150,32 @@ namespace CloudDesktopApp.Component
             }
         }
 
+        private void dailyTabelTrans_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Type typeOfMainTabel = typeof(MainTableManagement);
+                this.createShowForm(typeOfMainTabel);
+            }
+            catch (Exception msg)
+            {
+                UserMessage.ShowExceptions(msg.Message);
+            }
+        }
+
+        public void customer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Type typeOfCustomer = typeof(CustomerManagment);
+                this.createShowForm(typeOfCustomer);
+            }
+            catch (Exception msg)
+            {
+                UserMessage.ShowExceptions(msg.Message);
+            }
+        }
+
         private void DashboradIconButton_Click(object sender, EventArgs e)
         {
             this.Dashboard_Click(sender, e);
@@ -143,10 +191,7 @@ namespace CloudDesktopApp.Component
             this.Tabel_Click(sender, e);
         }
 
-        private void UserDashborad_Load(object sender, EventArgs e)
-        {
-            this.Dashboard_Click(sender, e);
-        }
+       
         private void logout_Click(object sender, EventArgs e)
         {
             this.signOut();

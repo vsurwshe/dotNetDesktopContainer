@@ -343,12 +343,12 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>Bunifu_UI_v1.52.dll</td><td>{271F7627-AD94-4B28-82B4-2DF337DD8D0F}</td><td>INSTALLDIR</td><td>2</td><td/><td>bunifu_ui_v1.52.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>CloudDesktopApp.exe</td><td>{7D83FB90-27C6-46BA-8DB6-B3D50F99E248}</td><td>INSTALLDIR</td><td>2</td><td/><td>clouddesktopapp.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>CloudDesktopApp.vshost.exe</td><td>{BC2C393D-DE30-4CB6-A7FE-AC96147B39B3}</td><td>INSTALLDIR</td><td>2</td><td/><td>clouddesktopapp.vshost.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Bunifu_UI_v1.52.dll</td><td>{14F95B98-4DCE-435F-928A-4AAE58B9051C}</td><td>INSTALLDIR</td><td>2</td><td/><td>bunifu_ui_v1.52.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>CloudDesktopApp.exe</td><td>{638A6558-0BC1-4F20-B470-3A932F31D120}</td><td>INSTALLDIR</td><td>2</td><td/><td>clouddesktopapp.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>CloudDesktopApp.vshost.exe</td><td>{6E524FEC-B5A1-4A45-967A-8FFB640374E1}</td><td>INSTALLDIR</td><td>2</td><td/><td>clouddesktopapp.vshost.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{438D3A17-35D0-45C8-B26A-39E8D15DBD73}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>MaterialSkin.dll</td><td>{671DE35F-C0C8-4E18-B62B-20082B4420D4}</td><td>INSTALLDIR</td><td>2</td><td/><td>materialskin.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Newtonsoft.Json.dll</td><td>{FAD15140-B011-4F04-8A83-3F05871EB15E}</td><td>INSTALLDIR</td><td>2</td><td/><td>newtonsoft.json.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>MaterialSkin.dll</td><td>{B55A4822-C302-4695-8D6C-1E8A80882165}</td><td>INSTALLDIR</td><td>2</td><td/><td>materialskin.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Newtonsoft.Json.dll</td><td>{12267B1F-E5A7-421F-A195-CB940B8B1D3C}</td><td>INSTALLDIR</td><td>2</td><td/><td>newtonsoft.json.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -2050,12 +2050,12 @@
 		<col def="S0">FTPLocation</col>
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
-		<row><td>Bunifu_UI_v1.52.dll</td><td/><td/><td>_CED26CC1_3D59_48C5_BEFB_040952C34C1E_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>CloudDesktopApp.exe</td><td/><td/><td>_6B8F21A2_B6B3_42B6_9FE7_5F29406C5AD3_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>CloudDesktopApp.vshost.exe</td><td/><td/><td>_02C1C61A_28AF_46F9_AF75_982114086A03_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Bunifu_UI_v1.52.dll</td><td/><td/><td>_A3E46CF0_1ABA_4E14_AED9_BDD4E8F6A976_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>CloudDesktopApp.exe</td><td/><td/><td>_825F0004_C82B_48E7_8A29_B579E93A0EA8_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>CloudDesktopApp.vshost.exe</td><td/><td/><td>_C95C3F61_9206_42DB_A905_B3018DC56BCE_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_B05DDFA9_E9EF_41FB_877A_707530397BEB_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>MaterialSkin.dll</td><td/><td/><td>_FB2DD39E_F850_4536_B356_969ED04DBCFB_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Newtonsoft.Json.dll</td><td/><td/><td>_5C7F286F_95F5_4ACE_9D85_E8E2B06FB15F_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>MaterialSkin.dll</td><td/><td/><td>_543D2D8E_E853_451F_B18C_670C38192874_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Newtonsoft.Json.dll</td><td/><td/><td>_3F4C5AA2_7AC1_440D_AEC7_A67EB3FE64AE_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -2361,6 +2361,7 @@
 		<col key="yes" def="s72">ISProductConfiguration_</col>
 		<col key="yes" def="s72">Property</col>
 		<col def="L255">Value</col>
+		<row><td>Express</td><td>SetupFileName</td><td>CloudDesktopApp.exe</td></row>
 	</table>
 
 	<table name="ISRelease">
@@ -2400,7 +2401,7 @@
 		<row><td>DVD-18</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>Default</td><td>3</td><td>1033</td><td>0</td><td>2</td><td>Intel</td><td/><td>1033</td><td>0</td><td>15.83</td><td>1</td><td>2048</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>75805</td><td/><td/><td/><td>3</td></row>
 		<row><td>DVD-5</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>Default</td><td>3</td><td>1033</td><td>0</td><td>2</td><td>Intel</td><td/><td>1033</td><td>0</td><td>4.38</td><td>1</td><td>2048</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>75805</td><td/><td/><td/><td>3</td></row>
 		<row><td>DVD-9</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>Default</td><td>3</td><td>1033</td><td>0</td><td>2</td><td>Intel</td><td/><td>1033</td><td>0</td><td>7.95</td><td>1</td><td>2048</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>75805</td><td/><td/><td/><td>3</td></row>
-		<row><td>SingleImage</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>PackageName</td><td>1</td><td>1033</td><td>0</td><td>1</td><td>Intel</td><td/><td>1033</td><td>0</td><td>0</td><td>0</td><td>0</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>108573</td><td/><td/><td/><td>3</td></row>
+		<row><td>SingleImage</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>PackageName</td><td>1</td><td>1033</td><td>0</td><td>1</td><td>Intel</td><td/><td>1033</td><td>0</td><td>0</td><td>0</td><td>0</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>108701</td><td/><td/><td/><td>3</td></row>
 		<row><td>WebDeployment</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>PackageName</td><td>4</td><td>1033</td><td>2</td><td>1</td><td>Intel</td><td/><td>1033</td><td>0</td><td>0</td><td>0</td><td>0</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>124941</td><td/><td/><td/><td>3</td></row>
 	</table>
 
@@ -2457,6 +2458,7 @@
 		<col key="yes" def="s72">ISProductConfiguration_</col>
 		<col key="yes" def="s72">Name</col>
 		<col def="s0">Value</col>
+		<row><td>SingleImage</td><td>Express</td><td>KeepUnusedDirectories</td><td>1</td></row>
 	</table>
 
 	<table name="ISReleasePublishInfo">
@@ -3464,6 +3466,8 @@
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>1033</td><td>LAUNCH~1.EXE|Launch HotelDashboard.exe</td><td>0</td><td/><td>1504232969</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME5</td><td>1033</td><td>LAUNCH~1.EXE|Launch CloudDesktopApp.exe</td><td>0</td><td/><td>1109967732</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME6</td><td>1033</td><td>LAUNCH~1.EXE|Launch CloudDesktopApp.vshost.exe</td><td>0</td><td/><td>1109967732</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME7</td><td>1033</td><td>LAUNCH~1.EXE|Launch CloudDesktopApp.exe</td><td>0</td><td/><td>-1708627157</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME8</td><td>1033</td><td>LAUNCH~1.EXE|Launch CloudDesktopApp.vshost.exe</td><td>0</td><td/><td>-1708627157</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>1504216489</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>1504216489</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>1504216489</td></row>
@@ -3757,12 +3761,16 @@
 		<row><td>ID_STRING3</td><td>1033</td><td>V &amp; Y Soft. Tech. Pvt. Ltd.</td><td>0</td><td/><td>1504239017</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td>LAUNCH~1.EXE|Launch HotelDashboard.exe</td><td>0</td><td/><td>1504239113</td></row>
 		<row><td>ID_STRING5</td><td>1033</td><td>LAUNCH~1.EXE|Launch CloudDesktopApp.exe</td><td>0</td><td/><td>1109920660</td></row>
+		<row><td>ID_STRING6</td><td>1033</td><td>LAUNCH~1.EXE|Launch CloudDesktopApp.exe</td><td>0</td><td/><td>-1708614869</td></row>
+		<row><td>ID_STRING7</td><td>1033</td><td>V &amp; Y Support Team.</td><td>0</td><td/><td>-1708645205</td></row>
+		<row><td>ID_STRING8</td><td>1033</td><td>vany.is-best.net</td><td>0</td><td/><td>-1708628821</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>1504216489</td></row>
 	</table>
 
 	<table name="ISSwidtagProperty">
 		<col key="yes" def="s72">Name</col>
 		<col def="s0">Value</col>
+		<row><td>SfwCreatorName</td><td>V &amp; Y Soft. Tech. Developer Team</td></row>
 		<row><td>UniqueId</td><td>37009430-80CD-427B-BB0E-CFB377CA8948</td></row>
 	</table>
 
@@ -3873,7 +3881,10 @@
 		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\setupicon.ico</td><td>0</td></row>
 		<row><td>CloudDesktopApp.ex_28CF5E96778D4D5C92DBB6D05819E649.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>CloudDesktopApp.ex_70BFBE76350746AE8214DBAD8D706F0B.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>CloudDesktopApp.ex_768BAEAC309F40B58CBE039D634304DD.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>CloudDesktopApp.ex_FAFEDEB420E04B8AA361CDDC7AD70E1D.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>CloudDesktopApp.vs_42B9923E851A4B14B38A9CEBE15E0186.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>CloudDesktopApp.vs_F84B22A76CDB400BA7BA33C786BDE9BA.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>HotelDashboard.exe_4C1640B70A60415FAA48324620848AA0.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>HotelDashboard.exe_E47321F9F99B464DAB1BE7CB589A3148.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>HotelDashboard.exe_FC2DC2EFF9E541C7B33B1B37EB4A5715.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
@@ -3993,8 +4004,8 @@
 		<col def="S0">Value</col>
 		<row><td>ActiveLanguage</td><td>1033</td></row>
 		<row><td>Comments</td><td/></row>
-		<row><td>CurrentMedia</td><td dt:dt="bin.base64" md5="de9f554a3bc05c12be9c31b998217995">
-UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
+		<row><td>CurrentMedia</td><td dt:dt="bin.base64" md5="6d78a46bf2c52ee27034bbcad20f7f95">
+QwBEAF8AUgBPAE0AAQBFAHgAcAByAGUAcwBzAA==
 			</td></row>
 		<row><td>DefaultProductConfiguration</td><td>Express</td></row>
 		<row><td>EnableSwidtag</td><td>1</td></row>
@@ -4011,7 +4022,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{C557BBB8-64A4-4425-9ECB-E0BBBCD4EB08}</td></row>
 		<row><td>ISUSSignature</td><td>{E3C3B425-5B6A-4246-A388-336BA4E29E3E}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewISToday</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewISToday,viewProject,viewUpgradePaths,viewUpdateService,viewShortcuts,viewUI,viewTextMessages,viewSystemSearch,viewRelease</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4319,6 +4330,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L0">Value</col>
 		<col def="S255">ISComments</col>
 		<row><td>ALLUSERS</td><td>1</td><td/></row>
+		<row><td>ARPCONTACT</td><td>##ID_STRING7##</td><td/></row>
+		<row><td>ARPHELPLINK</td><td>##ID_STRING8##</td><td/></row>
 		<row><td>ARPINSTALLLOCATION</td><td/><td/></row>
 		<row><td>ARPPRODUCTICON</td><td>ARPPRODUCTICON.exe</td><td/></row>
 		<row><td>ARPSIZE</td><td/><td/></row>
@@ -4391,7 +4404,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGRAMFILETOLAUNCHATEND</td><td>[INSTALLDIR]CloudDesktopApp.exe</td><td/></row>
 		<row><td>ProductCode</td><td>{8F184A97-E5FE-4870-BC7D-F2BE0C0CD634}</td><td/></row>
 		<row><td>ProductName</td><td>CloudHotelDesktopApp </td><td/></row>
-		<row><td>ProductVersion</td><td>0.0.1</td><td/></row>
+		<row><td>ProductVersion</td><td>0.0.2</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
@@ -4472,7 +4485,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="i2">InstallMode</col>
 		<row><td>CloudDesktopApp.exe</td><td>CloudDesktopApp.exe</td><td/><td>cloudh_1_cloudhoteldesktopapp_</td><td>2</td></row>
 		<row><td>CloudDesktopApp.vshost.exe</td><td>CloudDesktopApp.vshost.exe</td><td/><td>cloudh_1_cloudhoteldesktopapp_</td><td>2</td></row>
-		<row><td>FileKey1</td><td>CloudDesktopApp.exe</td><td/><td>cloudh_1_cloudhoteldesktopapp_</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4558,9 +4570,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>CloudDesktopApp.exe</td><td>cloudh_1_cloudhoteldesktopapp_</td><td>##IDS_SHORTCUT_DISPLAY_NAME5##</td><td>CloudDesktopApp.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>CloudDesktopApp.ex_70BFBE76350746AE8214DBAD8D706F0B.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>CloudDesktopApp.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME5##</td><td>CloudDesktopApp.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>CloudDesktopApp.ex_28CF5E96778D4D5C92DBB6D05819E649.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>CloudDesktopApp.vshost.exe</td><td>cloudh_1_cloudhoteldesktopapp_</td><td>##IDS_SHORTCUT_DISPLAY_NAME6##</td><td>CloudDesktopApp.vshost.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>CloudDesktopApp.vs_42B9923E851A4B14B38A9CEBE15E0186.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>CloudDesktopApp.exe</td><td>cloudh_1_cloudhoteldesktopapp_</td><td>##IDS_SHORTCUT_DISPLAY_NAME7##</td><td>CloudDesktopApp.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>CloudDesktopApp.ex_FAFEDEB420E04B8AA361CDDC7AD70E1D.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>CloudDesktopApp.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME7##</td><td>CloudDesktopApp.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>CloudDesktopApp.ex_768BAEAC309F40B58CBE039D634304DD.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>CloudDesktopApp.vshost.exe</td><td>cloudh_1_cloudhoteldesktopapp_</td><td>##IDS_SHORTCUT_DISPLAY_NAME8##</td><td>CloudDesktopApp.vshost.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>CloudDesktopApp.vs_F84B22A76CDB400BA7BA33C786BDE9BA.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">

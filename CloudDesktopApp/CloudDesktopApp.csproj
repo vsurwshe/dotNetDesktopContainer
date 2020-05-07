@@ -57,22 +57,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiOperations\CustomerApiServices.cs" />
     <Compile Include="ApiOperations\UserService.cs" />
     <Compile Include="ApiOperations\CommonApiOperation.cs" />
     <Compile Include="ApiOperations\CommonModelClass.cs" />
     <Compile Include="ApiOperations\LoginRegsiter.cs" />
     <Compile Include="ApiOperations\ProfileApiService.cs" />
-    <Compile Include="Component\CustomerTabel\TabelManagement.cs">
+    <Compile Include="Component\Customer\ShowCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\Customer\ShowCustomer.Designer.cs">
+      <DependentUpon>ShowCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\HotelTabel\HotelTabelForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Component\CustomerTabel\TabelManagement.Designer.cs">
+    <Compile Include="Component\HotelTabel\HotelTabelForm.Designer.cs">
+      <DependentUpon>HotelTabelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\HotelTabel\TabelManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\HotelTabel\TabelManagement.Designer.cs">
       <DependentUpon>TabelManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Customer\CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\Customer\CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Customer\CustomerManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\Customer\CustomerManagment.Designer.cs">
+      <DependentUpon>CustomerManagment.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\Dashborad\VerifyUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Component\Dashborad\VerifyUser.Designer.cs">
       <DependentUpon>VerifyUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Food\FoodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\Food\FoodForm.Designer.cs">
+      <DependentUpon>FoodForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\Food\FoodManagement.cs">
       <SubType>Form</SubType>
@@ -91,6 +122,12 @@
     </Compile>
     <Compile Include="Component\Help\HelpForm.Designer.cs">
       <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\MainTable\MainTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\MainTable\MainTable.Designer.cs">
+      <DependentUpon>MainTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\Profile\CreateProfile.cs">
       <SubType>Form</SubType>
@@ -151,8 +188,20 @@
     <Compile Include="Regsiter.Designer.cs">
       <DependentUpon>Regsiter.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Component\CustomerTabel\TabelManagement.resx">
+    <EmbeddedResource Include="Component\Customer\ShowCustomer.resx">
+      <DependentUpon>ShowCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\HotelTabel\HotelTabelForm.resx">
+      <DependentUpon>HotelTabelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\HotelTabel\TabelManagement.resx">
       <DependentUpon>TabelManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Customer\CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Customer\CustomerManagment.resx">
+      <DependentUpon>CustomerManagment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Component\Dashborad\CommonDashborad.resx">
       <DependentUpon>CommonDashborad.cs</DependentUpon>
@@ -160,11 +209,17 @@
     <EmbeddedResource Include="Component\Dashborad\VerifyUser.resx">
       <DependentUpon>VerifyUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Component\Food\FoodForm.resx">
+      <DependentUpon>FoodForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Component\Food\FoodManagement.resx">
       <DependentUpon>FoodManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Component\Help\HelpForm.resx">
       <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\MainTable\MainTable.resx">
+      <DependentUpon>MainTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Component\Profile\CreateProfile.resx">
       <DependentUpon>CreateProfile.cs</DependentUpon>
@@ -256,6 +311,7 @@
   <ItemGroup>
     <None Include="Resources\delete.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -11,5 +11,8 @@
     <Setting Name="User" Type="Newtonsoft.Json.Schema.JsonSchema" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="profileId" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

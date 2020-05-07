@@ -57,5 +57,17 @@ namespace CloudDesktopApp.Properties {
                 this["User"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string profileId {
+            get {
+                return ((string)(this["profileId"]));
+            }
+            set {
+                this["profileId"] = value;
+            }
+        }
     }
 }

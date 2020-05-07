@@ -50,4 +50,25 @@ namespace CloudDesktopApp.ApiOperations
         public Double cost { get; set; }
         public int version { get; set; }
     }
+
+    // This is Customer model class
+    public class CustomerModel
+    {
+        public int customerId { get; set; }
+        public string customerName { get; set; }
+        public string customerMobileNo { get; set; }
+        public string customerEmail { get; set; }
+        public string customerAddress { get; set; }
+        public double version { get; set; }
+    }
+
+    // This is Food model class
+    public class FoodModel
+    {
+        public int foodId { get; set; }
+        public string foodName { get; set; }
+        public double foodPrice { get; set; }
+        public string foodCategory { get; set; }
+        public double version { get; set; }
+    }
 }
