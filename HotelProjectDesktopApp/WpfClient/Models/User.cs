@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace HotelDashboard.WpfClient.Models
+namespace CloudDesktopApp.WpfClient.Models
 {
     // This User model class
     public class User

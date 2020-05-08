@@ -1,4 +1,4 @@
-﻿namespace HotelDashboard.UiScreen.Help
+﻿namespace CloudDesktopApp.UiScreen.Help
 {
     partial class Help
     {

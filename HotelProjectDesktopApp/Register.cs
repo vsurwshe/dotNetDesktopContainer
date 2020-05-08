@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 //---
 using System.Windows.Forms;
-using HotelDashboard.Helper;
-using HotelDashboard.WpfClient.Models;
-using HotelDashboard.WpfClient.Operations;
+using CloudDesktopApp.Helper;
+using CloudDesktopApp.WpfClient.Models;
+using CloudDesktopApp.WpfClient.Operations;
 
-namespace HotelDashboard
+namespace CloudDesktopApp
 {
     public partial class Register : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace HotelDashboard.UiScreen.Profile
+﻿namespace CloudDesktopApp.UiScreen.Profile
 {
     partial class CreateProfile
     {

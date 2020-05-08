@@ -1,4 +1,4 @@
-﻿namespace HotelDashboard.UiScreen.Food
+﻿namespace CloudDesktopApp.UiScreen.Food
 {
     partial class UpdateFood
     {

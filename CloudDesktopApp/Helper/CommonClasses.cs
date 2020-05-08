@@ -24,7 +24,7 @@ namespace CloudDesktopApp.Helper
         // This method use for the check response result
         public static Boolean checkResposeResult(Object resultApi)
         {
-            if (resultApi != null && !resultApi.Equals(CommonMessage.NOT_FOUND) && !resultApi.Equals(CommonMessage.INTERNAL_SERVER_ERROR))
+            if (resultApi != null && !resultApi.Equals(CommonMessage.BAD_REQUEST) && !resultApi.Equals(CommonMessage.NOT_FOUND) && !resultApi.Equals(CommonMessage.INTERNAL_SERVER_ERROR))
             {
                 return true;
             }else{

@@ -33,6 +33,7 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.profileName = new MaterialSkin.Controls.MaterialLabel();
             this.profileType = new MaterialSkin.Controls.MaterialLabel();
+            this.setProfile = new Bunifu.Framework.UI.BunifuTileButton();
             this.SuspendLayout();
             // 
             // DeleteButton
@@ -48,7 +49,7 @@
             this.DeleteButton.ImageZoom = 35;
             this.DeleteButton.LabelPosition = 10;
             this.DeleteButton.LabelText = "";
-            this.DeleteButton.Location = new System.Drawing.Point(74, 127);
+            this.DeleteButton.Location = new System.Drawing.Point(46, 127);
             this.DeleteButton.Margin = new System.Windows.Forms.Padding(6);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(50, 45);
@@ -68,7 +69,7 @@
             this.EditButton.ImageZoom = 35;
             this.EditButton.LabelPosition = 10;
             this.EditButton.LabelText = "";
-            this.EditButton.Location = new System.Drawing.Point(23, 127);
+            this.EditButton.Location = new System.Drawing.Point(-2, 127);
             this.EditButton.Margin = new System.Windows.Forms.Padding(6);
             this.EditButton.Name = "EditButton";
             this.EditButton.Size = new System.Drawing.Size(50, 45);
@@ -115,6 +116,26 @@
             this.profileType.Text = "Profile Type";
             this.profileType.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // setProfile
+            // 
+            this.setProfile.BackColor = System.Drawing.Color.Transparent;
+            this.setProfile.color = System.Drawing.Color.Transparent;
+            this.setProfile.colorActive = System.Drawing.Color.Yellow;
+            this.setProfile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.setProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.setProfile.ForeColor = System.Drawing.Color.Transparent;
+            this.setProfile.Image = global::CloudDesktopApp.Properties.Resources.delete;
+            this.setProfile.ImagePosition = 10;
+            this.setProfile.ImageZoom = 35;
+            this.setProfile.LabelPosition = 10;
+            this.setProfile.LabelText = "";
+            this.setProfile.Location = new System.Drawing.Point(96, 127);
+            this.setProfile.Margin = new System.Windows.Forms.Padding(6);
+            this.setProfile.Name = "setProfile";
+            this.setProfile.Size = new System.Drawing.Size(50, 45);
+            this.setProfile.TabIndex = 32;
+            this.setProfile.Click += new System.EventHandler(this.setProfile_Click);
+            // 
             // ProfileItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -123,6 +144,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.setProfile);
             this.Controls.Add(this.profileType);
             this.Controls.Add(this.profileName);
             this.Controls.Add(this.DeleteButton);
@@ -143,5 +165,6 @@
         private Bunifu.Framework.UI.BunifuTileButton DeleteButton;
         private MaterialSkin.Controls.MaterialLabel profileName;
         private MaterialSkin.Controls.MaterialLabel profileType;
+        private Bunifu.Framework.UI.BunifuTileButton setProfile;
     }
 }

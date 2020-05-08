@@ -30,7 +30,7 @@
         {
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.customerCreate = new MaterialSkin.Controls.MaterialLabel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.customerTablePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // materialLabel1
@@ -62,24 +62,26 @@
             this.customerCreate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.customerCreate.Click += new System.EventHandler(this.customerCreate_Click);
             // 
-            // flowLayoutPanel1
+            // customerTablePanel
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(242, 102);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(799, 471);
-            this.flowLayoutPanel1.TabIndex = 5;
+            this.customerTablePanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.customerTablePanel.Location = new System.Drawing.Point(314, 0);
+            this.customerTablePanel.Name = "customerTablePanel";
+            this.customerTablePanel.Size = new System.Drawing.Size(866, 741);
+            this.customerTablePanel.TabIndex = 5;
             // 
             // CustomerManagment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1053, 741);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(1180, 741);
+            this.Controls.Add(this.customerTablePanel);
             this.Controls.Add(this.customerCreate);
             this.Controls.Add(this.materialLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CustomerManagment";
             this.Text = "CustomerManagment";
+            this.Load += new System.EventHandler(this.CustomerManagment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,6 +91,6 @@
 
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel customerCreate;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel customerTablePanel;
     }
 }

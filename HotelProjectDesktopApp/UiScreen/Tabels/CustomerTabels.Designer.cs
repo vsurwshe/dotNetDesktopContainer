@@ -1,4 +1,4 @@
-﻿namespace HotelDashboard.UiScreen.Tabels
+﻿namespace CloudDesktopApp.UiScreen.Tabels
 {
     partial class CustomerTabels
     {

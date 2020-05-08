@@ -1,4 +1,4 @@
-﻿namespace HotelDashboard.UiScreen.Payment
+﻿namespace CloudDesktopApp.UiScreen.Payment
 {
     partial class Payments
     {

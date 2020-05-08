@@ -6,7 +6,7 @@ using System.Text;
 using System.Windows.Forms;
 
 
-namespace HotelDashboard.Helper
+namespace CloudDesktopApp.Helper
 {
     class UserExceptions
     {

@@ -1,4 +1,4 @@
-﻿namespace HotelDashboard
+﻿namespace CloudDesktopApp
 {
     partial class Form1
     {

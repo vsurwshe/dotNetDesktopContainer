@@ -1,4 +1,4 @@
-﻿namespace HotelDashboard.UiScreen
+﻿namespace CloudDesktopApp.UiScreen
 {
     partial class UserDashboard
     {

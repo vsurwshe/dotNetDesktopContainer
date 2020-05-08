@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 //----
-using HotelDashboard.WpfClient.Models;
-using HotelDashboard.Helper;
-using HotelDashboard.WpfClient.Operations;
+using CloudDesktopApp.WpfClient.Models;
+using CloudDesktopApp.Helper;
+using CloudDesktopApp.WpfClient.Operations;
 
 
-namespace HotelDashboard.UiScreen.Profile
+namespace CloudDesktopApp.UiScreen.Profile
 {
     public partial class CreateProfile : Form
     {

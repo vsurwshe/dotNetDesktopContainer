@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 //-----
-using HotelDashboard.WpfClient.Models;
-using HotelDashboard.Helper;
+using CloudDesktopApp.WpfClient.Models;
+using CloudDesktopApp.Helper;
 using Newtonsoft.Json;
 using System.Net;
 
-namespace HotelDashboard.WpfClient.Operations
+namespace CloudDesktopApp.WpfClient.Operations
 {
      class AuthApiService
     {

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace HotelDashboard.UiScreen.Food
+namespace CloudDesktopApp.UiScreen.Food
 {
     public partial class UpdateFood : Form
     {

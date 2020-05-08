@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace HotelDashboard.UiScreen.Tabels
+namespace CloudDesktopApp.UiScreen.Tabels
 {
     public partial class AddTabels : Form
     {

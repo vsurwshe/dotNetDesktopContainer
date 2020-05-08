@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 //-----
 using Newtonsoft.Json;
-using HotelDashboard.WpfClient.Models;
-using HotelDashboard.WpfClient.Operations;
-using HotelDashboard.Helper;
+using CloudDesktopApp.WpfClient.Models;
+using CloudDesktopApp.WpfClient.Operations;
+using CloudDesktopApp.Helper;
 
-namespace HotelDashboard.WpfClient.Operations
+namespace CloudDesktopApp.WpfClient.Operations
 {
     class ProfileService
     {
@@ -31,7 +31,7 @@ namespace HotelDashboard.WpfClient.Operations
             }
             catch (Exception msg)
             {
-                new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
+                new CloudDesktopApp.Helper.UserExceptions().showExceptions(msg.Message);
             }
             return result; 
         }

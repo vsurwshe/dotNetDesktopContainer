@@ -9,13 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 //-----
-using HotelDashboard.UiScreen;
-using HotelDashboard.UiScreen.Customer;
-using HotelDashboard.UiScreen.Foods;
-using HotelDashboard.UiScreen.Profile;
+using CloudDesktopApp.UiScreen;
+using CloudDesktopApp.UiScreen.Customer;
+using CloudDesktopApp.UiScreen.Foods;
+using CloudDesktopApp.UiScreen.Profile;
 
 
-namespace HotelDashboard
+namespace CloudDesktopApp
 {
     public partial class Dashboard : Form
     {
@@ -37,7 +37,7 @@ namespace HotelDashboard
             }
             catch (Exception msg)
             {
-                new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
+                new CloudDesktopApp.Helper.UserExceptions().showExceptions(msg.Message);
             }
         }
 
@@ -50,7 +50,7 @@ namespace HotelDashboard
             }
             catch (Exception msg)
             {
-                new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
+                new CloudDesktopApp.Helper.UserExceptions().showExceptions(msg.Message);
             }
         }
 
@@ -63,7 +63,7 @@ namespace HotelDashboard
             }
             catch (Exception msg)
             {
-                new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
+                new CloudDesktopApp.Helper.UserExceptions().showExceptions(msg.Message);
             }
         }
 
@@ -76,7 +76,7 @@ namespace HotelDashboard
             }
             catch (Exception msg)
             {
-                new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
+                new CloudDesktopApp.Helper.UserExceptions().showExceptions(msg.Message);
             }
         }
 
@@ -84,12 +84,12 @@ namespace HotelDashboard
         {
             try
             {
-                Type typeOfHelp = typeof(HotelDashboard.UiScreen.Help.Help);
+                Type typeOfHelp = typeof(CloudDesktopApp.UiScreen.Help.Help);
                 this.createShowForm(typeOfHelp);
             }
             catch (Exception msg)
             {
-                new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
+                new CloudDesktopApp.Helper.UserExceptions().showExceptions(msg.Message);
             }
         }
 
@@ -97,11 +97,11 @@ namespace HotelDashboard
         {
             try
             {   // This line called the UserService exit method
-                new HotelDashboard.Helper.UserService().appExit();
+                new CloudDesktopApp.Helper.UserService().appExit();
             }
             catch (Exception msg)
             {
-                new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
+                new CloudDesktopApp.Helper.UserExceptions().showExceptions(msg.Message);
             }
         }
        
@@ -127,7 +127,7 @@ namespace HotelDashboard
             }
             catch (Exception msg)
             {
-                new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
+                new CloudDesktopApp.Helper.UserExceptions().showExceptions(msg.Message);
             }
         }
         public ContextMenuStrip menu = new ContextMenuStrip();

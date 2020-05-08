@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 //---
 using System.Windows.Forms;
-using HotelDashboard.WpfClient.Models;
-using HotelDashboard.WpfClient.Operations;
-using HotelDashboard.Helper;
+using CloudDesktopApp.WpfClient.Models;
+using CloudDesktopApp.WpfClient.Operations;
+using CloudDesktopApp.Helper;
 
-namespace HotelDashboard.Helper
+namespace CloudDesktopApp.Helper
 {
     public class messageBoxHeader
     {

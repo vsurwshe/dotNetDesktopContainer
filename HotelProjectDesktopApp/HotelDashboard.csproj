@@ -31,7 +31,7 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
-    <RootNamespace>HotelDashboard</RootNamespace>
+    <RootNamespace>CloudDesktopApp</RootNamespace>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>HotelDashboard.Program</StartupObject>

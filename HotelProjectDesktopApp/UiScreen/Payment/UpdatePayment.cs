@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace HotelDashboard.UiScreen.Payment
+namespace CloudDesktopApp.UiScreen.Payment
 {
     public partial class UpdatePayment : Form
     {

@@ -44,20 +44,27 @@ namespace CloudDesktopApp.Component
         private void UserDashborad_Load(object sender, EventArgs e)
         {
             this.Dashboard_Click(sender, e);
-            String profileId = Properties.Settings.Default.profileId;
-            if (profileId.Equals(""))
+            try
             {
-                List<ProfileModel> profiles = new ProfileApiService().loadProfiles();
-                if (profiles != null)
+                String profileId = Properties.Settings.Default.profileId;
+                if (profileId.Equals(""))
                 {
-                    Properties.Settings.Default.profileId = profiles.First().profileId.ToString();
+                    List<ProfileModel> profiles = new ProfileApiService().loadProfiles();
+                    if (profiles != null)
+                    {
+                        Properties.Settings.Default.profileId = profiles.First().profileId.ToString();
+                    }
+                    else
+                    {
+                        UserMessage.showSuccessMessage(CommonMessage.PROFILE_CREATED_MESSAGE);
+                    }
                 }
-                else
-                {
-                    UserMessage.showSuccessMessage(CommonMessage.PROFILE_CREATED_MESSAGE);
-                }
+                new ProfileManagement().loadProfiles();
             }
-            new ProfileManagement().loadProfiles();
+            catch (Exception msg)
+            {
+                UserMessage.ShowExceptions(msg.Message);
+            }
         }
 
         public void Dashboard_Click(object sender, EventArgs e)

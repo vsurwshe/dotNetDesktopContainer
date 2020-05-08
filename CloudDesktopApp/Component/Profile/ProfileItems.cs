@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 //-----
 using CloudDesktopApp.ApiOperations;
+using CloudDesktopApp.Helper;
 
 namespace CloudDesktopApp.Component.Profile
 {
@@ -41,6 +42,12 @@ namespace CloudDesktopApp.Component.Profile
                 formExits.Close();
             }
             new DeleteProfile(this.tempProfile).Show(this);
+        }
+
+        private void setProfile_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.profileId = tempProfile.profileId.ToString();
+            MessageBox.Show(tempProfile.profileName+CommonMessage.PROFILE_SELECTED_MESSAGE);
         }
     }
 }

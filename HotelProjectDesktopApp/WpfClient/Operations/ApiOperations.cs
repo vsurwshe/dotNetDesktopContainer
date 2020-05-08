@@ -4,15 +4,15 @@ using System.Linq;
 using System.Net;
 using System.Text;
 //------
-using HotelDashboard.WpfClient.Models;
-using HotelDashboard.Helper;
+using CloudDesktopApp.WpfClient.Models;
+using CloudDesktopApp.Helper;
 using Newtonsoft.Json;
 using System.Configuration;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
 
-namespace HotelDashboard.WpfClient.Operations
+namespace CloudDesktopApp.WpfClient.Operations
 {
     class ApiOperations
     {
@@ -66,7 +66,7 @@ namespace HotelDashboard.WpfClient.Operations
             }
             catch (WebException msg)
             {
-                new HotelDashboard.Helper.UserExceptions().showExceptions(msg.Message);
+                new CloudDesktopApp.Helper.UserExceptions().showExceptions(msg.Message);
                 response = null;
             }
             return response;

@@ -1,4 +1,4 @@
-﻿namespace HotelDashboard.UiScreen.Customer
+﻿namespace CloudDesktopApp.UiScreen.Customer
 {
     partial class UpdateCustomer
     {
