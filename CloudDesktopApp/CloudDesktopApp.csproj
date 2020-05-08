@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiOperations\CustomerApiServices.cs" />
+    <Compile Include="ApiOperations\FoodApiServices.cs" />
+    <Compile Include="ApiOperations\HotelTableServices.cs" />
     <Compile Include="ApiOperations\UserService.cs" />
     <Compile Include="ApiOperations\CommonApiOperation.cs" />
     <Compile Include="ApiOperations\CommonModelClass.cs" />

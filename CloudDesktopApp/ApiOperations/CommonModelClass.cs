@@ -71,4 +71,13 @@ namespace CloudDesktopApp.ApiOperations
         public string foodCategory { get; set; }
         public double version { get; set; }
     }
+
+    // This is HotelTable model class
+    public class HotelTableModel
+    {
+        public int hotelTableId { get; set; }
+        public string hotelTableName { get; set; }
+        public string hotelTableLocations { get; set; }
+        public double version { get; set; }
+    }
 }
